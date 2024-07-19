@@ -1,0 +1,4055 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>TLS Edumanager HTML Publishing List</title>
+<style type="text/css">
+@charset "utf-8";
+* {margin:0;padding:0;}
+body {font-size:.75em;width:1200px;margin: 0 auto;}
+hr {border:0;border-bottom:solid 1px #ddd !important;}
+.skip {position:absolute;left:0;top:0;display:block;height:1px;width:1px;margin:0 -1px -1px 0;padding:0;overflow:hidden;font-size:0;line-height:0;text-align:center;}
+.skip:hover,
+.skip:active,
+.skip:focus {position:static;width:100%;height:auto;margin:0;padding:5px 0;text-indent:10px;font-weight:bold;font-size:12px;color:#333;font-family:Tahoma,Sans-serif;line-height:1;text-decoration:none !important;}
+#header {overflow:hidden;height:100px;background-color:#000;}
+#header h1 {float:left;padding:37px 20px;font:bold 15pt/100% Arial,Sans-serif;color:#fff;}
+#header h2 {float:right;padding:33px 10px 0 0;font:60pt/100% Arial,Sans-serif;color:#fff;}
+#wrap {padding:0 20px;}
+#wrap h3 {padding:20px 0;font:bold 16pt/130% "나눔고딕",NanumGothic,"맑은 고딕","Malgun gothic","Segoe UI",AppleGothic,Arial,Sans-serif;color:#333;}
+#wrap h4 {margin:0 0 5px 0;font:bold 11pt/130% "나눔고딕",NanumGothic,"맑은 고딕","Malgun gothic","Segoe UI",AppleGothic,Arial,Sans-serif;color:#333;}
+#wrap h4.h4_first {margin:20px 0 -15px 0;}
+table {width:100%;margin:0 0 20px 0;border-spacing:0;border-collapse:collapse;border:1px solid #ddd;font-family:"돋움",Dotum,Arial,Sans-serif;font-size:.95em;color:#555;}
+caption {padding:0 0 5px 0;font-family:"돋움",Dotum,"굴림",Gulim,Sans-serif;text-align:right;}
+.col1 {width:12%;}
+.col2 {width:20%;}
+.col3 {width:20%;}
+.col4 {width:10%;}
+.col6 {width:100px;}
+.col7 {width:100px;}
+thead {background-color:#f9f9f9;}
+th, td {padding:6px 10px;border-top:1px solid #ddd;border-right:1px solid #ddd}
+td a {color:#125fae;text-decoration:none;}
+td a:hover {color:#444;text-decoration:underline;}
+.align-center {text-align:center;}
+.state {font-size:.95em;color:#fff;}
+.state span {padding:3px;}
+.state .undecided {border-radius:30px;background-color:#9b9a4b;}
+.state .complete {border-radius:30px;background-color:#1f4d87;}
+.state .inProgress {border-radius:30px;background-color:#82cf54;}
+.state .edit {border-radius:30px;background-color:#c3122f;}
+footer {zoom:1;}
+footer:after {display:block;content:"";clear:both;}
+footer h3 {float:left;}
+footer dl {float:left;margin:27px 0 0 50px;}
+dl {overflow:auto;font-family:"나눔고딕",NanumGothic,"맑은 고딕","Malgun gothic","Segoe UI",AppleGothic,Arial,Sans-serif;}
+dt {float:left;font-weight:bold;color:#444;}
+dd {float:left;padding:0 30px 0 20px;color:#888;}
+/* 임시구분 */
+td {display:none;}
+.dowork td {display:table-cell;border-bottom:1px solid #ddd;}
+</style>
+</head>
+<body>
+<a href="#wrap" class="skip">≫ &nbsp; 메뉴 건너 뛰기</a>
+<header>
+	<div id="header">
+		<hgroup>
+			<h1>TLS Edumanager 반응형 HTML Publishing List</h1>
+			<h2>Publishing</h2>
+		</hgroup>
+	</div>
+</header>
+<hr style="display:none;" />
+<div id="wrap">
+	<section>
+		<h3>진행사항</h3>
+	</section>
+	<hr />
+<section>
+
+	<article style="padding: 0 20px;">
+		<h4 class="h4_first">퍼블리싱 가이드</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">가이드</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/common/guide.html" target="_blank">guide.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">스타일</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/common/style.html" target="_blank">style.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h4 class="h4_first">메인</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">메인</td>
+					<td>모바일하단 플로팅 추가</td>
+					<td>통합검색 추가</td>
+					<td></td>
+					<td><a href="html/01_main/main.html" target="_blank">main.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td>등록된 내용이 없을때</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_none.html" target="_blank">main_none.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr>
+					<td class="align-center">메인 - lg이노텍</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_2.html" target="_blank">main_2.html</a></td>
+					<td class="align-center">2022.12.</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">메인 - db손해보험</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_3_new.html" target="_blank">main_3_new.html</a></td>
+					<td class="align-center">2023.01.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">메인 - 에듀플렉스</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_4.html" target="_blank">main_4.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">메인 - dn솔루션즈</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_5.html" target="_blank">main_5.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">메인 - 대한제분</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_6_2.html" target="_blank">main_6_2.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">메인 - sc제일은행</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_7.html" target="_blank">main_7.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">메인 - 건국이러닝캠퍼스</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_8.html" target="_blank">main_8.html</a></td>
+					<td class="align-center">2023.10.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>내용없음</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_8_none.html" target="_blank">main_8_none.html</a></td>
+					<td class="align-center">2023.10.19</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">메인 - nhn</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_9.html" target="_blank">main_9.html</a></td>
+					<td class="align-center">2024.02.16</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">메인 - 토니모리</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_10.html" target="_blank">main_10.html</a></td>
+					<td class="align-center">2024.06.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center">과정검색</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/sch_01.html" target="_blank">sch_01.html</a></td>
+					<td class="align-center">2022.06.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>검색결과 없을때</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/sch_02.html" target="_blank">sch_02.html</a></td>
+					<td class="align-center">2022.06.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>검색 첫 화면</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/sch_03.html" target="_blank">sch_03.html</a></td>
+					<td class="align-center">2022.07.05</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr>
+					<td class="align-center">에러페이지</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/error.html" target="_blank">error.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">에러페이지2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/error_02.html" target="_blank">error_02.html</a></td>
+					<td class="align-center">2023.01.19</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>공지</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/notice_pop_01.html" target="_blank">notice_pop_01.html</a></td>
+					<td class="align-center">2023.01.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>공지2</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/notice_pop_02.html" target="_blank">notice_pop_02.html</a></td>
+					<td class="align-center">2023.10.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>앱 다운로드</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/app.html" target="_blank">app.html</a></td>
+					<td class="align-center">2023.01.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td>공지팝업 메인화면 적용시</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/main_pop_view.html" target="_blank">main_pop_view.html</a></td>
+					<td class="align-center">2022.07.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>이용약관</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/01_main/foot_pop_01.html" target="_blank">foot_pop_01.html</a></td>
+					<td class="align-center">2022.07.20</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">로그인</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">로그인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_01.html" target="_blank">login_01.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">로그인</td>
+					<td>어두운 배경이미지</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_01_2.html" target="_blank">login_01_2.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>왼쪽정렬</td>
+					<td></td>
+					<td><a href="html/00_login/login_01_2_left.html" target="_blank">login_01_2_left.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>왼쪽정렬 new</td>
+					<td></td>
+					<td><a href="html/00_login/login_01_2_add_left.html" target="_blank">login_01_2_add_left.html</a></td>
+					<td class="align-center">2024.05.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>밝은 배경이미지</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_01_3.html" target="_blank">login_01_3.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>오른쪽정렬</td>
+					<td></td>
+					<td><a href="html/00_login/login_01_3_right.html" target="_blank">login_01_3_right.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>오른쪽정렬 new</td>
+					<td></td>
+					<td><a href="html/00_login/login_01_2_add_right.html" target="_blank">login_01_2_add_right.html</a></td>
+					<td class="align-center">2024.05.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center">회원가입</td>
+					<td>Step1</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_02_1.html" target="_blank">login_02_1.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>Step2</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_02_2.html" target="_blank">login_02_2.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr> -->
+				<!-- <tr>
+					<td class="align-center">로그인</td>
+					<td>로그인 중</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_03_1.html" target="_blank">login_03_1.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>로그인 실패</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_03_2.html" target="_blank">login_03_2.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr> -->
+				<tr>
+					<td class="align-center">로그인</td>
+					<td>정보보안 강화</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_03_3.html" target="_blank">login_03_3.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>비밀번호 변경</td>
+					<td>비밀번호 변경주기 옵션 사용</td>
+					<td></td>
+					<td><a href="html/00_login/login_04_1.html" target="_blank">login_04_1.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>최초 접속 시 비밀번호 변경</td>
+					<td></td>
+					<td><a href="html/00_login/login_04_2.html" target="_blank">login_04_2.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>약관동의</td>
+					<td>1개 이상</td>
+					<td></td>
+					<td><a href="html/00_login/login_05_1.html" target="_blank">login_05_1.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>1개</td>
+					<td></td>
+					<td><a href="html/00_login/login_05_2.html" target="_blank">login_05_2.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">아이디 찾기</td>
+					<td>사번으로 찾기</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_06_1.html" target="_blank">login_06_1.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>휴대폰번호로 찾기</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_06_2.html" target="_blank">login_06_2.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>이메일로 찾기</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_06_2_3.html" target="_blank">login_06_2_3.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결과</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_06_3.html" target="_blank">login_06_3.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td>Step2</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_06_3.html" target="_blank">login_06_3.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr>
+					<td class="align-center">비밀번호 찾기</td>
+					<td>Step1</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_07_1.html" target="_blank">login_07_1.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>Step2</td>
+					<td>휴대폰번호로 찾기</td>
+					<td></td>
+					<td><a href="html/00_login/login_07_2.html" target="_blank">login_07_2.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>이메일로 찾기</td>
+					<td></td>
+					<td><a href="html/00_login/login_07_2_1.html" target="_blank">login_07_2_1.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>휴대폰번호,이메일,휴대폰인증</td>
+					<td></td>
+					<td><a href="html/00_login/login_07_3.html" target="_blank">login_07_3.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>Step3-1</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_07_4.html" target="_blank">login_07_4.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td>Step3-2</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_07_5.html" target="_blank">login_07_5.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr>
+					<td class="align-center"></td>
+					<td>Step3-2</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_07_5_2.html" target="_blank">login_07_5_2.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">임시 비밀번호 발급안내</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_08.html" target="_blank">login_08.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">회원가입</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_10.html" target="_blank">login_10.html</a></td>
+					<td class="align-center">2023.09.14</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>개인정보 확인 및 추가 입력</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_10_1.html" target="_blank">login_10_1.html</a></td>
+					<td class="align-center">2024.05.14</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">오프라인교육 QR 출첵</td>
+					<td>출석체크(완료)</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_09_1.html" target="_blank">login_09_1.html</a></td>
+					<td class="align-center">2023.03.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>출석체크(시간이 지난 경우)</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_09_2.html" target="_blank">login_09_2.html</a></td>
+					<td class="align-center">2023.03.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>출석체크(로그인을 하지 않은 경우)</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_09_3.html" target="_blank">login_09_3.html</a></td>
+					<td class="align-center">2023.03.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>출석체크(학습대상자가 아닌 경우)</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_09_4.html" target="_blank">login_09_4.html</a></td>
+					<td class="align-center">2023.03.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>1:1문의</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/00_login/login_pop_01.html" target="_blank">login_pop_01.html</a></td>
+					<td class="align-center">2024.05.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>휴대전화번호 확인 및 수정</td>
+					<td>확인</td>
+					<td></td>
+					<td><a href="html/00_login/login_pop_02.html" target="_blank">login_pop_02.html</a></td>
+					<td class="align-center">2024.05.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>휴대전화번호 확인 및 수정</td>
+					<td>수정</td>
+					<td></td>
+					<td><a href="html/00_login/login_pop_03.html" target="_blank">login_pop_03.html</a></td>
+					<td class="align-center">2024.05.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h4 class="h4_first">서브</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">레이아웃</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/sub.html" target="_blank">sub.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/pop.html" target="_blank">pop.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">통합검색</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/total_sch_01.html" target="_blank">total_sch_01.html</a></td>
+					<td class="align-center">2023.12.19</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>각 탭 선택시</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/total_sch_02.html" target="_blank">total_sch_02.html</a></td>
+					<td class="align-center">2023.12.19</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>아무 결과 없을떄</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/total_sch_03.html" target="_blank">total_sch_03.html</a></td>
+					<td class="align-center">2023.12.19</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">에듀 스템프</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/edu_01.html" target="_blank">edu_01.html</a></td>
+					<td class="align-center">2023.01.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">에듀 스템프 교육이력 팝업</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/edu_pop_01.html" target="_blank">edu_pop_01.html</a></td>
+					<td class="align-center">2023.01.19</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">강사관리 팝업</td>
+					<td>반응형 X</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/set_pop_01.html" target="_blank">set_pop_01.html</a></td>
+					<td class="align-center">2022.11.08</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">메일폼</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/mail_01.html" target="_blank">mail_01.html</a></td>
+					<td class="align-center">2023.02.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>sc제일은행</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/mail_02.html" target="_blank">mail_02.html</a></td>
+					<td class="align-center">2024.01.25</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">미리보기 팝업</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/preview_pop_01.html" target="_blank">preview_pop_01.html</a></td>
+					<td class="align-center">2023.02.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">미리보기 팝업</td>
+					<td>문자일때</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/preview_pop_02.html" target="_blank">preview_pop_02.html</a></td>
+					<td class="align-center">2023.02.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: turquoise;">
+					<td class="align-center">대한제분</td>
+					<td>진단</td>
+					<td>결과보기</td>
+					<td></td>
+					<td><a href="html/sub/dhf_jindan_01.html" target="_blank">dhf_jindan_01.html</a></td>
+					<td class="align-center">2023.08.07</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: turquoise;">
+					<td class="align-center"></td>
+					<td></td>
+					<td>결과보기 변경</td>
+					<td></td>
+					<td><a href="html/sub/dhf_jindan_01_2.html" target="_blank">dhf_jindan_01_2.html</a></td>
+					<td class="align-center">2023.11.23</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: turquoise;">
+					<td class="align-center"></td>
+					<td>교육제도</td>
+					<td>연간교육일정</td>
+					<td></td>
+					<td><a href="html/sub/dhf_edu_01.html" target="_blank">dhf_edu_01.html</a></td>
+					<td class="align-center">2023.12.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: turquoise;">
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>원본이미지보기</td>
+					<td><a href="html/sub/dhf_edu_01_2.html" target="_blank">dhf_edu_01_2.html</a></td>
+					<td class="align-center">2023.12.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: turquoise;">
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>원본이미지보기-다크용</td>
+					<td><a href="html/sub/dhf_edu_01_2_dk.html" target="_blank">dhf_edu_01_2_dk.html</a></td>
+					<td class="align-center">2023.12.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: turquoise;">
+					<td class="align-center"></td>
+					<td></td>
+					<td>그룹교육체계도</td>
+					<td></td>
+					<td><a href="html/sub/dhf_edu_02.html" target="_blank">dhf_edu_02.html</a></td>
+					<td class="align-center">2023.12.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr style="background: turquoise;">
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>첫번째 원본이미지보기</td>
+					<td><a href="html/sub/dhf_edu_02_1.html" target="_blank">dhf_edu_02_1.html</a></td>
+					<td class="align-center">2023.12.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr style="background: turquoise;">
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>두번째 원본이미지보기</td>
+					<td><a href="html/sub/dhf_edu_02_2.html" target="_blank">dhf_edu_02_2.html</a></td>
+					<td class="align-center">2023.12.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: turquoise;">
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>두번째 원본이미지보기 - 다크용</td>
+					<td><a href="html/sub/dhf_edu_02_2_dk.html" target="_blank">dhf_edu_02_2_dk.html</a></td>
+					<td class="align-center">2023.12.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: turquoise;">
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>세번째 원본이미지보기</td>
+					<td><a href="html/sub/dhf_edu_02_3.html" target="_blank">dhf_edu_02_3.html</a></td>
+					<td class="align-center">2023.12.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #8eb3e1;">
+					<td class="align-center">dns솔루션</td>
+					<td>포인트몰</td>
+					<td>상품 리스트</td>
+					<td></td>
+					<td><a href="html/sub/dns_point_01.html" target="_blank">dns_point_01.html</a></td>
+					<td class="align-center">2023.08.09</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #8eb3e1;">
+					<td class="align-center"></td>
+					<td></td>
+					<td>사용 리스트</td>
+					<td></td>
+					<td><a href="html/sub/dns_point_02.html" target="_blank">dns_point_02.html</a></td>
+					<td class="align-center">2023.08.09</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #8eb3e1;">
+					<td class="align-center"></td>
+					<td></td>
+					<td>커밍쑨</td>
+					<td></td>
+					<td><a href="html/sub/dns_point_03.html" target="_blank">dns_point_03.html</a></td>
+					<td class="align-center">2023.08.29</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #8eb3e1;">
+					<td class="align-center"></td>
+					<td>팝업</td>
+					<td>상품권 신청</td>
+					<td></td>
+					<td><a href="html/sub/dns_point_pop_01.html" target="_blank">dns_point_pop_01.html</a></td>
+					<td class="align-center">2023.08.09</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center">sc제일은행</td>
+					<td>팝업</td>
+					<td>전직원 필수과정 수강신청 및 학습현황</td>
+					<td>탭1 - 임직원별 현황</td>
+					<td><a href="html/sub/sc_pop_01_1.html" target="_blank">sc_pop_01_1.html</a></td>
+					<td class="align-center">2023.09.21</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>탭2 - 전직원 필수과정별 현황</td>
+					<td><a href="html/sub/sc_pop_01_2.html" target="_blank">sc_pop_01_2.html</a></td>
+					<td class="align-center">2023.09.21</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>임직원정보</td>
+					<td><a href="html/sub/sc_pop_01_3.html" target="_blank">sc_pop_01_3.html</a></td>
+					<td class="align-center">2024.05.23</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>프린트용</td>
+					<td><a href="html/sub/sc_print.html" target="_blank">sc_print.html</a></td>
+					<td class="align-center">2024.05.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center"></td>
+					<td>임직원검색</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="html/sub/sc_sch_01.html" target="_blank">sc_sch_01.html</a></td>
+					<td class="align-center">2023.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center"></td>
+					<td>임직원검색</td>
+					<td>상세</td>
+					<td></td>
+					<td><a href="html/sub/sc_sch_02.html" target="_blank">sc_sch_02.html</a></td>
+					<td class="align-center">2023.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">건국대학병원</td>
+					<td>교육팀운영체계</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/sub/kuh_edu.html" target="_blank">kuh_edu.html</a></td>
+					<td class="align-center">2023.10.20</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h4 class="h4_first">온라인과정</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- <tr>
+					<td class="align-center">수강신청</td>
+					<td>리스트</td>
+					<td>테이블형</td>
+					<td>사용안함 -&gt; 리스트형으로 변경</td>
+					<td><a href="html/02_online/online_01.html" target="_blank">online_01.html</a></td>
+					<td class="align-center">2022.09.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr>
+					<td class="align-center">수강신청</td>
+					<td></td>
+					<td>리스트형</td>
+					<td></td>
+					<td><a href="html/02_online/online_01_1.html" target="_blank">online_01_1.html</a></td>
+					<td class="align-center">2022.11.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>썸네일형</td>
+					<td></td>
+					<td><a href="html/02_online/online_01_2.html" target="_blank">online_01_2.html</a></td>
+					<td class="align-center">2022.10.04</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>블로그형</td>
+					<td></td>
+					<td><a href="html/02_online/online_01_3.html" target="_blank">online_01_3.html</a></td>
+					<td class="align-center">2022.11.09</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/02_online/online_02.html" target="_blank">online_02.html</a></td>
+					<td class="align-center">2022.09.20</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭2 - 목차</td>
+					<td></td>
+					<td><a href="html/02_online/online_02_2.html" target="_blank">online_02_2.html</a></td>
+					<td class="align-center">2022.09.21</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭3 - 학습후기</td>
+					<td></td>
+					<td><a href="html/02_online/online_02_3.html" target="_blank">online_02_3.html</a></td>
+					<td class="align-center">2022.09.21</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>과정정보 프린트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/02_online/online_pop_01.html" target="_blank">online_pop_01.html</a></td>
+					<td class="align-center">2022.11.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>학습후기 등록</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/02_online/online_pop_02.html" target="_blank">online_pop_02.html</a></td>
+					<td class="align-center">2022.11.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">마이크로러닝 (스마트러닝)</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">수강신청</td>
+					<td>리스트</td>
+					<td>블로그형</td>
+					<td>전체검색</td>
+					<td><a href="html/04_micro/micro_01.html" target="_blank">micro_01.html</a></td>
+					<td class="align-center">2022.09.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>썸네일형</td>
+					<td></td>
+					<td><a href="html/04_micro/micro_01_2.html" target="_blank">micro_01_2.html</a></td>
+					<td class="align-center">2023.04.25</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/04_micro/micro_02.html" target="_blank">micro_02.html</a></td>
+					<td class="align-center">2022.09.20</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">오프라인과정</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- <tr>
+					<td class="align-center">수강신청</td>
+					<td>테이블형</td>
+					<td>사용안함 -&gt; 리스트형으로 변경</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_01.html" target="_blank">offline_01.html</a></td>
+					<td class="align-center">2022.09.19</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr>
+					<td class="align-center">수강신청</td>
+					<td>리스트형</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/03_offline/offline_01_1.html" target="_blank">offline_01_1.html</a></td>
+					<td class="align-center">2022.11.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>수정버전</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_01_1_1.html" target="_blank">offline_01_1_1.html</a></td>
+					<td class="align-center">2024.04.09</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>캘린더</td>
+					<td>월별</td>
+					<td><a href="html/03_offline/offline_01_1_2.html" target="_blank">offline_01_1_2.html</a></td>
+					<td class="align-center">2024.04.09</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>캘린더</td>
+					<td>연도별</td>
+					<td><a href="html/03_offline/offline_01_1_3.html" target="_blank">offline_01_1_3.html</a></td>
+					<td class="align-center">2024.04.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>자세히보기</td>
+					<td><a href="html/03_offline/offline_01_1_4.html" target="_blank">offline_01_1_4.html</a></td>
+					<td class="align-center">2024.04.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/03_offline/offline_02.html" target="_blank">offline_02.html</a></td>
+					<td class="align-center">2022.09.20</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세 추가</td>
+					<td>탭1 - 과정개요</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_02_1.html" target="_blank">offline_02_1.html</a></td>
+					<td class="align-center">2024.04.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>추가</td>
+					<td>탭2 - 교육일정</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_02_3.html" target="_blank">offline_02_3.html</a></td>
+					<td class="align-center">2024.05.10</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭3 - 학습후기</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_02_2.html" target="_blank">offline_02_2.html</a></td>
+					<td class="align-center">2024.04.12</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>신청 입력</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_03.html" target="_blank">offline_03.html</a></td>
+					<td class="align-center">2022.09.23</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>교육생 명단</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/03_offline/offline_pop_01.html" target="_blank">offline_pop_01.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결재자 등록</td>
+					<td>&lt;head&gt;에 drag_drop.js 추가.</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_pop_02.html" target="_blank">offline_pop_02.html</a></td>
+					<td class="align-center">2022.09.30</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>신청 알림</td>
+					<td>스크롤 x, 체크박스</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_pop_06.html" target="_blank">offline_pop_06.html</a></td>
+					<td class="align-center">2023.07.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>동의하기</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_pop_07.html" target="_blank">offline_pop_07.html</a></td>
+					<td class="align-center">2023.07.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>스크롤 x</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_pop_04.html" target="_blank">offline_pop_04.html</a></td>
+					<td class="align-center">2023.07.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>신청불가</td>
+					<td></td>
+					<td><a href="html/03_offline/offline_pop_05.html" target="_blank">offline_pop_05.html</a></td>
+					<td class="align-center">2023.07.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>신청 완료</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/03_offline/offline_pop_03.html" target="_blank">offline_pop_03.html</a></td>
+					<td class="align-center">2022.09.30</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">나의강의실</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">온라인,오프라인 과정</td>
+					<td>학습하기</td>
+					<td>탭1 - 진행중 교육</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_01_1_new.html" target="_blank">myclass_01_1_new.html</a></td>
+					<td class="align-center">2022.12.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭2- 대기중 교육</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_01_2_new.html" target="_blank">myclass_01_2_new.html</a></td>
+					<td class="align-center">2022.12.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭3- 복습 교육</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_01_3_new.html" target="_blank">myclass_01_3_new.html</a></td>
+					<td class="align-center">2022.12.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">사외교육 과정</td>
+					<td>학습하기</td>
+					<td>탭1 - 진행중 교육</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_14_1.html" target="_blank">myclass_14_1.html</a></td>
+					<td class="align-center">2022.11.08</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭2- 대기중 교육</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_14_2.html" target="_blank">myclass_14_2.html</a></td>
+					<td class="align-center">2022.11.08</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭3- 교육완료</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_14_3.html" target="_blank">myclass_14_3.html</a></td>
+					<td class="align-center">2022.11.08</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>&lt;head&gt;에 drag_drop.js 추가</td>
+					<td>결과보고 팝업</td>
+					<td><a href="html/05_myclass/myclass_pop_14_1.html" target="_blank">myclass_pop_14_1.html</a></td>
+					<td class="align-center">2022.11.08</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">스마트러닝 과정</td>
+					<td>학습하기</td>
+					<td>탭1 - 학습중</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_02_1.html" target="_blank">myclass_02_1.html</a></td>
+					<td class="align-center">2022.09.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭2 - 학습완료</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_02_2.html" target="_blank">myclass_02_2.html</a></td>
+					<td class="align-center">2022.09.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">스마트러닝메이커 과정</td>
+					<td>학습하기</td>
+					<td>탭1 - 학습중</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_15_1.html" target="_blank">myclass_15_1.html</a></td>
+					<td class="align-center">2022.11.08</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭2 - 학습완료</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_15_2.html" target="_blank">myclass_15_2.html</a></td>
+					<td class="align-center">2022.11.08</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">학점현황</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_03.html" target="_blank">myclass_03.html</a></td>
+					<td class="align-center">2022.09.22</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">필수과정</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_04.html" target="_blank">myclass_04.html</a></td>
+					<td class="align-center">2022.10.04</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">상신결재현황</td>
+					<td>탭1 - 결재진행중</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_16_1.html" target="_blank">myclass_16_1.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>탭2 - 결재완료</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_16_2.html" target="_blank">myclass_16_2.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">결재하기</td>
+					<td>탭1- 결재대기</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_05_1.html" target="_blank">myclass_05_1.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>탭2- 결재예정</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_05_2.html" target="_blank">myclass_05_2.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>탭3- 결재완료</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_05_3.html" target="_blank">myclass_05_3.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결재정보 확인 팝업</td>
+					<td>오프라인 제외</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_05_1.html" target="_blank">myclass_pop_05_1.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결재정보 확인 팝업</td>
+					<td>오프라인</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_05_2.html" target="_blank">myclass_pop_05_2.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결재정보 확인 팝업</td>
+					<td>계획수립</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_05_3.html" target="_blank">myclass_pop_05_3.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결재정보 확인 팝업</td>
+					<td>사외교육신청</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_05_4.html" target="_blank">myclass_pop_05_4.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결재정보 확인 팝업</td>
+					<td>결과보고</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_05_5.html" target="_blank">myclass_pop_05_5.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">교육이력</td>
+					<td>탭1 - 교육과정</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_08_1.html" target="_blank">myclass_08_1.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>탭2 - 진단</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_08_2.html" target="_blank">myclass_08_2.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>탭3- 계획수립</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_08_3.html" target="_blank">myclass_08_3.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>탭4- 사외교육</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_08_4.html" target="_blank">myclass_08_4.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>탭5- COP</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_08_5.html" target="_blank">myclass_08_5.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>탭6- 게시글</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_08_6.html" target="_blank">myclass_08_6.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>교육이력 다운로드</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_08.html" target="_blank">myclass_pop_08.html</a></td>
+					<td class="align-center">2024.03.25</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">스크랩교육</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_09.html" target="_blank">myclass_09.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">부서장권한 학습이력</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_10.html" target="_blank">myclass_10.html</a></td>
+					<td class="align-center">2022.10.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>학습이력 - 상세정보 팝업</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_12.html" target="_blank">myclass_pop_12.html</a></td>
+					<td class="align-center">2022.10.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center">부서원학습현황(피플리더)</td>
+					<td>탭1 - 임직원별 현황</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_19_1.html" target="_blank">myclass_19_1.html</a></td>
+					<td class="align-center">2023.09.25</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center"></td>
+					<td>탭2 - 전직원 필수과정별 현황</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_19_2.html" target="_blank">myclass_19_2.html</a></td>
+					<td class="align-center">2023.09.25</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center">팝업</td>
+					<td>임직원별 전직원 필수과정 학습현황</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_19_1.html" target="_blank">myclass_pop_19_1.html</a></td>
+					<td class="align-center">2023.09.25</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background: #82cf54;">
+					<td class="align-center"></td>
+					<td>전직원 필수과정별 학습현황</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_19_2.html" target="_blank">myclass_pop_19_2.html</a></td>
+					<td class="align-center">2023.09.25</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">부서장권한 학점이력</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_11.html" target="_blank">myclass_11.html</a></td>
+					<td class="align-center">2022.10.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>학점이력 - 상세정보 팝업</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_13.html" target="_blank">myclass_pop_13.html</a></td>
+					<td class="align-center">2022.10.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">과정별 임직원 학습이력</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_19.html" target="_blank">myclass_19.html</a></td>
+					<td class="align-center">2023.03.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>학습이력 - 상세정보 팝업</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_15.html" target="_blank">myclass_pop_15.html</a></td>
+					<td class="align-center">2023.03.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">계획수립 이력</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_12.html" target="_blank">myclass_12.html</a></td>
+					<td class="align-center">2022.11.07</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세정보팝업</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_12_1.html" target="_blank">myclass_pop_12_1.html</a></td>
+					<td class="align-center">2022.11.07</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">진단 이력</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_13.html" target="_blank">myclass_13.html</a></td>
+					<td class="align-center">2022.11.07</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세정보팝업</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_13_1.html" target="_blank">myclass_pop_13_1.html</a></td>
+					<td class="align-center">2022.11.07</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">알림모아보기</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_17.html" target="_blank">myclass_17.html</a></td>
+					<td class="align-center">2023.01.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">마일리지현황</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_18.html" target="_blank">myclass_18.html</a></td>
+					<td class="align-center">2023.01.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>결재현황</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_01.html" target="_blank">myclass_pop_01.html</a></td>
+					<td class="align-center">2022.09.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>승인/반려</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_02.html" target="_blank">myclass_pop_02.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td>결과보고</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_03.html" target="_blank">myclass_pop_03.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>계획수립</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_04.html" target="_blank">myclass_pop_04.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결재하기</td>
+					<td>사외교육</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_05.html" target="_blank">myclass_pop_05.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>사외교육 결과보고</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_06.html" target="_blank">myclass_pop_06.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr> -->
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>환불/취소하기</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_07.html" target="_blank">myclass_pop_07.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>거래명세서</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_08.html" target="_blank">myclass_pop_08.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr> -->
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>출력양식</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_08.html" target="_blank">myclass_pop_08.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>주문확인서</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_09.html" target="_blank">myclass_pop_09.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>출력양식</td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_10.html" target="_blank">myclass_pop_10.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr> -->
+				<tr>
+					<td class="align-center"></td>
+					<td>수료증</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_11.html" target="_blank">myclass_pop_11.html</a></td>
+					<td class="align-center">2022.10.12</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>수료증 - 레이어팝업</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_pop_11_2.html" target="_blank">myclass_pop_11_2.html</a></td>
+					<td class="align-center">2023.01.04</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>프린트용</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/05_myclass/myclass_print_01.html" target="_blank">myclass_print_01.html</a></td>
+					<td class="align-center">2024.06.05</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">학습홈</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">학습목차보기</td>
+					<td>온라인</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_01_1.html" target="_blank">home_01_1.html</a></td>
+					<td class="align-center">2022.09.26</td>
+					<td class="align-center">1118</td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>오프라인</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_01_2.html" target="_blank">home_01_2.html</a></td>
+					<td class="align-center">2022.09.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>스마트러닝메이커</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_01_3.html" target="_blank">home_01_3.html</a></td>
+					<td class="align-center">2022.11.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">과제제출</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_02.html" target="_blank">home_02.html</a></td>
+					<td class="align-center">2022.09.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">시험응시</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_03.html" target="_blank">home_03.html</a></td>
+					<td class="align-center">2022.09.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">설문제출</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_04.html" target="_blank">home_04.html</a></td>
+					<td class="align-center">2022.09.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">공지사항</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_05_1.html" target="_blank">home_05_1.html</a></td>
+					<td class="align-center">2022.09.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_05_2.html" target="_blank">home_05_2.html</a></td>
+					<td class="align-center">2022.09.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background-color: thistle">
+					<td class="align-center">과제</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_06_1.html" target="_blank">home_06_1.html</a></td>
+					<td class="align-center">2023.04.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background-color: thistle">
+					<td class="align-center">토론</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_07_1.html" target="_blank">home_07_1.html</a></td>
+					<td class="align-center">2023.04.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background-color: thistle">
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td>답글-댓글</td>
+					<td></td>
+					<td><a href="html/06_home/home_07_2.html" target="_blank">home_07_2.html</a></td>
+					<td class="align-center">2023.04.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">학습창</td>
+					<td>&lt;head&gt; css, js추가. 학습창 주석</td>
+					<td>동영상</td>
+					<td>pc : ~ 1024px</td>
+					<td><a href="html/06_home/home_pop_01_1.html" target="_blank">home_pop_01_1.html</a></td>
+					<td class="align-center">2022.09.23</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>&lt;head&gt; css, js추가. 학습창 주석</td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_01_2.html" target="_blank">home_pop_01_2.html</a></td>
+					<td class="align-center">2022.09.23</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>카드뉴스</td>
+					<td>pc : ~ 1024px</td>
+					<td><a href="html/06_home/home_pop_02_1.html" target="_blank">home_pop_02_1.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_02_2.html" target="_blank">home_pop_02_2.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>PDF문서</td>
+					<td>pc : ~ 1024px</td>
+					<td><a href="html/06_home/home_pop_03_1.html" target="_blank">home_pop_03_1.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_03_2.html" target="_blank">home_pop_03_2.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>유투브</td>
+					<td>pc : ~ 1024px</td>
+					<td><a href="html/06_home/home_pop_04_1.html" target="_blank">home_pop_04_1.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_04_2.html" target="_blank">home_pop_04_2.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>이어보기</td>
+					<td>pc : ~ 1024px ~</td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_01_3.html" target="_blank">home_pop_01_3.html</a></td>
+					<td class="align-center">2022.12.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_01_4.html" target="_blank">home_pop_01_4.html</a></td>
+					<td class="align-center">2022.12.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>스마트러닝메이커</td>
+					<td>pdf</td>
+					<td>pc : ~ 1024px ~</td>
+					<td><a href="html/06_home/home_pop_03_3.html" target="_blank">home_pop_03_3.html</a></td>
+					<td class="align-center">2022.11.30</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_03_4.html" target="_blank">home_pop_03_4.html</a></td>
+					<td class="align-center">2022.11.30</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>일반파일</td>
+					<td>pc : ~ 1024px ~</td>
+					<td><a href="html/06_home/home_pop_11_3.html" target="_blank">home_pop_11_3.html</a></td>
+					<td class="align-center">2022.12.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_11_4.html" target="_blank">home_pop_11_4.html</a></td>
+					<td class="align-center">2022.12.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>외부링크</td>
+					<td>pc : ~ 1024px ~</td>
+					<td><a href="html/06_home/home_pop_12_3.html" target="_blank">home_pop_12_3.html</a></td>
+					<td class="align-center">2022.12.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_12_4.html" target="_blank">home_pop_12_4.html</a></td>
+					<td class="align-center">2022.12.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>내용작성</td>
+					<td>pc : ~ 1024px ~</td>
+					<td><a href="html/06_home/home_pop_13_3.html" target="_blank">home_pop_13_3.html</a></td>
+					<td class="align-center">2022.12.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_13_4.html" target="_blank">home_pop_13_4.html</a></td>
+					<td class="align-center">2022.12.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>유투브</td>
+					<td>pc : ~ 1024px ~</td>
+					<td><a href="html/06_home/home_pop_14_3.html" target="_blank">home_pop_14_3.html</a></td>
+					<td class="align-center">2022.12.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_14_4.html" target="_blank">home_pop_14_4.html</a></td>
+					<td class="align-center">2022.12.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>퀴즈, 설문</td>
+					<td>pc : ~ 1024px ~</td>
+					<td><a href="html/06_home/home_pop_15_3.html" target="_blank">home_pop_15_3.html</a></td>
+					<td class="align-center">2022.12.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 : 1023px ~</td>
+					<td><a href="html/06_home/home_pop_15_4.html" target="_blank">home_pop_15_4.html</a></td>
+					<td class="align-center">2022.12.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+ 				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>성적현황</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_05.html" target="_blank">home_pop_05.html</a></td>
+					<td class="align-center">2022.10.12</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>퀴즈, 설문</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_10.html" target="_blank">home_pop_10.html</a></td>
+					<td class="align-center">2022.10.12</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>학습창에서 상호작용 보기</td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_10_1.html" target="_blank">home_pop_10_1.html</a></td>
+					<td class="align-center">2023.01.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>수료기준</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_06_1.html" target="_blank">home_pop_06_1.html</a></td>
+					<td class="align-center">2022.12.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!--<tr>
+					<td class="align-center"></td>
+					<td>과제결과</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_07.html" target="_blank">home_pop_07.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr> -->
+				<tr>
+					<td class="align-center"></td>
+					<td>시험지</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_08.html" target="_blank">home_pop_08.html</a></td>
+					<td class="align-center">2022.09.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>시험결과</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_09.html" target="_blank">home_pop_09.html</a></td>
+					<td class="align-center">2022.09.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>설문지</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_10.html" target="_blank">home_pop_10.html</a></td>
+					<td class="align-center">2022.09.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background-color: thistle">
+					<td class="align-center"></td>
+					<td>과제지</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_16.html" target="_blank">home_pop_16.html</a></td>
+					<td class="align-center">2023.04.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background-color: thistle">
+					<td class="align-center"></td>
+					<td>과제결과</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_17.html" target="_blank">home_pop_17.html</a></td>
+					<td class="align-center">2023.04.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>출석현황</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/06_home/home_pop_18.html" target="_blank">home_pop_18.html</a></td>
+					<td class="align-center">2024.04.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">COP</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center">COP 개설</td>
+					<td>탭1 - 개설현황</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/07_cop/cop_01_1.html" target="_blank">cop_01_1.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center"></td>
+					<td>탭2 - 나의 가입목록</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/07_cop/cop_01_2.html" target="_blank">cop_01_2.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center"></td>
+					<td>입력</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/07_cop/cop_02_1.html" target="_blank">cop_02_1.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center"></td>
+					<td></td>
+					<td>의견</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_02_2.html" target="_blank">cop_02_2.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr style="background-color: #aed6ff;">
+					<td class="align-center">COP</td>
+					<td>전체홈</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/07_cop/cop_03_new.html" target="_blank">cop_03_new.html</a></td>
+					<td class="align-center">2024.02.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr style="background-color: #82cf54;">
+					<td class="align-center">COP</td>
+					<td>전체홈</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/07_cop/cop_home_01.html" target="_blank">cop_home_01.html</a></td>
+					<td class="align-center">2024.04.15</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center"></td>
+					<td></td>
+					<td>검색결과</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_03_new_2.html" target="_blank">cop_03_new_2.html</a></td>
+					<td class="align-center">2024.02.16</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center">COP</td>
+					<td>개별홈</td>
+					<td>&lt;head&gt; swiper_slide.js 추가</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_03.html" target="_blank">cop_03.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center"></td>
+					<td>공지사항</td>
+					<td>리스트형</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_04_1.html" target="_blank">cop_04_1.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center"></td>
+					<td></td>
+					<td>블로그형</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_04_2.html" target="_blank">cop_04_2.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center"></td>
+					<td></td>
+					<td>썸네일형</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_04_3.html" target="_blank">cop_04_3.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>이미지</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_04_4.html" target="_blank">cop_04_4.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background-color: #aed6ff;">
+					<td class="align-center"></td>
+					<td></td>
+					<td>게시글 상세 내용</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_04_5.html" target="_blank">cop_04_5.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>등록, 수정</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_04_6.html" target="_blank">cop_04_6.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>소개 및 설정</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_05.html" target="_blank">cop_05.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>회원관리</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_06.html" target="_blank">cop_06.html</a></td>
+					<td class="align-center">2022.10.26</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>게시판관리</td>
+					<td>반응형x</td>
+					<td><a href="html/07_cop/cop_07.html" target="_blank">cop_07.html</a></td>
+					<td class="align-center">2022.10.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>결과보고서</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_08_1.html" target="_blank">cop_08_1.html</a></td>
+					<td class="align-center">2022.10.26</td>
+					<td class="align-center"><span class="state"><span class="edit">수</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>등록 - 반응형x</td>
+					<td><a href="html/07_cop/cop_08_2.html" target="_blank">cop_08_2.html</a></td>
+					<td class="align-center">2022.10.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>상세 - 반응형x</td>
+					<td><a href="html/07_cop/cop_08_3.html" target="_blank">cop_08_3.html</a></td>
+					<td class="align-center">2022.10.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>가입하기</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/07_cop/cop_pop_01.html" target="_blank">cop_pop_01.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>의견</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/07_cop/cop_pop_02.html" target="_blank">cop_pop_02.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td>대리 리더십 역량진단</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/07_cop/cop_pop_03.html" target="_blank">cop_pop_03.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr> -->
+				<tr>
+					<td class="align-center"></td>
+					<td>대상자 관리 (관리자와 동일)</td>
+					<td>탭1 - 개별등록</td>
+					<td>계층형 사용 (트리구조)</td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_03_1.html" target="_blank">smartmaker_pop_03_1.html</a></td>
+					<td class="align-center">2022.11.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭2 - 일괄등록</td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_03_2.html" target="_blank">smartmaker_pop_03_2.html</a></td>
+					<td class="align-center">2022.11.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>게시판설정</td>
+					<td>반응형x</td>
+					<td></td>
+					<td><a href="html/07_cop/cop_pop_06.html" target="_blank">cop_pop_06.html</a></td>
+					<td class="align-center">2022.09.28</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h4 class="h4_first">진단</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">역량진단</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/08_jindan/jindan_01.html" target="_blank">jindan_01.html</a></td>
+					<td class="align-center">2022.09.23</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">진단하기</td>
+					<td>대상자 1명</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/08_jindan/jindan_02_1.html" target="_blank">jindan_02_1.html</a></td>
+					<td class="align-center">2022.09.23</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>대상자 n명</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/08_jindan/jindan_02_2.html" target="_blank">jindan_02_2.html</a></td>
+					<td class="align-center">2022.09.23</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">진단결과</td>
+					<td>자가진단</td>
+					<td>차트</td>
+					<td></td>
+					<td><a href="html/08_jindan/jindan_03_2.html" target="_blank">jindan_03_2.html</a></td>
+					<td class="align-center">2022.10.05</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>다면진단</td>
+					<td>차트</td>
+					<td></td>
+					<td><a href="html/08_jindan/jindan_04_2.html" target="_blank">jindan_04_2.html</a></td>
+					<td class="align-center">2022.10.05</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h4 class="h4_first">커뮤니티</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">게시판</td>
+					<td>리스트형</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_01_1.html" target="_blank">community_01_1.html</a></td>
+					<td class="align-center">2022.10.04</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>블로그형</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_01_2.html" target="_blank">community_01_2.html</a></td>
+					<td class="align-center">2022.10.05</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>썸네일형</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_01_3.html" target="_blank">community_01_3.html</a></td>
+					<td class="align-center">2022.10.04</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>이미지</td>
+					<td>&lt;head&gt; swiper_slide.js 추가</td>
+					<td></td>
+					<td><a href="html/10_community/community_01_4.html" target="_blank">community_01_4.html</a></td>
+					<td class="align-center">2022.10.05</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center">E-book</td>
+					<td>블로그형 게시판</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_01_5.html" target="_blank">community_01_5.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr> -->
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_02.html" target="_blank">community_02.html</a></td>
+					<td class="align-center">2022.10.05</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>상세 이미지 &lt;head&gt; swiper_slide.js 추가</td>
+					<td></td>
+					<td><a href="html/10_community/community_02_2.html" target="_blank">community_02_2.html</a></td>
+					<td class="align-center">2022.10.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>등록, 수정</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_03.html" target="_blank">community_03.html</a></td>
+					<td class="align-center">2022.10.05</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">공지사항</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_04_1.html" target="_blank">community_04_1.html</a></td>
+					<td class="align-center">2022.10.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_04_2.html" target="_blank">community_04_2.html</a></td>
+					<td class="align-center">2022.10.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">설문조사</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_05.html" target="_blank">community_05.html</a></td>
+					<td class="align-center">2022.10.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">1:1문의</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_07_1.html" target="_blank">community_07_1.html</a></td>
+					<td class="align-center">2022.12.09</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>등록, 수정</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_07_2.html" target="_blank">community_07_2.html</a></td>
+					<td class="align-center">2022.12.09</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_07_3.html" target="_blank">community_07_3.html</a></td>
+					<td class="align-center">2022.12.09</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">FAQ</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_08.html" target="_blank">community_08.html</a></td>
+					<td class="align-center">2023.11.29</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center">FAQ</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_06_1.html" target="_blank">community_06_1.html</a></td>
+					<td class="align-center">2022.10.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_06_2.html" target="_blank">community_06_2.html</a></td>
+					<td class="align-center">2022.10.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>설문조사 안내</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_pop_01.html" target="_blank">community_pop_01.html</a></td>
+					<td class="align-center">2022.10.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>설문조사 안내 다수</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_pop_01_2.html" target="_blank">community_pop_01_2.html</a></td>
+					<td class="align-center">2022.12.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>리더십 역량 중간시험 설문조사</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_pop_02.html" target="_blank">community_pop_02.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>전체 설문결과 확인</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/10_community/community_pop_03.html" target="_blank">community_pop_03.html</a></td>
+					<td class="align-center">2022.10.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h4 class="h4_first">게이미피케이션</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">게이미피케이션</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/09_gamification/gamification_01.html" target="_blank">gamification_01.html</a></td>
+					<td class="align-center">2022.11.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>레벨등급표 및 미션</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/09_gamification/gamification_pop_01.html" target="_blank">gamification_pop_01.html</a></td>
+					<td class="align-center">2022.11.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>연수원 접속미션</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/09_gamification/gamification_pop_02.html" target="_blank">gamification_pop_02.html</a></td>
+					<td class="align-center">2022.11.22</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">계획수립</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">계획수립</td>
+					<td>계획수립기간이 아닌경우</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/12_plan/plan_01_1.html" target="_blank">plan_01_1.html</a></td>
+					<td class="align-center">2022.10.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>진단이 필수이나 진행하지 않은 경우</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/12_plan/plan_01_2.html" target="_blank">plan_01_2.html</a></td>
+					<td class="align-center">2022.10.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>등록된 계획수립 정보가 1건도 없을 때</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/12_plan/plan_01_3.html" target="_blank">plan_01_3.html</a></td>
+					<td class="align-center">2022.10.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>계획수립하기</td>
+					<td>드래그앤 드랍 - &lt;head&gt; js추가 : drag_drop.js</td>
+					<td></td>
+					<td><a href="html/12_plan/plan_02.html" target="_blank">plan_02.html</a></td>
+					<td class="align-center">2022.10.13</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>등록된과정 월별선택 추가</td>
+					<td></td>
+					<td><a href="html/12_plan/plan_02_1.html" target="_blank">plan_02_1.html</a></td>
+					<td class="align-center">2023.11.21</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>등록완료</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/12_plan/plan_03.html" target="_blank">plan_03.html</a></td>
+					<td class="align-center">2022.10.14</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">계획수립 달성현황</td>
+					<td>완료이력이 없는경우</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/12_plan/plan_04_1.html" target="_blank">plan_04_1.html</a></td>
+					<td class="align-center">2022.10.25</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>달성현황 - 차트</td>
+					<td>&lt;head&gt; js추가 : kendo.all.min.js</td>
+					<td>&lt;head&gt; css추가 : kendo.fiori.min.css, kendo.all.css, kendo.common.min.css</td>
+					<td><a href="html/12_plan/plan_04_2.html" target="_blank">plan_04_2.html</a></td>
+					<td class="align-center">2022.10.25</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>과정검색</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/12_plan/plan_pop_01.html" target="_blank">plan_pop_01.html</a></td>
+					<td class="align-center">2022.10.14</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>진단 추천과정</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/12_plan/plan_pop_02.html" target="_blank">plan_pop_02.html</a></td>
+					<td class="align-center">2022.10.14</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>과정정보</td>
+					<td>온라인</td>
+					<td></td>
+					<td><a href="html/12_plan/plan_pop_03.html" target="_blank">plan_pop_03.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>오프라인</td>
+					<td></td>
+					<td><a href="html/12_plan/plan_pop_04.html" target="_blank">plan_pop_04.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>마이크로러닝</td>
+					<td></td>
+					<td><a href="html/12_plan/plan_pop_05.html" target="_blank">plan_pop_05.html</a></td>
+					<td class="align-center">2022.10.18</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">사외교육 신청 및 보고서</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="" target="_blank"></a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">스마트러닝</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">스마트러닝</td>
+					<td>리스트형</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_01_1.html" target="_blank">smartlearning_01_1.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td>이미지형</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_01_2.html" target="_blank">smartlearning_01_2.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr> -->
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_02.html" target="_blank">smartlearning_02.html</a></td>
+					<td class="align-center"></td>
+					<td class="align-center"></td>
+				</tr>
+				<tr>
+					<td class="align-center">스마트러닝메이커</td>
+					<td>목록-속성</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_03_1.html" target="_blank">smartlearning_03_1.html</a></td>
+					<td class="align-center">2022.10.20</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>목록-이미지</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_03_2.html" target="_blank">smartlearning_03_2.html</a></td>
+					<td class="align-center">2022.10.20</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_04.html" target="_blank">smartlearning_04.html</a></td>
+					<td class="align-center">2022.10.20</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">제작현황</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_05.html" target="_blank">smartlearning_05.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">개설현황</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_06.html" target="_blank">smartlearning_06.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">학습현황</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_07_1.html" target="_blank">smartlearning_07_1.html</a></td>
+					<td class="align-center">2022.10.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>요약</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_07_2.html" target="_blank">smartlearning_07_2.html</a></td>
+					<td class="align-center">2022.10.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>상세학습현황</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_pop_01.html" target="_blank">smartlearning_pop_01.html</a></td>
+					<td class="align-center">2022.10.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>과정만들기</td>
+					<td>시작하기</td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_pop_02.html" target="_blank">smartlearning_pop_02.html</a></td>
+					<td class="align-center">2022.10.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>등록</td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartlearning_pop_03.html" target="_blank">smartlearning_pop_03.html</a></td>
+					<td class="align-center">2022.10.31</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr style="background-color: wheat;">
+					<td colspan="7">스마트러닝메이커 - 관리자와 동일</td>
+				</tr>
+				<tr>
+					<td class="align-center">상세 - 내용없음</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_01.html" target="_blank">smartmaker_01.html</a></td>
+					<td class="align-center">2022.10.06</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">상세</td>
+					<td>드래그앤 드랍 - &lt;head&gt; js추가 : drag_drop.js</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_02.html" target="_blank">smartmaker_02.html</a></td>
+					<td class="align-center">2022.10.06</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>동영상등록</td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_03.html" target="_blank">smartmaker_03.html</a></td>
+					<td class="align-center">2022.10.07</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>동영상 - &lt;head&gt;에 video-js.css , video.js 추가</td>
+					<td>동영상 수정(업로드)</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_2.html" target="_blank">smartmaker_03_2.html</a></td>
+					<td class="align-center">2022.10.07</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 세로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_2_1.html" target="_blank">smartmaker_03_2_1.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 가로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_2_2.html" target="_blank">smartmaker_03_2_2.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>세로 동영상</td>
+					<td>PC</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_2_0.html" target="_blank">smartmaker_03_2_0.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>세로 동영상</td>
+					<td>모바일 세로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_2_1_0.html" target="_blank">smartmaker_03_2_1_0.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>세로 동영상</td>
+					<td>모바일 가로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_2_2_0.html" target="_blank">smartmaker_03_2_2_0.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>재생시간 편집</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_13.html" target="_blank">smartmaker_03_13.html</a></td>
+					<td class="align-center">2022.10.07</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<!-- <tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>썸네일 등록</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_14.html" target="_blank">smartmaker_03_14.html</a></td>
+					<td class="align-center">2022.12.29</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr> -->
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>자막설정</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_4.html" target="_blank">smartmaker_03_4.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>워터마크</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_5.html" target="_blank">smartmaker_03_5.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>이미지</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_6.html" target="_blank">smartmaker_03_6.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 세로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_6_1.html" target="_blank">smartmaker_03_6_1.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 가로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_6_2.html" target="_blank">smartmaker_03_6_2.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>pdf</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_7.html" target="_blank">smartmaker_03_7.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 세로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_7_1.html" target="_blank">smartmaker_03_7_1.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 가로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_7_2.html" target="_blank">smartmaker_03_7_2.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>일반파일</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_8.html" target="_blank">smartmaker_03_8.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>외부링크</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_9.html" target="_blank">smartmaker_03_9.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>내용작성</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_10.html" target="_blank">smartmaker_03_10.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>유투브</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_11.html" target="_blank">smartmaker_03_11.html</a></td>
+					<td class="align-center">2022.10.27</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 세로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_11_1.html" target="_blank">smartmaker_03_11_1.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 가로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_11_2.html" target="_blank">smartmaker_03_11_2.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>퀴즈,설문</td>
+					<td>pc</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_12.html" target="_blank">smartmaker_03_12.html</a></td>
+					<td class="align-center">2022.10.12</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 세로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_12_1.html" target="_blank">smartmaker_03_12_1.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>모바일 가로</td>
+					<td><a href="html/11_smartmaker/smartmaker_03_12_2.html" target="_blank">smartmaker_03_12_2.html</a></td>
+					<td class="align-center">2022.11.01</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">레이어팝업</td>
+					<td>동영상등록</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_01.html" target="_blank">smartmaker_pop_01.html</a></td>
+					<td class="align-center">2022.10.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>구성요소 등록</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_02.html" target="_blank">smartmaker_pop_02.html</a></td>
+					<td class="align-center">2022.10.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>학습자설정</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_04.html" target="_blank">smartmaker_pop_04.html</a></td>
+					<td class="align-center">2022.11.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>대상자 관리 (관리자와 동일)</td>
+					<td>탭1 - 개별등록</td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_03.html" target="_blank">smartmaker_pop_03.html</a></td>
+					<td class="align-center">2022.11.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td></td>
+					<td>계층형 사용 (트리구조)</td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_03_1.html" target="_blank">smartmaker_pop_03_1.html</a></td>
+					<td class="align-center">2022.11.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭2 - 일괄등록</td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_03_2.html" target="_blank">smartmaker_pop_03_2.html</a></td>
+					<td class="align-center">2022.11.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>오픈요청</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_05.html" target="_blank">smartmaker_pop_05.html</a></td>
+					<td class="align-center">2022.11.02</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>설문문항 등록</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_06.html" target="_blank">smartmaker_pop_06.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>학습설정</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_07.html" target="_blank">smartmaker_pop_07.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>마이크로러닝 콘텐츠 일괄 등록</td>
+					<td>최초</td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_08.html" target="_blank">smartmaker_pop_08.html</a></td>
+					<td class="align-center">2022.11.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>수정</td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_09.html" target="_blank">smartmaker_pop_09.html</a></td>
+					<td class="align-center">2022.11.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>마이크로러닝 콘텐츠 일괄 등록</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_10.html" target="_blank">smartmaker_pop_10.html</a></td>
+					<td class="align-center">2022.11.11</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>학습설정 상세정보</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/11_smartmaker/smartmaker_pop_11.html" target="_blank">smartmaker_pop_11.html</a></td>
+					<td class="align-center">2023.01.04</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">사외교육</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">수강신청</td>
+					<td>리스트형</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/13_outside/outside_01_1.html" target="_blank">outside_01_1.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>블로그형</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/13_outside/outside_01_2.html" target="_blank">outside_01_2.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>과정상세</td>
+					<td></td>
+					<td>online_02.html 참고</td>
+					<td><a href="html/13_outside/outside_01_3.html" target="_blank">outside_01_3.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td></td>
+					<td>탭2 - 목차</td>
+					<td></td>
+					<td><a href="html/13_outside/outside_01_3_2.html" target="_blank">outside_01_3_2.html</a></td>
+					<td class="align-center">2022.11.17</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center">팝업</td>
+					<td>교육개설신청</td>
+					<td>반응형x</td>
+					<td></td>
+					<td><a href="html/13_outside/outside_pop_01.html" target="_blank">outside_pop_01.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결재정보</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/03_offline/offline_pop_02.html" target="_blank">offline_pop_02.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>기수개설신청</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/13_outside/outside_pop_03.html" target="_blank">outside_pop_03.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>신청완료</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/03_offline/offline_pop_03.html" target="_blank">offline_pop_03.html</a></td>
+					<td class="align-center">2022.11.03</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>결과보고 첨부파일</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/13_outside/outside_pop_04.html" target="_blank">outside_pop_04.html</a></td>
+					<td class="align-center">2022.11.14</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+				<tr>
+					<td class="align-center"></td>
+					<td>교육일정</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/13_outside/outside_pop_05.html" target="_blank">outside_pop_05.html</a></td>
+					<td class="align-center">2022.11.15</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">사외교육</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">큐레이션</td>
+					<td>리스트형</td>
+					<td></td>
+					<td></td>
+					<td><a href="html/14_curation/curation_01.html" target="_blank">curation_01.html</a></td>
+					<td class="align-center">2023.03.23</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">마이페이지</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">나의정보</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/15_mypage/mypage_01.html" target="_blank">mypage_01.html</a></td>
+					<td class="align-center">2023.10.16</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h4 class="h4_first">방문 및 예약</h4>
+		<table border="0" class="dowork">
+			<caption>
+				진행상태 &nbsp;
+				<span class="state"><span class="undecided">미</span></span> 미정,
+				<span class="state"><span class="inProgress">중</span></span> 진행중,
+				<span class="state"><span class="complete">완</span></span> 완료,
+				<span class="state"><span class="edit">수</span></span> 수정
+			</caption>
+			<colgroup>
+				<col class="col1" />
+				<col class="col2" />
+				<col class="col3" />
+				<col class="col4" />
+				<col class="col5" />
+				<col class="col6" />
+				<col class="col7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>화면</th>
+					<th>URL</th>
+					<th>완료일</th>
+					<th>상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="align-center">시설예약</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/16_reservation/reservation_01.html" target="_blank">reservation_01.html</a></td>
+					<td class="align-center">2024.04.26</td>
+					<td class="align-center"><span class="state"><span class="complete">완</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+	</article>
+	<br><br>
+
+</section>
+<hr />
+<footer>
+	<h3>진행 퍼블리셔</h3>
+	<dl>
+		<dt>이름</dt>
+		<dd>김미연, 문단비</dd>
+	</dl>
+</footer>
+</div>
+</body>
+
+</html>
