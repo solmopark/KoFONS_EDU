@@ -1,2 +1,2 @@
-# atomic-energy
-atomic energy_원자력
+# KoFONS(EDU)
+원자력(edu)
