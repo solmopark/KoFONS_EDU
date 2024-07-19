@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+
+	<!-- header -->
+	<header class="header">
+
+		<!-- pc gnb --><!-- 반응형으로 피씨 모바일 헤더 나누기 -->
+		<div class="type-pc">
+			<div class="layout-inner">
+				<div class="header-top">
+					<div class="top-name">
+						<strong>홍길동님</strong>안녕하세요.
+					</div>
+					<button type="button" class="btn-logout">
+						<span>로그아웃</span>
+					</button>
+				</div>
+				<nav class="gnb-menu">
+					<h1>
+						<a href="javascript:void(0);" target="_self">
+							<img src="../../images/logo.png" alt="TLS Edumanager">
+						</a>
+					</h1>
+					<ul class="gnb" id="gnb">
+						<li>
+							<a href="javascript:void(0);" target="_self">학습과정</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">학습안내</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">전체과정</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">실시간학습</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">학습안내</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">전체과정</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">자료실</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습지원</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">공지사항</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">디자인관련질의응답</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">사이트이용문의</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">자주묻는질문</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">교육담당자권한신청</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">개설희망과정신청</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+	
+					<!-- 추가 20220629 -->
+					<a href="javascript:void(0);" target="_self" class="btn-sch-top">
+						<span>검색</span>
+					</a>
+					<!-- 추가 20220629 -->
+	
+					<button type="button" class="btn-all-view">
+						<span>메뉴 전체보기와 닫기</span>
+						<small></small>
+						<small></small>
+						<small></small>
+					</button>
+				</nav>
+				<div class="gnb-menu-all">
+					<strong class="hidden">전체메뉴</strong>
+					<ul class="all-depth1">
+						<li>
+							<strong>학습과정</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">전체과정</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(온라인)</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(특강)</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>실시간학습</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">전체과정</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(온라인)</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(특강)</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>자료실</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">자료실</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>학습지원</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">공지사항</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">디자인관련질의응답</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">크리에이터현황</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">전체질의응답</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">사이트이용문의</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">자주묻는질문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">개설희망과정신청</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">교육담당자권한신청</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>나의학습실</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">보관함</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의설문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">수료증발급</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의클래스설계</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의결제현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의과정문의</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">개인정보관리</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">크리에이터신청</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">크리에이터활동</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">프로필관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">콘텐츠등록</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">콘텐츠관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- pc gnb -->
+
+		<!-- 모바일 gnb --><!-- 반응형으로 피씨 모바일 헤더 나누기 -->
+		<div class="type-mobile">
+
+			<!-- header_top -->
+			<div class="header-top">
+				<button type="button" class="btn-all-view" id="openNav">
+					<span>메뉴 전체보기</span>
+					<small></small>
+					<small></small>
+					<small></small>
+				</button>
+				<h1>
+					<a href="javascript:void(0);" target="_self">
+						<img src="../../images/logo_m.png" alt="design ground">
+					</a>
+				</h1>
+				<a href="javascript:void(0);" target="_self" class="btn-sch-top">
+					<span>검색</span>
+				</a>
+			</div>
+			<!-- header_top -->
+			<div class="layer-dim"></div>
+			<!-- nav -->
+			<div class="nav">
+				<article class="nav-in">
+					<!-- <div class="btn-wrap">
+						<button type="button" class="btn-close" id="closeNav">
+							<span>닫기</span>
+						</button>
+					</div> -->
+					<header>
+						<div class="top-name">
+							<strong>홍길동님</strong>안녕하세요.
+						</div>
+						<button type="button" class="btn-logout">
+							<span>로그아웃</span>
+						</button>
+					</header>
+					
+					<!-- nav -->
+					<nav>
+						<!-- gnb -->
+						<ul class="gnb" id="gnbM">
+							<li>
+								<a href="javascript:void(0);" target="_self">학습<br>과정</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+										<ul class="lnb-3">
+											<li>
+												<a href="javascript:void(0);" target="_self" class="opeth">3뎁스</a><!-- 현재메뉴 -->
+											</li>
+											<li>
+												<a href="javascript:void(0);" target="_self">3뎁스</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">실시간<br>학습</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정2-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정2-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">자료실</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정3-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정3-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">학습<br>지원</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정4-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정4-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">나의<br>학습실</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정5-1</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- gnb -->
+					</nav>
+				</article>
+				
+			</div>
+			<!-- nav -->
+
+			<!-- fnb -->
+			<div class="fnb">
+				<nav>
+					<ul>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습과정</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">실시간학습</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">자료실</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습지원</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- fnb -->
+	
+		</div>
+		<!-- 모바일 gnb -->
+		
+	</header>
+	<!-- header -->
+
+	<!-- content -->
+	<section class="sub">
+		<h2 class="hidden">서브컨텐츠</h2>
+		<div class="layout-inner">
+
+			<!-- snb-wrap -->
+			<div class="snb-wrap">
+				<h3 class="h3">사외교육</h3>
+				<nav class="snb-nav">
+					<ul class="depth2">
+						<li class="">
+							<a href="javascript:void(0);" target="_self">메뉴1</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">메뉴2</a>
+							<ul class="depth3">
+								<li class="active"><!-- 현재메뉴일때 active -->
+									<a href="javascript:void(0);" target="_self">메뉴2-1</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">메뉴2-2</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">메뉴3</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- sub-container -->
+			<div class="sub-container" id="content">
+    
+				<!-- location -->
+				<div class="location">
+					<ul>
+						<li>home</li>
+						<li>사외교육</li>
+						<li>수강신청</li>
+					</ul>
+				</div>
+				<!-- location -->
+
+				<!-- sub-content -->
+				<div class="sub-content">
+					<h4 class="h4">수강신청</h4>
+
+                    <!-- view-top -->
+                    <div class="view-top">
+
+                        <div class="head type-2"><!-- type-2 추가. 디자인보완 -->
+							<div class="flag-wrap2"><!-- 구분플래그 수정. 20231130 -->
+								<span class="flag7">대면</span>
+								<span class="flag7 type-2">비대면</span>
+								<span class="flag8">필수</span>
+								<span class="flag8 type-2">선택</span>
+								<span class="flag">마이크로러닝</span>
+								<span class="flag1">소프트웨어개발</span>
+							</div>
+                            <h5 class="h5">핵심인재 양성 전문가 과정</h5>
+                        </div>
+
+                        <div class="thumb-wrap">
+                            <!-- <div class="flag-wrap">
+                                <span class="flag1">광고전략</span>
+                            </div> 이동. 디자인보완 -->
+                            <div class="thumb">
+                                <img src="../../images/img_thumb1.jpg" alt="과정 섬네일">
+                            </div>
+                        </div>
+                        <div class="cont">
+							<div class="tag-wrap"><!-- 태그추가. 20231221 -->
+								<a href="javascript:void(0);" target="_self">
+									<span class="tag">자기개발</span>
+								</a>
+								<a href="javascript:void(0);" target="_self">
+									<span class="tag">위험관리</span>
+								</a>
+								<a href="javascript:void(0);" target="_self">
+									<span class="tag">마인드</span>
+								</a>
+								<a href="javascript:void(0);" target="_self">
+									<span class="tag">행복</span>
+								</a>
+							</div>
+                            <div class="dl-list">
+                                <dl>
+                                    <dt>신청기간</dt>
+                                    <dd>2022.03.03(월) ~ 2022.03.03(수)<span class="flag3 ing">종료 3일전</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>학습기간</dt>
+                                    <dd>2022.03.03(월) ~ 2022.03.03(수)<span class="d-day">00일</span>
+                                        <dl class="re-dl">
+                                            <dt>복습</dt>
+                                            <dd>2022.03.03까지</dd>
+                                        </dl>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>교육정보</dt>
+                                    <dd>
+                                        <div class="info-wrap">
+											<!-- 하단 아이콘영역으로 이동 20240405
+                                            <dl class="reverse">
+                                                <dt>학습</dt>
+                                                <dd>22명</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>평점</dt>
+                                                <dd>4.4점</dd>
+                                            </dl> -->
+                                            <dl>
+                                                <dt>학점</dt>
+                                                <dd>3점</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>교육시간</dt>
+                                                <dd>20분
+													<span class="flag3 ok">고용보험과정</span>
+												</dd>
+                                            </dl>
+                                        </div>
+                                    </dd>
+                                </dl>
+								<dl>
+									<dt>교육장소</dt>
+									<dd>여의도 포스트타워 6층</dd>
+								</dl>
+                                <dl>
+									<dt>교육비</dt>
+                                    <dd>2022.03.03(월) ~ 2022.03.03(수)</dd>
+                                </dl>
+                            </div>
+                        </div>
+						<div class="foot-in"><!-- 영역추가. 디자인보완 -->
+							<div class="bottom"><!-- 위치이동. 디자인보완 -->
+								<button type="button" class="btn-icon btn-print">
+									<span>프린트</span>
+								</button>
+								<button type="button" class="btn-icon btn-link2">
+									<span>링크복사</span>
+								</button>
+								<button type="button" class="btn-icon btn-qr">
+									<span>qr</span>
+								</button>
+								<button type="button" class="btn-icon btn-scrap"><!-- 위치이동. 디자인보완 -->
+									<span>스크랩</span>
+								</button>
+							</div>
+							<div class="btn-wrap">
+								<a href="javascript:void(0)" class="btn" target="_self">
+									<span>기수개설신청</span>
+								</a>
+								<a href="javascript:void(0)" class="btn" target="_self">
+									<span>수강신청</span>
+								</a>
+								<a href="javascript:void(0)" class="btn-list" target="_self"><!-- 클래스명 수정. 디자인보완 -->
+									<span>목록</span>
+								</a>
+							</div>
+						</div>
+                    </div>
+                    <!-- view-top -->
+
+                    <!-- cover -->
+                    <div class="cover">
+                        <div class="head">
+                            <h6 class="h6">결재 진행현황</h6>
+                        </div>
+                        <ul class="ul-list type-view-cmt"><!-- 클래스명 수정. 의견나오는 리스트는 type-view-cmt . 디자인보완 -->
+                            <li>
+								<div class="info-wrap"><!-- 결재 현황 영역 추가. 디자인보완 -->
+									<div class="td-number">1</div>
+									<div class="td-name">김이름 인재개발팀 사원</div>
+									<div class="td-state">
+										<span class="state-text ok">승인</span>
+									</div>
+									<div class="td-date">2022.06.06 12:00:00</div>
+								</div>
+								<div class="cmt-wrap"><!-- 결재 의견 영역 추가. 디자인보완 -->
+									내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.
+								</div>
+                            </li>
+                            <li>
+								<div class="info-wrap">
+									<div class="td-number">2</div>
+									<div class="td-name">최이름 인재개발팀 과장</div>
+									<div class="td-state">
+										<span class="state-text no">반려</span>
+									</div>
+									<div class="td-date">2022.06.06 12:00:00</div>
+								</div>
+								<div class="cmt-wrap">
+									내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.
+								</div>
+                            </li>
+                            <li>
+								<div class="info-wrap">
+									<div class="td-number">3</div>
+									<div class="td-name">서이름 인재개발팀 과장</div>
+									<div class="td-state">
+										<span class="state-text wait">대기</span>
+									</div>
+									<div class="td-date">2022.06.06 12:00:00</div>
+								</div>
+								<div class="cmt-wrap">
+									결제의견이 없습니다.
+								</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- cover -->
+                    <!-- cover -->
+                    <!-- <div class="cover"> 위 결재진형현황으로 이동. 디자인보완 
+                        <div class="head">
+                            <h6 class="h6">결재의견</h6>
+                        </div>
+                        <ul class="ul-list type-view2">
+                            <li>
+                                <div class="td-name">김이름 사원</div>
+                                <div class="td-cont">내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.내용을 확인하였습니다.</div>
+                            </li>
+                            <li>
+                                <div class="td-name">김이름 대리</div>
+                                <div class="td-cont">내용을 확인하였습니다.</div>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- cover -->
+                    <!-- cover -->
+                    <div class="cover">
+                        <div class="tab-area">
+                            <ul>
+                                <li class="on">
+                                    <a href="javascript:void(0);">과정정보</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">목차</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-cont">
+                            <strong class="hidden">과정정보</strong>
+                            <div class="view-dl">
+                                <dl>
+                                    <dt>상세교육비</dt>
+                                    <dd>
+										<ul class="dot-list">
+											<li>총 교육비 : 000,000원</li>
+											<li>개인환금금액 : 000,000원</li>
+											<li>개인부담교육비 : 000,000원</li>
+											<li>회사부담교육비 : 000,000원</li>
+										</ul>
+									</dd>
+                                </dl>
+                                <dl>
+                                    <dt>교육대상</dt>
+                                    <dd>
+                                        01. 최신 채용 트랜드를 바탕으로 취업에 대비할 수 있다. <br>
+                                        02. 자신의 경험을 다양한 방법으로 활용하여, 직무별 차별화된 자기소개서를 작성할 수 있다. <br>
+                                        03. 각 면접별 평가 포인트를 명확히 인지하고, 전략을 수립·실행하여 취업에 성공할 수 있다. 
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>과정개요</dt>
+                                    <dd>
+                                        [면접관을 교육하는 교육전문가, 마리텔 이민영 소장의 취업 꿀팁] <br>
+                                        * 1분 1초가 아까운 취업 준비생들의 시간은 금보다 비싸다! 단! 600초 안에 취업 준비생이라면 반드시 알아야 할 핵심 내용 완벽 습득 
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>학습목표</dt>
+                                    <dd>
+                                        01. 無스펙 채용, 블라인드 채용 시대, 나만의 전략으로 취업에 성공하고 싶은 모든 분 <br>
+                                        02. 자소서 작성법부터 면접까지 취업에 대한 모든 것이 알고 싶은 모든 분  
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>교육특징</dt>
+                                    <dd>
+										01. 無스펙 채용, 블라인드 채용 시대, 나만의 전략으로 취업에 성공하고 싶은 모든 분 <br>
+                                        02. 자소서 작성법부터 면접까지 취업에 대한 모든 것이 알고 싶은 모든 분  
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>교육기관</dt>
+                                    <dd>OOOOOOO</dd>
+                                </dl>
+								<dl> 
+									<dt>파일첨부</dt>
+									<dd>
+										<div class="file-list">
+											<b>첨부파일</b>
+											<ul>
+												<li>
+													<a href="javascript:void(0)" title="파일다운로드" target="">abcd.jpg</a>
+												</li>
+												<li>
+													<a href="javascript:void(0)" title="파일다운로드" target="">abcd2.jpg</a>
+												</li>
+												<li>첨부된 파일이 없습니다.</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
+								<dl><!-- 20240405 추가. -->
+                                    <dt>교육일정</dt>
+                                    <dd>
+										<div class="dl-schedule">
+											<ul>
+												<li>
+													<div class="hour">
+														<em>1</em>
+													</div>
+													<div class="info-class">
+														<strong>1교시</strong>
+														<div class="info-class-in">
+															<dl>
+																<dt>강사</dt>
+																<dd>김강사</dd>
+															</dl>
+															<span class="division"></span>
+															<dl>
+																<dt class="hidden">교육시간</dt>
+																<dd>2024.03.03(00:00 ~ 00:00)</dd>
+															</dl>
+															<span class="division"></span>
+															<dl>
+																<dt class="hidden">교육장소</dt>
+																<dd>6층 대보</dd>
+															</dl>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="hour">
+														<em>2</em>
+													</div>
+													<div class="info-class">
+														<strong>목차정보</strong>
+														<div class="info-class-in">
+															<dl>
+																<dt>강사</dt>
+																<dd>김강사</dd>
+															</dl>
+															<span class="division"></span>
+															<dl>
+																<dt class="hidden">교육시간</dt>
+																<dd>2024.03.03(00:00 ~ 00:00)</dd>
+															</dl>
+															<span class="division"></span>
+															<dl>
+																<dt class="hidden">교육장소</dt>
+																<dd>6층 대보</dd>
+															</dl>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cover -->
+
+				</div>
+				<!-- sub-content -->
+
+			</div>
+			<!-- sub-container -->
+		
+		</div>
+		
+	</section>
+	<!-- content -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="layout-inner">
+			<strong>
+				<img src="../../images/logo_foot.png" alt="TLS Edumanager">
+			</strong>
+			<div class="foot-info">
+				<ul>
+					<li class="type-1">
+						<a href="javascript:void(0);">개인정보처리방침</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">이용약관</a>
+					</li>
+				</ul>
+				<address>서울시 영등포구</address>
+				<ul class="ul2">
+					<li>사업자등록번호 1111</li>
+					<li>123 tls@mail.com</li>
+				</ul>
+				<small>COPYRIGHT © <ins>TLS Edumanager</ins> ALL RIGHTS RESERVED.</small>
+			</div>
+			<div class="family-wrap">
+				<select class="select-foot" title="사이트바로가기 선택"> 
+					<option value="hide">사이트바로가기</option><!-- Option에 표시 안됨 -->
+					<option>선택선택선택선택선택선택선택선택선택선택선택선택</option>
+					<option>선택2</option>
+				</select>
+				<button type="button" class="btn-sm">
+					<span>이동</span>
+				</button>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+	<!-- 다크모드, 맨위로 이동 기능 추가. -->
+	<div class="quick-btn-wrap">
+		<button type="button" class="dark-toggle">
+			<span>다크 모드로 보기</span>
+		</button>
+		<button type="button" class="btn-move-top">
+			<span>맨위로 이동</span>
+		</button>
+	</div>
+	
+</div>
+</body>
+
+</html>

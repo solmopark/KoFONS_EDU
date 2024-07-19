@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css3" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap type-never">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">학습현황 알림</h2>
+            </header>
+            <!-- pop-header -->
+
+            <!-- pop-cont -->
+            <div class="pop-cont">
+                
+                <div class="tab-area3">
+                    <ul>
+                        <li class="on" title="선택됨">
+                            <a href="javascript:void(0);">전직원 필수과정</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">학습중인 과정</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-cont">
+                    <strong class="hidden">전직원 필수과정</strong><!-- 현재 탭 제목 -->
+                    <div class="head">
+						<div class="head-left">
+							<p class="total">총 <em>3</em>과정</p>
+                        </div>
+                    </div>
+                    <div class="list-list type-sc">
+						<ul>
+							<li>
+								<div class="list-cont">
+                                    <div class="flag-wrap">
+                                        <span class="flag">그룹규제</span>
+                                    </div>
+                                    <strong class="title">1.금융 소비자 보호를 위한 금융소비자보호법 바로 알기 초급과정입니다금융 소비자 보호를 위한 금융소비자보호법 바로 알기 초급과정입니다.</strong>
+                                    <div class="date-wrap">
+                                        <dl>
+                                            <dt class="hidden">수강기간</dt>
+                                            <dd>23.09.09 ~ 23.10.10<span class="dday">D-<em>19</em></span></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>교육시간</dt>
+                                            <dd>100분</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn cancel">
+                                        <span>수강취소</span>
+                                    </button>
+                                </div>
+							</li>
+							<li>
+								<div class="list-cont">
+                                    <div class="flag-wrap">
+                                        <span class="flag">그룹규제</span>
+                                    </div>
+                                    <strong class="title">1.금융 소비자 보호를 위한 금융소비자보호법 바로 알기</strong>
+                                    <div class="date-wrap">
+                                        <dl>
+                                            <dt class="hidden">수강기간</dt>
+                                            <dd>23.09.09 ~ 23.10.10<span class="dday">D-<em>19</em></span></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>교육시간</dt>
+                                            <dd>100분</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn cancel">
+                                        <span>수강취소</span>
+                                    </button>
+                                </div>
+							</li>
+						</ul>
+					</div>
+                </div>
+
+            </div>
+            <!-- pop-cont -->
+
+            <!-- pop-foot -->
+            <footer class="pop-foot">
+                <a href="javascript:void(0);" class="btn-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"--><!-- 클래스명 수정. 디자인보완 -->
+                    <span>닫기</span>
+                </a>
+            </footer>
+            <!-- pop-foot -->
+
+            <footer class="foot">
+                <div class="never-btn">
+                    <label for="check01-01">오늘하루 열지 않음</label>
+                    <input type="checkbox" class="custom-check" id="check01-01">
+                </div>
+            </footer>
+    
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<div class="quick-btn-wrap type-trick">
+    <p>이 영역은 팝업에서의 퍼블확인용으로 실제 화면에선 보이지 않음.</p>
+    <button type="button" class="dark-toggle">
+        <span>다크 모드로 보기</span>
+    </button>
+</div>
+
+<script src="../../js/layer_popup.js"></script><!-- 레이어팝업 js -->
+</body>
+
+</html>

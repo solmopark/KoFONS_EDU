@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+	<script src="../../lib/drag_drop/js/drag_drop.js"></script>
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">기수개설신청</h2>
+            </header>
+            <!-- pop-header -->
+            <!-- pop-cont -->
+            <div class="pop-cont">
+                <!-- cover -->
+                <div class="cover">
+                    <div class="head">
+                        <h5 class="pop-h5">기수정보</h5>
+                    </div>
+                    <div class="list-write list-outside">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id1">과정명</label>
+                                    </dt>
+                                    <dd>기수정보 과정명</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id2">신청기간<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="datepicker">
+                                            <div class="date-input">
+                                                <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                            </div>
+                                            <span class="custom-form-space">~</span>
+                                            <div class="date-input">
+                                                <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id3">교육기간<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="datepicker">
+                                            <div class="date-input">
+                                                <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                            </div>
+                                            <span class="custom-form-space">~</span>
+                                            <div class="date-input">
+                                                <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id4">교육장소<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd class="flex-center">
+                                        <input type="text" title="교육장소" class="input-box">
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl> 
+                                    <dt>
+                                        <label for="id33">교육커리큘럼<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="file-upload-wrap">
+
+                                            <div class="upload-container"><!-- 샘플등록과 동일 -->
+                                                <div class="upload-progress"><div class="progress"></div></div>
+                                                <div class="upload-dropzone-text">
+                                                    <i class="material-icons-outlined">cloud_upload</i><span>첨부할 파일을 끌어다 놓거나</span>
+                                                    <label class="btn-find"><!-- 클래스명 수정. 20220905. 샘플등록과 동일 -->
+                                                        찾아보기
+                                                        <input id="" name="" type="file" multiple="multiple">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="k-content">
+                                                <input name="multipartFile" id="files" type="file">
+                                            </div>
+
+                                            <!-- 업로드된 파일리스트 -->
+                                            <div class="k-upload">
+                                                <ul class="k-upload-files">
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                            <a href="#0" traget="_blank" class="k-upload-action"><i class="k-icon k-i-close"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //업로드된 파일리스트 -->
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl> 
+                                    <dt>
+                                        <label for="id33">개인정보 처리업무 계약서<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="file-upload-wrap">
+
+                                            <div class="upload-container"><!-- 샘플등록과 동일 -->
+                                                <div class="upload-progress"><div class="progress"></div></div>
+                                                <div class="upload-dropzone-text">
+                                                    <i class="material-icons-outlined">cloud_upload</i><span>첨부할 파일을 끌어다 놓거나</span>
+                                                    <label class="btn-find"><!-- 클래스명 수정. 20220905. 샘플등록과 동일 -->
+                                                        찾아보기
+                                                        <input id="" name="" type="file" multiple="multiple">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="k-content">
+                                                <input name="multipartFile" id="files" type="file">
+                                            </div>
+
+                                            <!-- 업로드된 파일리스트 -->
+                                            <div class="k-upload">
+                                                <ul class="k-upload-files">
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                            <a href="#0" traget="_blank" class="k-upload-action"><i class="k-icon k-i-close"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //업로드된 파일리스트 -->
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl> 
+                                    <dt>
+                                        <label for="id33">세부내용<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="file-upload-wrap">
+
+                                            <div class="upload-container"><!-- 샘플등록과 동일 -->
+                                                <div class="upload-progress"><div class="progress"></div></div>
+                                                <div class="upload-dropzone-text">
+                                                    <i class="material-icons-outlined">cloud_upload</i><span>첨부할 파일을 끌어다 놓거나</span>
+                                                    <label class="btn-find"><!-- 클래스명 수정. 20220905. 샘플등록과 동일 -->
+                                                        찾아보기
+                                                        <input id="" name="" type="file" multiple="multiple">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="k-content">
+                                                <input name="multipartFile" id="files" type="file">
+                                            </div>
+
+                                            <!-- 업로드된 파일리스트 -->
+                                            <div class="k-upload">
+                                                <ul class="k-upload-files">
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                            <a href="#0" traget="_blank" class="k-upload-action"><i class="k-icon k-i-close"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //업로드된 파일리스트 -->
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <div class="head">
+                        <div class="head-left">
+                            <h5 class="pop-h5">결재정보</h5>
+                        </div>
+                    </div>
+                    <form>
+                        <fieldset>
+                            <legend>검색영역</legend>
+                            <div class="sch-box-add">
+                                <div class="sch-input">
+                                    <input type="text" class="input-box" placeholder="결재자의 이름 or 사번을 입력해주세요.">
+                                    <button type="button" class="btn-sch-in"><!-- 20221014 -->
+                                        <span>등록</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+    
+                    <ul class="ul-list type-drag">
+                        <li draggable="true" class="drag-item">
+                            <div class="td-drag">
+                                <i class="icon drag">
+                                    <span>드래그</span>
+                                </i>
+                            </div>
+                            <div class="td-number">1</div>
+                            <div class="td-arrow">
+                                <div class="btn-updown">
+                                    <button type="button" class="btn-updown up">
+                                        <span>위로</span>
+                                    </button>
+                                    <button type="button" class="btn-updown down">
+                                        <span>아래로</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="td-select"><!-- 추가 20221014 -->
+                                <select class="select-sm min2" title="선택">
+                                    <option>결제</option>
+                                    <option>승인</option>
+                                    <option>텍스트가 길어진다</option>
+                                </select>
+                            </div>
+                            <div class="td-name">김이름 인재개발팀 사원<span class="flag1 type-2">대체결재</span></div><!-- 클래스명수정. 20221014 -->
+                            <div class="td-btn">
+                                <button type="button" class="btn-icon btn-del"><!-- 클래스명수정. 20221014 -->
+                                    <span>삭제</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li draggable="true" class="drag-item">
+                            <div class="td-drag">
+                                <i class="icon drag">
+                                    <span>드래그</span>
+                                </i>
+                            </div>
+                            <div class="td-number">2</div>
+                            <div class="td-arrow">
+                                <div class="btn-updown">
+                                    <button type="button" class="btn-updown up">
+                                        <span>위로</span>
+                                    </button>
+                                    <button type="button" class="btn-updown down">
+                                        <span>아래로</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="td-select">
+                                <select class="select-sm min2" title="선택">
+                                    <option>결제</option>
+                                    <option>승인</option>
+                                    <option>텍스트가 길어진다</option>
+                                </select>
+                            </div>
+                            <div class="td-name">최이름 인재개발팀 과장</div>
+                            <div class="td-btn">
+                                <button type="button" class="btn-icon btn-del">
+                                    <span>삭제</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li draggable="true" class="drag-item">
+                            <div class="td-drag">
+                                <i class="icon drag">
+                                    <span>드래그</span>
+                                </i>
+                            </div>
+                            <div class="td-number">3</div>
+                            <div class="td-arrow">
+                                <div class="btn-updown">
+                                    <button type="button" class="btn-updown up">
+                                        <span>위로</span>
+                                    </button>
+                                    <button type="button" class="btn-updown down">
+                                        <span>아래로</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="td-select">
+                                <select class="select-sm min2" title="선택">
+                                    <option>결제</option>
+                                    <option>승인</option>
+                                    <option>텍스트가 길어진다</option>
+                                </select>
+                            </div>
+                            <div class="td-name">서이름 인재개발팀 과장</div>
+                            <div class="td-btn">
+                                <button type="button" class="btn-icon btn-del">
+                                    <span>삭제</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- cover -->
+            </div>
+            <!-- pop-cont -->
+            <footer class="pop-foot">
+                <a href="javascript:void(0);" class="btn-pop">
+                    <span>개설신청</span>
+                </a>
+                <a href="javascript:void(0);" class="btn-close" popup-close="popup1"><!-- 클래스명 수정. 디자인보완 --><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+                    <span>닫기</span>
+                </a>
+            </footer>
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<script src="../../js/layer_popup.js"></script><!-- 레이어팝업 js -->
+</body>
+
+</html>

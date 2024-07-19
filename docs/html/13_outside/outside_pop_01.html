@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+	<script src="../../lib/drag_drop/js/drag_drop.js"></script>
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">교육개설신청</h2>
+            </header>
+            <!-- pop-header -->
+            <!-- pop-cont -->
+            <div class="pop-cont">
+                <!-- cover -->
+                <div class="cover">
+                    <div class="head">
+                        <h5 class="pop-h5">과정정보</h5>
+                    </div>
+                    <div class="list-write list-outside">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id1">과정코드<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="제목" class="input-box min" id="id1">
+                                        <span class="point-text">등록이 가능한 과정코드입니다.</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id2">과정명<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="제목" class="input-box" id="id2">
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id3">교육분류<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="select-wrap">
+                                            <select class="select" title="분류선택">
+                                                <option>공통</option>
+                                                <option>리더십</option>
+                                                <option>전사교육</option>
+                                            </select>
+                                            <button type="button" class="btn-sm">
+                                                <span>삭제</span>
+                                            </button>
+                                        </div>
+                                        <div class="select-wrap type-infinite"><!-- 셀렉트박스 여러개일때 type-infinite추가. 20231215 -->
+                                            <select class="select" title="분류선택">
+                                                <option>공통</option>
+                                                <option>리더십</option>
+                                                <option>전사교육</option>
+                                            </select>
+                                            <select class="select" title="분류선택">
+                                                <option>사원공통</option>
+                                                <option>대리공통</option>
+                                                <option>팀장공통</option>
+                                            </select>
+                                            <select class="select" title="분류선택">
+                                                <option>사원공통</option>
+                                                <option>대리공통</option>
+                                                <option>팀장공통</option>
+                                            </select>
+                                            <select class="select" title="분류선택">
+                                                <option>사원공통</option>
+                                                <option>대리공통</option>
+                                                <option>팀장공통</option>
+                                            </select>
+                                            <select class="select" title="분류선택">
+                                                <option>사원공통</option>
+                                                <option>대리공통</option>
+                                                <option>팀장공통</option>
+                                            </select>
+                                            <select class="select" title="분류선택">
+                                                <option>사원공통</option>
+                                                <option>대리공통</option>
+                                                <option>팀장공통</option>
+                                            </select>
+                                            <button type="button" class="btn-sm">
+                                                <span>삭제</span>
+                                            </button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id4">교육유형<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <select class="select" title="교육유형">
+                                            <option>교육유형</option>
+                                            <option>목록</option>
+                                            <option>전체 전체 전체 전체 전체</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id5">교육형태<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <select class="select" title="교육형태">
+                                            <option>교육형태</option>
+                                            <option>목록</option>
+                                            <option>전체 전체 전체 전체 전체</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id6">신청기간<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="flex"><!-- 시간입력 추가로 인한 flex클래스 추가. 20231215 -->
+                                            <div class="datepicker">
+                                                <div class="date-input">
+                                                    <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                                </div>
+                                                <span class="custom-form-space">~</span>
+                                                <div class="date-input">
+                                                    <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                                </div>
+                                            </div>
+                                            <input type="text" title="교육시간" class="input-box min3" placeholder="00:00"><!-- 시간입력 추가. 20231215 -->
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id7">교육기간<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="flex"><!-- 시간입력 추가로 인한 flex클래스 추가. 20231215 -->
+                                            <div class="datepicker">
+                                                <div class="date-input">
+                                                    <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                                </div>
+                                                <span class="custom-form-space">~</span>
+                                                <div class="date-input">
+                                                    <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                                </div>
+                                            </div>
+                                            <input type="text" title="교육시간" class="input-box min3" placeholder="00:00"><!-- 시간입력 추가. 20231215 -->
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id8">교육시간<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="교육시간" class="input-box min"><!-- min으로 수정. 20231215 -->
+                                        <span class="space-text">분</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id9">교육인정시간<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="교육인정시간" class="input-box min"><!-- min으로 수정. 20231215 -->
+                                        <span class="space-text">분</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id10">교육기관<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="교육기관" class="input-box">
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id11">교육장소<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="교육장소" class="input-box">
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id12">고용보험과정여부</label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio12" class="custom-radio" id="radio12-01" checked="checked">
+                                                <label for="radio12-01">예</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio12" class="custom-radio" id="radio12-02">
+                                                <label for="radio12-02">아니요</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id13">총교육비<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="총교육비" class="input-box min">
+                                        <span class="space-text">원</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id14">개인환급금액<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="개인환급금액" class="input-box min">
+                                        <span class="space-text">원</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id15">개인부담교육비<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="개인부담교육비" class="input-box min">
+                                        <span class="space-text">원</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id16">회사부담교육비<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="회사부담교육비" class="input-box min">
+                                        <span class="space-text">원</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id17">타 임직원 수강신청여부<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio17" class="custom-radio" id="radio17-01" checked="checked">
+                                                <label for="radio17-01">가능</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio17" class="custom-radio" id="radio17-02">
+                                                <label for="radio17-02">불가능</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id18">신청 대상자지정 여부<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio18" class="custom-radio" id="radio18-01" checked="checked">
+                                                <label for="radio18-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio18" class="custom-radio" id="radio18-02">
+                                                <label for="radio18-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id19">신청대상자<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list type-vertical">
+                                            <li>
+                                                <input type="radio" name="radio19" class="custom-radio" id="radio19-01" checked="checked">
+                                                <label for="radio19-01">전체</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio19" class="custom-radio" id="radio19-02">
+                                                <label for="radio19-02">계열사</label>
+                                                <ul class="form-list">
+                                                    <li>
+                                                        <input type="checkbox" class="custom-check" id="check19-01">
+                                                        <label for="check19-01">유밥</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="custom-check" id="check19-02">
+                                                        <label for="check19-02">유밥 시스템즈</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="custom-check" id="check19-03" >
+                                                        <label for="check19-03">유밥 탤런트뱅크</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio19" class="custom-radio" id="radio19-03">
+                                                <label for="radio19-03">수강신청 받지 않음.(일괄입과)</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id20">정원<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="정원" class="input-box min">
+                                        <span class="space-text">명</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id21">결과보고 사용여부<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio21" class="custom-radio" id="radio21-01" checked="checked">
+                                                <label for="radi21-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio21" class="custom-radio" id="radio21-02">
+                                                <label for="radio21-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id22">결과보고 파일 사용여부<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list flex-center">
+                                            <li>
+                                                <input type="radio" name="radio22" class="custom-radio" id="radio22-01" checked="checked">
+                                                <label for="radio22-01">사용</label>
+                                                <a href="javascript:void(0);" class="btn-sm">
+                                                    <span>관리</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio22" class="custom-radio" id="radio22-02">
+                                                <label for="radio22-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id23">학점 사용여부<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio23" class="custom-radio" id="radio23-01" checked="checked">
+                                                <label for="radio23-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio23" class="custom-radio" id="radio23-02">
+                                                <label for="radio23-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id24">학점 설정<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li class="flex-center">
+                                                <input type="radio" name="radio24" class="custom-radio" id="radio24-01" checked="checked">
+                                                <label for="radio24-01" class="outside-mr">고정</label>
+                                                <div class="flex-center">
+                                                    <input type="text" title="학점설정" class="input-box min">
+                                                    <span class="space-text">점</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-center">
+                                                <input type="radio" name="radio24" class="custom-radio" id="radio24-02">
+                                                <label for="radio24-02" class="outside-mr">교육시간당 학점</label>
+                                                <div class="flex-center">
+                                                    <input type="text" title="학점설정" class="input-box min outside-mr"><span class="outside-mr">/</span>
+                                                    <input type="text" title="학점설정" class="input-box min outside-mr">
+                                                    <span>교육시간(분) / 학점</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id25">미수료 학점 사용여부<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio25" class="custom-radio" id="radio25-01" checked="checked">
+                                                <label for="radio25-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio25" class="custom-radio" id="radio25-02">
+                                                <label for="radio25-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id26">미수료 학점 설정<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" title="미수료 학점 설정" class="input-box min">
+                                        <span class="space-text">점</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id27">수강신청자동승인여부</label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio27" class="custom-radio" id="radio27-01" checked="checked">
+                                                <label for="radio27-01">자동</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio27" class="custom-radio" id="radio27-02">
+                                                <label for="radio27-02">수동</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id28">결과보고자동승인여부</label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio28" class="custom-radio" id="radio28-01" checked="checked">
+                                                <label for="radio28-01">자동</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio28" class="custom-radio" id="radio28-02">
+                                                <label for="radio28-02">수동</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id29">교육목차<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd class="edu-index">
+                                        <a href="javascript:void(0);" class="btn-sm">
+                                            <span>일정등록</span>
+                                        </a>
+                                        <ul class="ul-list type-view3">
+                                            <li>
+                                                <span class="date">YYYY-MM-DD HH:MM ~ HH:MM</span>
+                                                <div>
+                                                    <span class="title">
+                                                        목차입니다.목차입니다.목차입니다.목차입니다.목차입니다.목차입니다.
+                                                    </span>
+                                                    <div class="info-wrap">
+                                                        <dl class="">
+                                                            <dt>장소 : </dt>
+                                                            <dd>우리집</dd>
+                                                        </dl>
+                                                        <dl class="">
+                                                            <dt>강사 : </dt>
+                                                            <dd>김강사</dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="date">YYYY-MM-DD HH:MM ~ HH:MM</span>
+                                                <div>
+                                                    <span class="title">
+                                                        목차입니다.목차입니다.목차입니다.목차입니다.목차입니다.목차입니다.
+                                                    </span>
+                                                    <div class="info-wrap">
+                                                        <dl class="">
+                                                            <dt>장소 : </dt>
+                                                            <dd>우리집</dd>
+                                                        </dl>
+                                                        <dl class="">
+                                                            <dt>강사 : </dt>
+                                                            <dd>김강사</dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="date">YYYY-MM-DD HH:MM ~ HH:MM</span>
+                                                <div>
+                                                    <span class="title">
+                                                        목차입니다.목차입니다.목차입니다.목차입니다.목차입니다.목차입니다.
+                                                    </span>
+                                                    <div class="info-wrap">
+                                                        <dl class="">
+                                                            <dt>장소 : </dt>
+                                                            <dd>우리집</dd>
+                                                        </dl>
+                                                        <dl class="">
+                                                            <dt>강사 : </dt>
+                                                            <dd>김강사</dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id29">교육목차<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <p class="none-text">등록된 목차가 없습니다.</p><!-- 추가. 20231215 -->
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id30">과정개요</label>
+                                    </dt>
+                                    <dd>
+                                        에디터
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id31">학습목표</label>
+                                    </dt>
+                                    <dd>
+                                        에디터
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id32">교육특징</label>
+                                    </dt>
+                                    <dd>
+                                        에디터
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl> 
+                                    <dt>
+                                        <label for="id33">첨부파일<span class="required2">*</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="file-upload-wrap">
+
+                                            <div class="upload-container"><!-- 샘플등록과 동일 -->
+                                                <div class="upload-progress"><div class="progress"></div></div>
+                                                <div class="upload-dropzone-text">
+                                                    <i class="material-icons-outlined">cloud_upload</i><span>첨부할 파일을 끌어다 놓거나</span>
+                                                    <label class="btn-find"><!-- 클래스명 수정. 20220905. 샘플등록과 동일 -->
+                                                        찾아보기
+                                                        <input id="" name="" type="file" multiple="multiple">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="k-content">
+                                                <input name="multipartFile" id="files" type="file">
+                                            </div>
+
+                                            <!-- 업로드된 파일리스트 -->
+                                            <div class="k-upload">
+                                                <ul class="k-upload-files">
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                            <a href="#0" traget="_blank" class="k-upload-action"><i class="k-icon k-i-close"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //업로드된 파일리스트 -->
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id34">과정이미지</label>
+                                    </dt>
+                                    <dd>
+                                        <div class="file-upload-wrap">
+            
+                                            <div class="upload-container"><!-- 샘플등록과 동일 -->
+                                                <div class="upload-progress"><div class="progress"></div></div>
+                                                <div class="upload-dropzone-text">
+                                                    <i class="material-icons-outlined">cloud_upload</i><span>첨부할 파일을 끌어다 놓거나</span>
+                                                    <label class="btn-find"><!-- 클래스명 수정. 20220905. 샘플등록과 동일 -->
+                                                        찾아보기
+                                                        <input id="" name="" type="file" multiple="multiple">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="k-content">
+                                                <input name="multipartFile" id="files" type="file">
+                                            </div>
+            
+                                            <!-- 업로드된 파일리스트 -->
+                                            <div class="k-upload">
+                                                <ul class="k-upload-files">
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                            <a href="#0" traget="_blank" class="k-upload-action"><i class="k-icon k-i-close"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="k-file">
+                                                        <div class="k-file-extension-wrapper"></div>
+                                                        <div class="k-file-name-size-wrapper">
+                                                            <span class="k-file-name">img_name.png</span>
+                                                            <span class="k-file-size">1.88 KB</span>
+                                                        </div>
+                                                        <div class="k-upload-status">
+                                                            <a href="#0" traget="_blank" download="" class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //업로드된 파일리스트 -->
+                                    
+                                            <div class="alert alert-secondary">
+                                                <em>파일 등록 시 유의사항</em>
+                                                <p>파일명은 영문 또는 숫자로 구성된 GIF, JPG, PNG 파일만 등록해 주세요. 예)abc_01929.png</p>
+                                            </div>
+            
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id35">중복과정 신청제한</label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio35" class="custom-radio" id="radio35-01" checked="checked">
+                                                <label for="radio35-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio35" class="custom-radio" id="radio35-02">
+                                                <label for="radio35-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id36">동일과정 미수료 신청제한</label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio36" class="custom-radio" id="radio36-01" checked="checked">
+                                                <label for="radio36-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio36" class="custom-radio" id="radio36-02">
+                                                <label for="radio36-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <label for="id37">사용여부</label>
+                                    </dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio37" class="custom-radio" id="radio37-01" checked="checked">
+                                                <label for="radio37-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio37" class="custom-radio" id="radio37-02">
+                                                <label for="radio37-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <div class="head">
+                        <div class="head-left">
+                            <h5 class="pop-h5">결재정보</h5>
+                        </div>
+                    </div>
+                    <form>
+                        <fieldset>
+                            <legend>검색영역</legend>
+                            <div class="sch-box-add">
+                                <div class="sch-input">
+                                    <input type="text" class="input-box" placeholder="결재자의 이름 or 사번을 입력해주세요.">
+                                    <button type="button" class="btn-sch-in"><!-- 20221014 -->
+                                        <span>등록</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+    
+                    <ul class="ul-list type-drag">
+                        <li draggable="true" class="drag-item">
+                            <div class="td-drag">
+                                <i class="icon drag">
+                                    <span>드래그</span>
+                                </i>
+                            </div>
+                            <div class="td-number">1</div>
+                            <div class="td-arrow">
+                                <div class="btn-updown">
+                                    <button type="button" class="btn-updown up">
+                                        <span>위로</span>
+                                    </button>
+                                    <button type="button" class="btn-updown down">
+                                        <span>아래로</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="td-select"><!-- 추가 20221014 -->
+                                <select class="select-sm min2" title="선택">
+                                    <option>결제</option>
+                                    <option>승인</option>
+                                    <option>텍스트가 길어진다</option>
+                                </select>
+                            </div>
+                            <div class="td-name">김이름 인재개발팀 사원<span class="flag1 type-2">대체결재</span></div><!-- 클래스명수정. 20221014 -->
+                            <div class="td-btn">
+                                <button type="button" class="btn-icon btn-del"><!-- 클래스명수정. 20221014 -->
+                                    <span>삭제</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li draggable="true" class="drag-item">
+                            <div class="td-drag">
+                                <i class="icon drag">
+                                    <span>드래그</span>
+                                </i>
+                            </div>
+                            <div class="td-number">2</div>
+                            <div class="td-arrow">
+                                <div class="btn-updown">
+                                    <button type="button" class="btn-updown up">
+                                        <span>위로</span>
+                                    </button>
+                                    <button type="button" class="btn-updown down">
+                                        <span>아래로</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="td-select">
+                                <select class="select-sm min2" title="선택">
+                                    <option>결제</option>
+                                    <option>승인</option>
+                                    <option>텍스트가 길어진다</option>
+                                </select>
+                            </div>
+                            <div class="td-name">최이름 인재개발팀 과장</div>
+                            <div class="td-btn">
+                                <button type="button" class="btn-icon btn-del">
+                                    <span>삭제</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li draggable="true" class="drag-item">
+                            <div class="td-drag">
+                                <i class="icon drag">
+                                    <span>드래그</span>
+                                </i>
+                            </div>
+                            <div class="td-number">3</div>
+                            <div class="td-arrow">
+                                <div class="btn-updown">
+                                    <button type="button" class="btn-updown up">
+                                        <span>위로</span>
+                                    </button>
+                                    <button type="button" class="btn-updown down">
+                                        <span>아래로</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="td-select">
+                                <select class="select-sm min2" title="선택">
+                                    <option>결제</option>
+                                    <option>승인</option>
+                                    <option>텍스트가 길어진다</option>
+                                </select>
+                            </div>
+                            <div class="td-name">서이름 인재개발팀 과장</div>
+                            <div class="td-btn">
+                                <button type="button" class="btn-icon btn-del">
+                                    <span>삭제</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="none-text">등록된 결재자가 없습니다.</div><!-- 추가. 20231215 -->
+                </div>
+                <!-- cover -->
+            </div>
+            <!-- pop-cont -->
+            <footer class="pop-foot">
+                <a href="javascript:void(0);" class="btn-pop">
+                    <span>개설신청</span>
+                </a>
+                <a href="javascript:void(0);" class="btn-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"--><!-- 클래스명 수정. 디자인보완 -->
+                    <span>닫기</span>
+                </a>
+            </footer>
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<div class="quick-btn-wrap type-trick">
+    <p>이 영역은 팝업에서의 퍼블확인용으로 실제 화면에선 보이지 않음.</p>
+    <button type="button" class="dark-toggle">
+        <span>다크 모드로 보기</span>
+    </button>
+</div>
+
+<script src="../../js/layer_popup.js"></script><!-- 레이어팝업 js -->
+<!-- 퍼블용 달력 스크립트 (개발에선 상관없음) -->
+<script>
+	// 달력 기간
+$(".dateGroup").each(function () {
+	let inputStart = $(this).find("input.startDate");
+	let inputEnd = $(this).find("input.endDate");
+
+	inputStart.datepicker({
+		dateFormat: "yy.mm.dd",
+		maxDate: inputEnd.val(),
+		onSelect: function (selectDate) {
+			selectFrom(selectDate);
+		}
+	});
+
+	inputEnd.datepicker({
+		dateFormat: "yy.mm.dd",
+		minDate: inputStart.val(),
+		onSelect: function (selectDate) {
+			selectTo(selectDate)
+		}
+	});
+
+	// 종료일
+	function selectFrom(selectedDate) {
+		inputEnd.datepicker('option', {
+			minDate: selectedDate
+		});
+	}
+
+	// 시작일
+	function selectTo(selectedDate) {
+		inputStart.datepicker('option', {
+			maxDate: selectedDate
+		});
+	}
+});
+
+// 달력
+$('.date-picker').datepicker();
+
+</script>
+</body>
+
+</html>

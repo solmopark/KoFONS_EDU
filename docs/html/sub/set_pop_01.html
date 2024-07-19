@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap large">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">강사 관리</h2>
+            </header>
+            <!-- pop-header -->
+
+            <!-- pop-cont -->
+            <div class="pop-cont">
+
+                <form>
+                    <fieldset>
+                        <legend>검색영역</legend>
+                        <div class="sch-box">
+                            <div class="sch-box-in">
+                                <ul class="sch-table">
+                                    <li class="sch-tr">
+                                        <div class="sch-td">
+                                            <select class="select" title="분류 선택">
+                                                <option>임직원</option>
+                                                <option>40개</option>
+                                                <option>텍스트가 길어진다</option>
+                                            </select>
+                                        </div>
+                                        <div class="sch-td type-max">
+                                            <div class="sch-input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="sch-btn-wrap">
+                                    <button type="button" class="btn-sch">
+                                        <span>검색</span>
+                                    </button>
+                                    <button type="button" class="btn-sch3">
+                                        <span>전체검색</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div class="head">
+                    <div class="head-left">
+                        <button type="button" class="btn-sm btn-ask">
+                            <span>추가</span>
+                        </button>
+                    </div>
+                    <div class="head-right">
+                        <select class="select min" title="게시글 갯수">
+                            <option>20개씩 보기</option>
+                            <option>40개</option>
+                            <option>텍스트가 길어진다</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="data-table type-center type-scl">
+                    <table>
+                        <colgroup>
+                            <col style="width: 60px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 120px;">
+                            <col style="width: 120px;">
+                            <col style="width: 100px;">
+                            <col style="width: 120px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>이름</th>
+                                <th>사번</th>
+                                <th>아이디</th>
+                                <th>회사</th>
+                                <th>부서</th>
+                                <th>강사구분</th>
+                                <th>강의분야</th>
+                                <th>경력</th>
+                                <th>강의수</th>
+                                <th>강의시간</th>
+                                <th>만족도</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>김이름</td>
+                                <td>12345</td>
+                                <td>id123</td>
+                                <td>유밥</td>
+                                <td>개발팀</td>
+                                <td>강사</td>
+                                <td>분야</td>
+                                <td>1년</td>
+                                <td>2</td>
+                                <td>2시간</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>김이름</td>
+                                <td>12345</td>
+                                <td>id123</td>
+                                <td>유밥</td>
+                                <td>개발팀</td>
+                                <td>강사</td>
+                                <td>분야</td>
+                                <td>1년</td>
+                                <td>2</td>
+                                <td>2시간</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>김이름</td>
+                                <td>12345</td>
+                                <td>id123</td>
+                                <td>유밥</td>
+                                <td>개발팀</td>
+                                <td>강사</td>
+                                <td>분야</td>
+                                <td>1년</td>
+                                <td>2</td>
+                                <td>2시간</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>김이름</td>
+                                <td>12345</td>
+                                <td>id123</td>
+                                <td>유밥</td>
+                                <td>개발팀</td>
+                                <td>강사</td>
+                                <td>분야</td>
+                                <td>1년</td>
+                                <td>2</td>
+                                <td>2시간</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>김이름</td>
+                                <td>12345</td>
+                                <td>id123</td>
+                                <td>유밥</td>
+                                <td>개발팀</td>
+                                <td>강사</td>
+                                <td>분야</td>
+                                <td>1년</td>
+                                <td>2</td>
+                                <td>2시간</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>김이름</td>
+                                <td>12345</td>
+                                <td>id123</td>
+                                <td>유밥</td>
+                                <td>개발팀</td>
+                                <td>강사</td>
+                                <td>분야</td>
+                                <td>1년</td>
+                                <td>2</td>
+                                <td>2시간</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>김이름</td>
+                                <td>12345</td>
+                                <td>id123</td>
+                                <td>유밥</td>
+                                <td>개발팀</td>
+                                <td>강사</td>
+                                <td>분야</td>
+                                <td>1년</td>
+                                <td>2</td>
+                                <td>2시간</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>김이름</td>
+                                <td>12345</td>
+                                <td>id123</td>
+                                <td>유밥</td>
+                                <td>개발팀</td>
+                                <td>강사</td>
+                                <td>분야</td>
+                                <td>1년</td>
+                                <td>2</td>
+                                <td>2시간</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+            <!-- pop-cont -->
+
+            <!-- pop-foot -->
+            <footer class="pop-foot">
+                <a href="javascript:void(0);" class="btn-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"--><!-- 클래스명 수정. 디자인보완 -->
+                    <span>닫기</span>
+                </a>
+            </footer>
+            <!-- pop-foot -->
+    
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<div class="quick-btn-wrap type-trick">
+    <p>이 영역은 팝업에서의 퍼블확인용으로 실제 화면에선 보이지 않음.</p>
+    <button type="button" class="dark-toggle">
+        <span>다크 모드로 보기</span>
+    </button>
+</div>
+
+<script src="../../js/layer_popup.js"></script><!-- 레이어팝업 js -->
+</body>
+
+</html>

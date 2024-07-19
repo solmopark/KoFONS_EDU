@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">진단 추천과정</h2>
+            </header>
+            <!-- pop-header -->
+
+            <!-- pop-cont -->
+            <div class="pop-cont">
+
+                <!-- 20240402 추가. -->
+                <div class="head">
+                    <dl class="dl-top">
+                        <dt>계획수립유형 선택</dt>
+                        <dd>
+                            <select class="select" title="계획수립유형 선택">
+                                <option>공통</option>
+                                <option>40개</option>
+                                <option>텍스트가 길어진다</option>
+                            </select>
+                        </dd>
+                    </dl>
+                </div>
+
+                <form>
+                    <fieldset>
+                        <legend>검색영역</legend>
+                        <div class="sch-box type-jindan"><!-- 20240402 type-jindan 추가. -->
+                            <div class="sch-box-in">
+                                <ul class="sch-table">
+                                    <li class="sch-tr"><!-- sch-td 삭제. 20240129 -->
+                                        <div class="sch-th">역량군</div>
+                                        <div class="sch-td">
+                                            <select class="select" title="역량군 선택">
+                                                <option>역량군유형1</option>
+                                                <option>40개</option>
+                                                <option>텍스트가 길어진다</option>
+                                            </select>
+                                        </div>
+                                        <div class="sch-th">역량명</div>
+                                        <div class="sch-td">
+                                            <select class="select" title="역량명 선택">
+                                                <option>역량명2</option>
+                                                <option>40개</option>
+                                                <option>텍스트가 길어진다</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <!-- 추가. 20240402 -->
+                                    <li class="sch-tr">            
+                                        <div class="sch-th">강약점</div>
+                                        <div class="sch-td">
+                                            <select class="select" title="강약점 선택">
+                                                <option>강약점</option>
+                                                <option>40개</option>
+                                                <option>텍스트가 길어진다</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- <div class="sch-btn-wrap">
+                                    <button type="button" class="btn-sch">
+                                        <span>검색</span>
+                                    </button>
+                                    <button type="button" class="btn-sch3">
+                                        <span>전체검색</span>
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div class="list-list type-check">
+                    <ul>
+                        <li>
+                            <div class="check">
+                                <input type="checkbox" class="custom-check alone" id="check000-00">
+                            </div>
+                            <div class="title-in">
+                                <strong class="title">과정명입니다.과정명입니다.과정명입니다.과정명입니다.과정명입니다.과정명입니다.과정명입니다.과정명입니다.과정명입니다.과정명입니다.</strong>
+                            </div>
+                            <div class="cont">
+                                <div class="info-in type-flex">
+                                    <dl>
+                                        <dt>역량군</dt>
+                                        <dd>공통역량</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>역량</dt>
+                                        <dd>비전제시</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>교육형태</dt>
+                                        <dd>온라인</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>강약점</dt>
+                                        <dd>강점</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="none-li">
+                            <p class="none-text">등록된 내용이 없습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- pop-cont -->
+
+            <!-- pop-foot -->
+            <footer class="pop-foot">
+                <a href="javascript:void(0);" class="btn-pop">
+                    <span>등록</span>
+                </a>
+                <a href="javascript:void(0);" class="btn-pop" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+                    <span>닫기</span>
+                </a>
+            </footer>
+            <!-- pop-foot -->
+    
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<script src="../../js/layer_popup.js"></script><!-- 레이어팝업 js -->
+</body>
+
+</html>
