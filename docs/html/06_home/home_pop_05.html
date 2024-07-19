@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">성적현황</h2>
+            </header>
+            <!-- pop-header -->
+
+            <!-- pop-cont -->
+            <div class="pop-cont">
+
+                <div class="achieve-state">
+                    <p class="ing">현재 학습이 진행중입니다.</p>
+                </div>
+                <div class="achieve-state">
+                    <p class="end">본 교육을 수료하였습니다.</p>
+                </div>
+                <div class="achieve-state">
+                    <p class="no">수료기준 미충족으로 미수료 되었습니다.</p>
+                </div>
+                <div class="achieve-state">
+                    <p class="confirm">수료여부를 확인 중 입니다.</p>
+                </div>
+
+                <div class="cover-flex">
+                    <div class="cover-item">
+                        <div class="head">
+                            <h6 class="h6">수료기준</h6>
+                        </div>
+                        <div class="data-table type-th-lg">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 24%;">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>수료기준명</th>
+                                        <th>평가비율</th>
+                                        <th>수료기준</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>진도</td>
+                                        <td>-</td>
+                                        <td>00% 이상 학습</td>
+                                    </tr>
+                                    <tr>
+                                        <td>과제</td>
+                                        <td>50%</td>
+                                        <td rowspan="2">00점 이상</td>
+                                    </tr>
+                                    <tr>
+                                        <td>시험</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>설문</td>
+                                        <td>-</td>
+                                        <td>필수</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="cover-item">
+                        <div class="head">
+                            <h6 class="h6">나의 점수</h6>
+                        </div>
+                        <div class="data-table type-th-lg">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 24%;">
+                                    <col>
+                                    <col>
+                                    <col style="width: 20%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>수료기준명</th>
+                                        <th>원점수</th>
+                                        <th>합산점수</th>
+                                        <th>수료기준<br>충족여부</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>진도</td>
+                                        <td>-</td>
+                                        <td>70%</td>
+                                        <td>충족</td>
+                                    </tr>
+                                    <tr>
+                                        <td>과제</td>
+                                        <td>00점</td>
+                                        <td rowspan="2">00점</td>
+                                        <td rowspan="2">미충족</td>
+                                    </tr>
+                                    <tr>
+                                        <td>시험</td>
+                                        <td>00점</td>
+                                    </tr>
+                                    <tr>
+                                        <td>설문</td>
+                                        <td>-</td>
+                                        <td>제출완료</td>
+                                        <td>충족</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+            <!-- pop-cont -->
+
+
+            <!-- pop-foot -->
+            <footer class="pop-foot">
+                <a href="javascript:void(0);" class="btn-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"--><!-- 클래스명 수정. 디자인보완 -->
+                    <span>닫기</span>
+                </a>
+            </footer>
+            <!-- pop-foot -->
+    
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<div class="quick-btn-wrap type-trick">
+    <p>이 영역은 팝업에서의 퍼블확인용으로 실제 화면에선 보이지 않음.</p>
+    <button type="button" class="dark-toggle">
+        <span>다크 모드로 보기</span>
+    </button>
+</div>
+
+<script src="../../js/layer_popup.js"></script><!-- 레이어팝업 js -->
+</body>
+
+</html>

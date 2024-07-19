@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- 디자인보완. style 수정 -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+        @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0");
+        @import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+        @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+        @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+        html {font-size:62.5%; overflow-x:hidden;}
+        body {overflow-x:hidden;-webkit-text-size-adjust:none;}
+        /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+        body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video, main {margin:0; padding:0; border:0; color:#000; font-style:normal; font-size:1.4rem; font-weight:400; font-family:"ubobtlsFont", "Noto Sans KR", "NanumSquare", "Malgun Gothic", "맑은 고딕", AppleSDGothicNeo-Regular, dotum, "돋움", sans-serif; line-height:1.3; vertical-align:baseline; box-sizing:border-box; word-break:break-all;-webkit-box-sizing:border-box;}
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {display:block;}
+        ol, ul {list-style:none;}
+        input,
+        button,
+        select,
+        textarea {border:none; border-radius:0; background:#fff; color:inherit; font-size:inherit; font-weight:normal; font-family:inherit; line-height:inherit; box-sizing:border-box;-webkit-box-sizing:border-box;}
+        input {-webkit-border-radius:0; -webkit-appearance:none;}
+        a {color: inherit;text-decoration: none;box-sizing: border-box;cursor: pointer;font: inherit;}
+        button {padding:0; border:0 none; background-color:transparent; cursor:pointer;}
+        button:disabled {background:#f2f2f2; cursor:default;}
+        button:disabled span {color:#000;}
+        button:disabled::after {display:none; width:0; height:0; background:none; transition:none;-webkit-transition:none;}
+        input, select, textarea {font-size:1.5rem;}
+
+        .input-box {position: relative;width: 100%;height: 40px;padding: 0 12px;background: #fff;border: 1px solid silver;border-radius: 4px;}
+        .textarea3 {width: 100%;min-height: 58px;padding: 10px;font-size: 1.5rem;white-space: pre-line;resize: none;background: #fff;border: 1px solid silver;border-radius: 4px;}
+        .btn-pop, .btn-lg {min-width: 150px;height: 40px;background: #000;border-radius: 4px;padding: 0 20px;display: inline-flex;align-items: center;justify-content: center;}
+        /* .btn-pop.btn-apply, .btn-apply.btn-lg {background: #f15928;} */
+        .btn-pop span, .btn-lg span {color: #fff;}
+        .btn-close {width: 130px;height: 40px;display: inline-flex;align-items: center;justify-content: center;border: 1px solid #000;padding: 0 20px;border-radius: 4px;}
+        .btn-x {width: 30px;height: 30px;display: inline-block;position: absolute;right: -5px;top: -33px;z-index: inherit;}
+        .btn-x::before {content: "\e5cd";font-family: "Material Icons";font-style: normal;font-variant: normal;font-weight: normal;font-size: 24px;text-transform: none;text-decoration: none;vertical-align: top;-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing: antialiased;color: #fff;}
+        .btn-x span {position: absolute;left: -10000px;top: auto;width: 1px;height: 1px;overflow: hidden;}
+
+        .custom-check, .custom-radio {display:inline-block; width:15px; height:15px; margin-right:4px; border-color:#707070;}
+        .custom-check:disabled, .custom-radio:disabled {border-color:#707070; background-color:#c5c5c5;}
+        .custom-check + [class*=-label], .custom-radio + [class*=-label] {margin-left:0;}
+        .custom-check.alone, .custom-check.alone2, .custom-radio.alone, .custom-radio.alone2 {margin-left:0;}
+        .custom-check.alone2 + label, .custom-radio.alone2 + label {display:none;}
+        .custom-check {display:inline-block; position:relative; width:16px; height:16px; padding:0; border-width:1px; border-style:solid; outline:0; line-height:initial; vertical-align:middle; box-sizing:border-box;-webkit-box-sizing:border-box; -webkit-appearance:none;}
+        .custom-check::before {font-size:12px;}
+        .custom-check:checked {border-color:#000; background-color:#000;}
+        .custom-check:checked::before {display:inline-block; position:absolute; top:50%; left:50%; width:12px; height:12px; overflow:hidden; content:"\e5ca"; color:#fff; font-size:12px; font-family:"Material Icons"; transform:scale(1) translate(-50%, -50%);-webkit-transform:scale(1) translate(-50%, -50%);}
+        .custom-check:disabled {border-color:#707070; background-color:#c5c5c5;}
+        .custom-check-radio {display:inline-block; position:relative; width:16px; height:16px; padding:0; outline:0; line-height:initial; vertical-align:middle; box-sizing:border-box;-webkit-box-sizing:border-box; -webkit-appearance:none;}
+        .custom-check-radio::before {display:inline-block; position:absolute; top:50%; left:50%; margin-top:-3px; overflow:hidden; content:"\e836"; color:#767676; font-size:19px; font-family:"Material Icons Outlined"; transform:scale(1) translate(-50%, -50%);-webkit-transform:scale(1) translate(-50%, -50%);}
+        .custom-check-radio:checked {background-color:#fff;}
+        .custom-check-radio:checked::before {content:"\e837"; color:#000;}
+        .custom-check-radio:checked:disabled {background-color:#c5c5c5;}
+        .custom-check-radio:checked:disabled::before {background-color:#707070;}
+        .custom-radio {display:inline-block; position:relative; width:16px; height:16px; margin:3px 0 0 0; padding:0; border:none; /*border-style:solid;*/ border-radius:100%; outline:0; line-height:initial; vertical-align:middle; box-sizing:border-box;-webkit-box-sizing:border-box; -webkit-appearance:none;}
+        .custom-radio::before {display:inline-block; position:absolute; top:50%; left:50%; margin-top:-3px; overflow:hidden; content:"\e836"; color:#767676; font-size:19px; font-family:"Material Icons Outlined"; transform:scale(1) translate(-50%, -50%);-webkit-transform:scale(1) translate(-50%, -50%);}
+        .custom-radio:checked {background-color:#fff;}
+        .custom-radio:checked::before {content:"\e837"; color:#000;}
+        .custom-radio:checked:disabled {background-color:#c5c5c5;}
+        .custom-radio:checked:disabled::before {background-color:#707070;}
+        .custom-check-label,
+        .custom-radio-label {display:inline-block; width:auto; min-height:15px; padding-left:5px; color:#000; font-size:1.5rem; line-height:15px;}
+        
+        .layer-wrap {display: none;align-items: center;justify-content: center;position: fixed;z-index: 1001;left: 0;top: 0;width: 100%;height: 100%;}
+        .layer-wrap.popup-open {display: flex;}
+        .layer-wrap.popup-open .pop-wrap {opacity: 1;}
+        .popup-dimmed {position: fixed;z-index: 1000;left: 0;top: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,.7);transition: opacity .2s;}
+        
+        .pop-wrap {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;flex-wrap: wrap;opacity: 0;border: 8px solid #000;border-top: 40px solid #000;width: 780px;height: 80%;}
+        .pop-wrap .pop-in {width: 100%;height: 100%;background: #fff;padding: 0 30px 40px;overflow-y: auto;overflow-x: hidden;}
+        .pop-wrap .pop-header {width: 100%;padding: 56px 20px;text-align: center;overflow: auto;}
+        .pop-wrap .h2 {font-size: 2.8rem;line-height: 1;font-weight: 600;}
+        .pop-wrap .pop-header .date {text-align: center;margin-top: 10px;}
+        .poll {padding: 18px 24px;background: #f3f3f3;margin-bottom: 20px;font-size: 1.3rem;border-radius: 10px;}
+        .servey-list .servey-li {border-bottom: 1px solid #e5e5e5;padding: 30px 0;}
+        .servey-list .servey-li .num-wrap {margin-bottom: 16px;display: flex;}
+        .servey-list .servey-li .num-wrap .num {font-size: 2rem;font-weight: 600;line-height: 1;flex-shrink: 0;margin-right: 10px;}
+        .servey-list .servey-li .num-wrap .servey-text {font-size: 1.6rem;}
+        .servey-list .poll {margin-left: 40px;}
+        .servey-list .servey-li .answre-wrap {padding: 0 0 0 40px;}
+        .servey-list .servey-li .answre-wrap ul.servey-check li {margin-bottom: 10px;position: relative;display: flex;}
+        .servey-list .servey-li .answre-wrap ul.servey-check li .custom-radio {margin: 4px 4px 0 0;flex-shrink: 0;}
+        .servey-list .servey-li .answre-wrap ul.servey-check li .custom-check {margin: 1px 4px 0 0;flex-shrink: 0;}
+        .servey-list .servey-li .answre-wrap ul.servey-check li label {color: #595959;}
+        .servey-list .servey-li .answre-wrap ul.servey-check li:last-child {margin-bottom: 0;}
+        .servey-list .servey-li .answre-wrap ul.servey-check li .add-input {margin: -4px 0 0 10px;flex: 1;}
+        .servey-list .servey-li .answre-wrap ul.servey-check li .add-input .input-box {height: 28px;}
+
+        .bot-text {color: #767676;text-align: center;margin-top: 40px;font-size: 1.6rem;}
+        .pop-wrap .pop-foot {margin-top: 40px;display: flex;justify-content: center;}
+        .pop-wrap .pop-foot a, .pop-wrap .pop-foot button {margin-left: 10px;}
+        .pop-wrap .pop-foot a:first-child, .pop-wrap .pop-foot button:first-child {margin-left: 0;}
+
+        /* 반응형 */
+        @media (max-width: 1023px) {
+            .pop-wrap {border: 0;border-top: 30px solid #000;width: 90%;}
+            .pop-wrap .pop-in {padding: 0 14px 20px;}
+            .pop-wrap .pop-header {padding: 28px 14px;}
+            .pop-wrap .h2 {font-size: 2.2rem;}
+            .pop-wrap .pop-foot {margin-top: 30px;}
+            .btn-pop, .btn-lg , .btn-close {min-width: auto;width: auto;}
+            .pop-wrap .pop-foot a {margin-left: 6px;}
+            .pop-wrap .btn-x {right: 0px;top: -31px;}
+        }
+
+    </style>
+    <!-- 디자인보완. style 수정 -->
+
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">설문지명 표시영역입니다.</h2>
+            </header>
+            <!-- pop-header -->
+
+            <!-- pop-cont -->
+            <div class="pop-cont">
+
+                <!-- servey-list -->
+                <div class="servey-list">
+                    <ul>
+                        <li class="servey-li">
+                            <div class="num-wrap">
+                                <span class="num">01</span>
+                                <div class="servey-text">
+                                    <p>객관식단일, OX. 온라인교육 콘텐츠 제작에 있어 중요한 것은 무엇이라고 생각하십니까?온라인교육 콘텐츠 제작에 있어 중요한 것은 무엇이라고 생각하십니까?</p>
+                                </div>
+                            </div>
+
+                            <!-- answre-wrap -->
+                            <div class="answre-wrap">
+                                <ul class="servey-check">
+                                    <li>
+                                        <input type="radio" name="radio01" class="custom-radio" id="radio01-01">
+                                        <label for="radio01-01">1. 라디오버튼 의사결정과 관련된 현장상황을 명확히 이해한 후 의사결정을 한다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="radio01" class="custom-radio" id="radio01-02">
+                                        <label for="radio01-02">2. 라디오버튼 사안의 효과를 정확하게 예측하고, 장단점을 검토하여 합리적인 의사결정을 한다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="radio01" class="custom-radio" id="radio01-03">
+                                        <label for="radio01-03">3. 라디오버튼 사안의 다양한 결과를 예측하고 대안의 장단점을 파악하여 의사결정을 한다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="radio01" class="custom-radio" id="radio01-04">
+                                        <label for="radio01-04">4. 라디오버튼 자신의 의사결정 사안에 대해 철저한 사후관리를 통해 오너십을 가진다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="radio01" class="custom-radio" id="radio01-05">
+                                        <label for="radio01-05">5. 라디오버튼 의사결정과 관련된 현장상황을 명확히 이해한 후 의사결정을 한다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="radio01" class="custom-radio" id="radio01-06">
+                                        <label for="radio01-06">기타</label>
+                                        <div class="add-input">
+                                            <input type="text" class="input-box" placeholder="기타 내용을 입력해주세요.">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- answre-wrap -->
+                        </li>
+                        
+                        <li class="servey-li">
+                            <div class="num-wrap">
+                                <span class="num">03</span>
+                                <div class="servey-text">
+                                    <p>객관식멀티. 답안은 체크박스</p>
+                                    <p>객관식멀티 텍스트</p>
+                                </div>
+                                <!-- <ins>난이도 상, 배점 20</ins> -->
+                            </div>
+                            <!-- answre-wrap -->
+                            <div class="answre-wrap">
+                                <ul class="servey-check"><!-- 20221110 수정. -->
+                                    <li>
+                                        <input type="checkbox" class="custom-check" id="check02-01">
+                                        <label for="check02-01">1. 체크박스 의사결정과 관련된 현장상황을 명확히 이해한 후 의사결정을 한다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="custom-check" id="check02-02">
+                                        <label for="check02-02">2. 체크박스 사안의 효과를 정확하게 예측하고, 장단점을 검토하여 합리적인 의사결정을 한다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="custom-check" id="check02-03">
+                                        <label for="check02-03">3. 체크박스 사안의 다양한 결과를 예측하고 대안의 장단점을 파악하여 의사결정을 한다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="custom-check" id="check02-04">
+                                        <label for="check02-04">4. 체크박스 자신의 의사결정 사안에 대해 철저한 사후관리를 통해 오너십을 가진다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="custom-check" id="check02-05">
+                                        <label for="check02-05">5. 체크박스 의사결정과 관련된 현장상황을 명확히 이해한 후 의사결정을 한다.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="custom-check" id="check02-05">
+                                        <label for="check02-05">기타</label>
+                                        <div class="add-input">
+                                            <input type="text" class="input-box" placeholder="기타 내용을 입력해주세요.">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- answre-wrap -->
+                        </li>
+                        <li class="servey-li">
+                            <div class="num-wrap">
+                                <span class="num">03</span>
+                                <div class="servey-text">
+                                    <label for="id1">단답형, 서술형문제입니다.</label>
+                                </div>
+                                <!-- <ins>난이도 상, 배점 20</ins> -->
+                            </div>
+                            <div class="poll">
+                                답안 단답형, 서술형 유형<br>
+                                본 설문의 취지는 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            
+                                성실한 참여 부탁드립니다
+                            </div>
+                            <!-- answre-wrap -->
+                            <div class="answre-wrap">
+                                <textarea class="textarea3" id="id1" rows="4" placeholder="내용을 입력하세요."></textarea>
+                            </div>
+                            <!-- answre-wrap -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- servey-list -->
+                <p class="bot-text">설문에 참여해주셔서 감사합니다.</p>
+            </div>
+            <!-- pop-cont -->
+
+
+            <!-- pop-foot -->
+            <footer class="pop-foot">
+                <button type="button" class="btn-pop btn-apply">
+                    <span>제출</span>
+                </button>
+                <a href="javascript:void(0);" class="btn-close" popup-close="popup1"><!-- 디자인보완. 클래스명 수정 --> <!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+                    <span>닫기</span>
+                </a>
+            </footer>
+            <!-- pop-foot -->
+    
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<!-- 레이어팝업 js -->
+<script>
+    let currentTarget, focusEl = [], popupDepth = 0, popupDimmed, keyEscapeEvt, KeyEvtEl;
+const _$this = this,
+    popupAll = document.querySelectorAll(".layer-wrap"),
+    popupCloseBtnAll = document.querySelectorAll('[popup-close]');
+// ESC 누름 감지
+const keyEvent = {
+    get keyEscape() {
+        return this._state;
+    },
+    set keyEscape(state) {
+        this._state = state;
+        if (state) escKeyEvt(KeyEvtEl, keyEscapeEvt);
+    },
+};
+
+keyEvent;
+
+// popup dimmed 생성
+const createdDimmed = () => {
+    const createDiv = document.createElement('div');
+    createDiv.classList.add('popup-dimmed');
+    createDiv.style.zIndex = 1000 + (popupDepth * 10);
+    createDiv.dataset.popup = currentTarget;
+    document.querySelector('body').appendChild(createDiv);
+};
+// popup dimmed click 시 팝업 닫기
+const dimmedClick = (e) => {
+    if (e.target.classList.contains('layer-wrap')) {
+        popupClose({popupId: e.target.dataset.popup});
+        keyEvent.keyEscape = false;
+    }
+};
+// popup open
+const popupOpen = (param) => {
+    popupDepth = popupDepth + 1;
+    currentTarget = typeof param === "object" ? param.popupId : param;
+    createdDimmed();
+
+    popupAll.forEach((popupEl) => {
+        if ((typeof param === "object" && param.popupId === popupEl.id) || (typeof param === "string" && popupEl.dataset.popup === param) ) {
+            popupEl.classList.add('popup-open'); // open class add
+            popupEl.style.zIndex = 1001 + (popupDepth * 10);
+
+            // dimmed click 이벤트 할당
+            popupEl.removeEventListener('click', dimmedClick);
+
+            if (param.close === undefined || param.close === true) {
+                popupEl.addEventListener('click', dimmedClick);
+            }
+
+            document.body.classList.add('scroll-lock'); // popup scroll lock
+            popupEl.querySelector('.pop-header').focus(); // popup 오픈 시 타이틀에 포커스
+
+            // shift+tab 또는 <- 화살표 키 키보드 동작 시 팝업 밖으로 포커스 이동 방지 이벤트 할당
+            popupEl.querySelector('.pop-header').removeEventListener('keydown', titleKeyDown);
+            popupEl.querySelector('.pop-header').addEventListener('keydown', titleKeyDown);
+
+            KeyEvtEl = popupEl; // ESC 키 동작을 위한 현재 활성화 된 popup element 저장
+        }
+    });
+};
+
+
+// popup close
+const popupClose = (e) => {
+    if (typeof e === "object") {
+        if (!e.popupId) {
+            e.popupId = $(e.target).closest(".layer-wrap").attr("id");
+        }
+
+        if (!e.popupId) {
+            e.popupId = $(e.target).attr("popup-close");
+        }
+
+        if (!e.popupId) {
+            e.popupId = $(e.target).closest(".layer-wrap").data("popup");
+        }
+    }
+
+    popupAll.forEach((popupEl) => {
+        if (typeof e === "object" && (e.popupId === popupEl.id || e.popupId === popupEl.dataset.popup)) {
+            popupDepth = popupDepth - 1;
+
+            popupEl.classList.remove('popup-open');
+            delete popupEl.dataset.param;
+        }
+    });
+
+    const popupDimmedList = document.querySelectorAll('.popup-dimmed');
+    popupDimmedList.forEach((popupDimmed) => {
+        if (popupDepth === 0) {
+            // scroll lock 해지
+            document.body.classList.remove('scroll-lock');
+        }
+
+        if (typeof e === "object" && e.popupId === popupDimmed.dataset.popup) {
+            popupDimmed.style.opacity = 0;
+            popupDimmed.addEventListener('transitionend', function () {
+                if (popupDimmed.parentNode !== null) popupDimmed.parentNode.removeChild(popupDimmed);
+            });
+
+            popupDimmed.remove();
+        }
+    });
+}
+
+// ESC 키보드 이벤트
+const escKeyEvt = (El, e) => {
+    const openPopups = document.querySelectorAll(`.popup-open`);
+    // 팝업 열린 상태에서 키보드 ESC 키 이벤트 실행
+    if (openPopups.length > 0 && $(e.target).closest(".layer-wrap").find(".btn-layer-close").css("display") !== "none") {
+        popupClose(e);
+    }
+};
+
+// popup 닫기 키보드 이벤트
+const closeBtnKeyDown = (e) => {
+    if ((e.key == 'Tab' && !e.shiftKey) || e.key == 'ArrowRight') {
+        e.preventDefault();
+        popupAll.forEach((popupEl) => {
+            if (popupEl.getAttribute('data-popup') === e.target.getAttribute('popup-close')) {
+                popupEl.querySelector('.pop-header').focus();
+            }
+        });
+    }
+};
+// popup title 키보드 이벤트
+const titleKeyDown = (e) => {
+    if ((e.key == 'Tab' && e.shiftKey) || e.key == 'ArrowLeft') {
+        e.preventDefault();
+        popupAll.forEach((popupEl) => {
+            if (popupEl.getAttribute('data-popup') === e.target.closest('.layer-wrap').getAttribute('data-popup')) {
+                popupEl.querySelector('.btn-layer-close').focus();
+            }
+        });
+    }
+};
+
+// 키보드 ESC 키 누름 감지 이벤트
+const escKeyDown = (e) => {
+    if (e.key == 'Escape' || e.key == 'Esc') {
+        keyEscapeEvt = e;
+        keyEvent.keyEscape = true;
+    }
+};
+
+// 팝업 닫기
+popupCloseBtnAll.forEach((popupCloseBtn) => {
+    popupCloseBtn.removeEventListener('click', popupClose);
+    popupCloseBtn.addEventListener('click', popupClose);
+    if (popupCloseBtn.classList.contains('btn-layer-close')) {
+        popupCloseBtn.removeEventListener('keydown', closeBtnKeyDown);
+        popupCloseBtn.addEventListener('keydown', closeBtnKeyDown);
+    }
+});
+// ESC 키로 팝업 닫기
+window.removeEventListener('keydown', escKeyDown);
+window.addEventListener('keydown', escKeyDown);
+fnPopupBtnAll();
+function fnPopupBtnAll() {
+    let popupBtnAll = document.querySelectorAll('[aria-haspopup="dialog"]');
+    if (popupBtnAll) {
+        popupBtnAll.forEach((popupBtn) => {
+            popupBtn.removeEventListener('click', function () {
+                popupOpen(popupBtn.dataset.popup);
+            });
+            popupBtn.addEventListener('click', function () {
+                popupOpen(popupBtn.dataset.popup);
+            });
+        });
+    }
+}
+
+</script>
+
+</body>
+
+</html>
