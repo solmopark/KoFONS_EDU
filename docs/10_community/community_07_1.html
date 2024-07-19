@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+
+	<!-- header -->
+	<header class="header">
+
+		<!-- pc gnb --><!-- 반응형으로 피씨 모바일 헤더 나누기 -->
+		<div class="type-pc">
+			<div class="layout-inner">
+				<div class="header-top">
+					<div class="top-name">
+						<strong>홍길동님</strong>안녕하세요.
+					</div>
+					<button type="button" class="btn-logout">
+						<span>로그아웃</span>
+					</button>
+				</div>
+				<nav class="gnb-menu">
+					<h1>
+						<a href="javascript:void(0);" target="_self">
+							<img src="../../images/logo.png" alt="TLS Edumanager">
+						</a>
+					</h1>
+					<ul class="gnb" id="gnb">
+						<li>
+							<a href="javascript:void(0);" target="_self">학습과정</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">학습안내</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">전체과정</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">실시간학습</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">학습안내</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">전체과정</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">자료실</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습지원</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">공지사항</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">디자인관련질의응답</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">사이트이용문의</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">자주묻는질문</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">교육담당자권한신청</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">개설희망과정신청</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+	
+					<a href="javascript:void(0);" target="_self" class="btn-sch-top">
+						<span>검색</span>
+					</a>
+	
+					<button type="button" class="btn-all-view">
+						<span>메뉴 전체보기와 닫기</span>
+						<small></small>
+						<small></small>
+						<small></small>
+					</button>
+				</nav>
+				<div class="gnb-menu-all">
+					<strong class="hidden">전체메뉴</strong>
+					<ul class="all-depth1">
+						<li>
+							<strong>학습과정</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">전체과정</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(온라인)</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(특강)</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>실시간학습</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">전체과정</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(온라인)</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(특강)</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>자료실</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">자료실</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>학습지원</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">공지사항</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">디자인관련질의응답</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">크리에이터현황</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">전체질의응답</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">사이트이용문의</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">자주묻는질문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">개설희망과정신청</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">교육담당자권한신청</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>나의학습실</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">보관함</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의설문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">수료증발급</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의클래스설계</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의결제현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의과정문의</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">개인정보관리</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">크리에이터신청</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">크리에이터활동</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">프로필관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">콘텐츠등록</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">콘텐츠관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- pc gnb -->
+
+		<!-- 모바일 gnb --><!-- 반응형으로 피씨 모바일 헤더 나누기 -->
+		<div class="type-mobile">
+
+			<!-- header_top -->
+			<div class="header-top">
+				<button type="button" class="btn-all-view" id="openNav">
+					<span>메뉴 전체보기</span>
+					<small></small>
+					<small></small>
+					<small></small>
+				</button>
+				<h1>
+					<a href="javascript:void(0);" target="_self">
+						<img src="../../images/logo_m.png" alt="design ground">
+					</a>
+				</h1>
+				<a href="javascript:void(0);" target="_self" class="btn-sch-top">
+					<span>검색</span>
+				</a>
+			</div>
+			<!-- header_top -->
+			<div class="layer-dim"></div>
+			<!-- nav -->
+			<div class="nav">
+				<article class="nav-in">
+					<!-- <div class="btn-wrap">
+						<button type="button" class="btn-close" id="closeNav">
+							<span>닫기</span>
+						</button>
+					</div> -->
+					<header>
+						<div class="top-name">
+							<strong>홍길동님</strong>안녕하세요.
+						</div>
+						<button type="button" class="btn-logout">
+							<span>로그아웃</span>
+						</button>
+					</header>
+					
+					<!-- nav -->
+					<nav>
+						<!-- gnb -->
+						<ul class="gnb" id="gnbM">
+							<li>
+								<a href="javascript:void(0);" target="_self">학습<br>과정</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+										<ul class="lnb-3">
+											<li>
+												<a href="javascript:void(0);" target="_self" class="opeth">3뎁스</a><!-- 현재메뉴 -->
+											</li>
+											<li>
+												<a href="javascript:void(0);" target="_self">3뎁스</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">실시간<br>학습</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정2-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정2-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">자료실</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정3-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정3-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">학습<br>지원</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정4-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정4-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">나의<br>학습실</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정5-1</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- gnb -->
+					</nav>
+				</article>
+			</div>
+			<!-- nav -->
+
+			<!-- fnb -->
+			<div class="fnb">
+				<nav>
+					<ul>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습과정</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">실시간학습</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">자료실</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습지원</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- fnb -->
+	
+		</div>
+		<!-- 모바일 gnb -->
+		
+	</header>
+	<!-- header -->
+
+	<!-- content -->
+	<section class="sub">
+		<h2 class="hidden">서브컨텐츠</h2>
+		<div class="layout-inner">
+
+			<!-- snb-wrap -->
+			<div class="snb-wrap">
+				<h3 class="h3">커뮤니티</h3>
+                
+				<nav class="snb-nav">
+					<ul class="depth2">
+						<li class="">
+							<a href="javascript:void(0);" target="_self">메뉴1</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">메뉴2</a>
+							<ul class="depth3">
+								<li class="active"><!-- 현재메뉴일때 active -->
+									<a href="javascript:void(0);" target="_self">메뉴2-1</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">메뉴2-2</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">메뉴3</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- sub-container -->
+			<div class="sub-container" id="content">
+    
+				<!-- location -->
+				<div class="location">
+					<ul>
+						<li>home</li>
+						<li>커뮤니티</li>
+						<li>1:1문의</li>
+					</ul>
+				</div>
+				<!-- location -->
+
+				<!-- sub-content -->
+				<div class="sub-content">
+					<h4 class="h4">1:1문의</h4>
+
+					<form>
+						<fieldset>
+							<legend>검색영역</legend>
+							<div class="sch-box">
+                                
+								<div class="sch-box-in">
+									<ul class="sch-table">
+										<li class="sch-tr">
+											<div class="sch-td">
+												<select class="select" title="구분">
+													<option>구분 전체</option>
+													<option>공지</option>
+													<option>자료</option>
+													<option>구분구분구분구분구분</option>
+													<option>구분구분구분구분구분구분구분구분구분구분</option>
+												</select>
+											</div>
+											<div class="sch-td">
+												<select class="select" title="답변여부">
+													<option>답변여부 전체</option>
+													<option>공지</option>
+													<option>자료</option>
+													<option>구분구분구분구분구분</option>
+													<option>구분구분구분구분구분구분구분구분구분구분</option>
+												</select>
+											</div>
+											<div class="sch-td type-max">
+												<div class="sch-input">
+													<input type="text" placeholder="제목 및 내용 입력">
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="sch-btn-wrap">
+										<button type="button" class="btn-sch">
+											<span>검색</span>
+										</button>
+									</div>
+								</div>
+
+							</div>
+						</fieldset>
+					</form>
+
+                    <div class="head">
+						<div class="head-left">
+							<p class="total">총 <em>3</em>건</p>
+						</div>
+						<div class="head-right">
+							<a href="javascript:void(0);" class="btn-sm btn-ask">
+								<span>글쓰기</span>
+							</a>
+							<select class="select min" title="게시글 갯수">
+								<option>20개</option>
+								<option>40개</option>
+								<option>60개</option>
+								<option>80개</option>
+								<option>100개</option>
+							</select>
+						</div>
+                    </div>
+					<div class="list-list btn-none">
+						<ul>
+							<li>
+								<div class="title-in">
+									<strong class="title">
+                                        <a href="javascript:void(0);">제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다</a>
+                                    </strong>
+								</div>
+								<div class="cont">
+									<div class="info-in type-flex type-5"><!-- dt 최대글자수가 5글자면 type-5 . 디자인보완 -->
+										<dl>
+											<dt>번호</dt>
+											<dd>32</dd>
+										</dl>
+										<dl>
+											<dt>구분</dt>
+											<dd>학습문의</dd>
+										</dl>
+										<dl>
+											<dt>등록일</dt>
+											<dd>2022.03.03</dd>
+										</dl>
+										<dl>
+											<dt>답변여부</dt>
+											<dd>답변대기</dd>
+										</dl>
+										<dl>
+											<dt>답변등록일</dt>
+											<dd>2022.03.03</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="title-in">
+									<strong class="title">
+                                        <a href="javascript:void(0);">제목입니다</a>
+                                    </strong>
+								</div>
+								<div class="cont">
+									<div class="info-in type-flex type-5">
+										<dl>
+											<dt>번호</dt>
+											<dd>32</dd>
+										</dl>
+										<dl>
+											<dt>구분</dt>
+											<dd>학습문의</dd>
+										</dl>
+										<dl>
+											<dt>등록일</dt>
+											<dd>2022.03.03</dd>
+										</dl>
+										<dl>
+											<dt>답변여부</dt>
+											<dd>답변대기</dd>
+										</dl>
+										<dl>
+											<dt>답변등록일</dt>
+											<dd>2022.03.03</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li class="none-li">
+								<p class="none-text">등록된 내용이 없습니다.</p>
+							</li>
+						</ul>
+					</div>
+
+                    <!-- paging -->
+                    <div class="type-pc">
+                        <div class="paging">
+                            <a href="javascript:void(0);" class="prev">
+                                <span>이전페이지</span>
+                            </a>
+                            <a href="javascript:void(0);" class="on" title="선택됨">1</a>
+                            <a href="javascript:void(0);">2</a>
+                            <a href="javascript:void(0);">3</a>
+                            <a href="javascript:void(0);">4</a>
+                            <a href="javascript:void(0);">5</a>
+                            <a href="javascript:void(0);">6</a>
+                            <a href="javascript:void(0);">7</a>
+                            <a href="javascript:void(0);">8</a>
+                            <a href="javascript:void(0);">9</a>
+                            <a href="javascript:void(0);">10</a>
+                            <a href="javascript:void(0);" class="next">
+                                <span>다음페이지</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="type-mobile">
+                        <div class="paging">
+                            <a href="javascript:void(0);" class="prev">
+                                <span>이전</span>
+                            </a>
+                            <span class="page">
+                                <strong>1</strong>/<span>10</span>
+                            </span>
+                            <a href="javascript:void(0);" class="next">
+                                <span>다음</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- paging -->
+
+				</div>
+				<!-- sub-content -->
+
+			</div>
+			<!-- sub-container -->
+		
+		</div>
+		
+	</section>
+	<!-- content -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="layout-inner">
+			<strong>
+				<img src="../../images/logo_foot.png" alt="TLS Edumanager">
+			</strong>
+			<div class="foot-info">
+				<ul>
+					<li class="type-1">
+						<a href="javascript:void(0);">개인정보처리방침</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">이용약관</a>
+					</li>
+				</ul>
+				<address>서울시 영등포구</address>
+				<ul class="ul2">
+					<li>사업자등록번호 1111</li>
+					<li>123 tls@mail.com</li>
+				</ul>
+				<small>COPYRIGHT © <ins>TLS Edumanager</ins> ALL RIGHTS RESERVED.</small>
+			</div>
+			<div class="family-wrap">
+				<select class="select-foot" title="사이트바로가기 선택"> 
+					<option value="hide">사이트바로가기</option><!-- Option에 표시 안됨 -->
+					<option>선택선택선택선택선택선택선택선택선택선택선택선택</option>
+					<option>선택2</option>
+				</select>
+				<button type="button" class="btn-sm">
+					<span>이동</span>
+				</button>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+</div>
+</body>
+
+</html>

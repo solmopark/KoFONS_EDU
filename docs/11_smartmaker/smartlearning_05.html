@@ -1,0 +1,815 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+
+	<!-- header -->
+	<header class="header">
+
+		<!-- pc gnb --><!-- 반응형으로 피씨 모바일 헤더 나누기 -->
+		<div class="type-pc">
+			<div class="layout-inner">
+				<div class="header-top">
+					<div class="top-name">
+						<strong>홍길동님</strong>안녕하세요.
+					</div>
+					<button type="button" class="btn-logout">
+						<span>로그아웃</span>
+					</button>
+				</div>
+				<nav class="gnb-menu">
+					<h1>
+						<a href="javascript:void(0);" target="_self">
+							<img src="../../images/logo.png" alt="TLS Edumanager">
+						</a>
+					</h1>
+					<ul class="gnb" id="gnb">
+						<li>
+							<a href="javascript:void(0);" target="_self">학습과정</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">학습안내</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">전체과정</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">실시간학습</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">학습안내</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">전체과정</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">자료실</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습지원</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">공지사항</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">디자인관련질의응답</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">사이트이용문의</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">자주묻는질문</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">교육담당자권한신청</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">개설희망과정신청</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+	
+					<!-- 추가 20220629 -->
+					<a href="javascript:void(0);" target="_self" class="btn-sch-top">
+						<span>검색</span>
+					</a>
+					<!-- 추가 20220629 -->
+	
+					<button type="button" class="btn-all-view">
+						<span>메뉴 전체보기와 닫기</span>
+						<small></small>
+						<small></small>
+						<small></small>
+					</button>
+				</nav>
+				<div class="gnb-menu-all">
+					<strong class="hidden">전체메뉴</strong>
+					<ul class="all-depth1">
+						<li>
+							<strong>학습과정</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">전체과정</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(온라인)</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(특강)</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>실시간학습</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">전체과정</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(온라인)</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(특강)</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>자료실</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">자료실</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>학습지원</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">공지사항</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">디자인관련질의응답</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">크리에이터현황</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">전체질의응답</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">사이트이용문의</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">자주묻는질문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">개설희망과정신청</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">교육담당자권한신청</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>나의학습실</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">보관함</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의설문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">수료증발급</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의클래스설계</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의결제현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의과정문의</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">개인정보관리</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">크리에이터신청</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">크리에이터활동</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">프로필관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">콘텐츠등록</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">콘텐츠관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- pc gnb -->
+
+		<!-- 모바일 gnb --><!-- 반응형으로 피씨 모바일 헤더 나누기 -->
+		<div class="type-mobile">
+
+			<!-- header_top -->
+			<div class="header-top">
+				<button type="button" class="btn-all-view" id="openNav">
+					<span>메뉴 전체보기</span>
+					<small></small>
+					<small></small>
+					<small></small>
+				</button>
+				<h1>
+					<a href="javascript:void(0);" target="_self">
+						<img src="../../images/logo_m.png" alt="design ground">
+					</a>
+				</h1>
+				<a href="javascript:void(0);" target="_self" class="btn-sch-top">
+					<span>검색</span>
+				</a>
+			</div>
+			<!-- header_top -->
+			<div class="layer-dim"></div>
+			<!-- nav -->
+			<div class="nav">
+				<article class="nav-in">
+					<!-- <div class="btn-wrap">
+						<button type="button" class="btn-close" id="closeNav">
+							<span>닫기</span>
+						</button>
+					</div> -->
+					<header>
+						<div class="top-name">
+							<strong>홍길동님</strong>안녕하세요.
+						</div>
+						<button type="button" class="btn-logout">
+							<span>로그아웃</span>
+						</button>
+					</header>
+					
+					<!-- nav -->
+					<nav>
+						<!-- gnb -->
+						<ul class="gnb" id="gnbM">
+							<li>
+								<a href="javascript:void(0);" target="_self">학습<br>과정</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+										<ul class="lnb-3">
+											<li>
+												<a href="javascript:void(0);" target="_self" class="opeth">3뎁스</a><!-- 현재메뉴 -->
+											</li>
+											<li>
+												<a href="javascript:void(0);" target="_self">3뎁스</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">실시간<br>학습</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정2-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정2-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">자료실</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정3-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정3-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">학습<br>지원</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정4-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정4-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">나의<br>학습실</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정5-1</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- gnb -->
+					</nav>
+				</article>
+				
+			</div>
+			<!-- nav -->
+
+			<!-- fnb -->
+			<div class="fnb">
+				<nav>
+					<ul>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습과정</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">실시간학습</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">자료실</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습지원</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- fnb -->
+	
+		</div>
+		<!-- 모바일 gnb -->
+		
+	</header>
+	<!-- header -->
+
+	<!-- content -->
+	<section class="sub">
+		<h2 class="hidden">서브컨텐츠</h2>
+		<div class="layout-inner">
+
+			<!-- snb-wrap -->
+			<div class="snb-wrap">
+				<h3 class="h3">스마트러닝</h3>
+				<nav class="snb-nav">
+					<ul class="depth2">
+						<li class="">
+							<a href="javascript:void(0);" target="_self">메뉴1</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">메뉴2</a>
+							<ul class="depth3">
+								<li class="active"><!-- 현재메뉴일때 active -->
+									<a href="javascript:void(0);" target="_self">메뉴2-1</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">메뉴2-2</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">메뉴3</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- sub-container -->
+			<div class="sub-container" id="content">
+				<!-- location -->
+				<div class="location">
+					<ul>
+						<li>home</li>
+						<li>스마트러닝</li>
+						<li>스마트러닝메이커</li>
+						<li>제작현황</li>
+					</ul>
+				</div>
+				<!-- location -->
+				<!-- sub-content -->
+				<div class="sub-content">
+					<h4 class="h4">제작현황</h4>
+
+					<!-- 나의 과정 요약 -->
+					<div class="cover">
+						<div class="head">
+							<div class="head-left">
+								<h5 class="h5">나의 과정 요약</h5>
+							</div>
+							<div class="head-right">
+								<a href="javascript:void(0);" class="btn-sm" target="_self">
+									<span>과정만들기</span>
+								</a>
+							</div>
+                        </div>
+						<div class="score-progress-wrap smartlearning-summary">
+							<div class="score-progress">
+								<ul>
+									<li>
+										<div class="score-progress score-progress-all">
+											<div class="text-box">
+												<p class="rate">10</p>
+											</div>
+											<figure class="bg-white"></figure>
+											<figure class="arc">
+												<canvas id="rate1"></canvas>
+											</figure>
+										</div>
+										<strong>전체과정수</strong>
+									</li>
+									<li>
+										<div class="score-progress score-progress-ing">
+											<div class="text-box">
+												<p class="rate">6</p>
+											</div>
+											<figure class="bg-white"></figure>
+											<figure class="arc">
+												<canvas id="rate2"></canvas>
+											</figure>
+										</div>
+										<strong>작업중</strong>
+									</li>
+									<li>
+										<div class="score-progress score-progress-wait">
+											<div class="text-box">
+												<p class="rate">1</p>
+											</div>
+											<figure class="bg-white"></figure>
+											<figure class="arc">
+												<canvas id="rate3"></canvas>
+											</figure>
+										</div>
+										<strong>검수대기</strong>
+									</li>
+									<li>
+										<div class="score-progress score-progress-operation">
+											<div class="text-box">
+												<p class="rate">1</p>
+											</div>
+											<figure class="bg-white"></figure>
+											<figure class="arc">
+												<canvas id="rate4"></canvas>
+											</figure>
+										</div>
+										<strong>운영과정수</strong>
+									</li>
+									<li><!-- 미운영과정수 추가. 디자인보완 -->
+										<div class="score-progress score-progress-no">
+											<div class="text-box">
+												<p class="rate">1</p>
+											</div>
+											<figure class="bg-white"></figure>
+											<figure class="arc">
+												<canvas id="rate5"></canvas>
+											</figure>
+										</div>
+										<strong>미운영과정수</strong>
+									</li>
+								</ul>
+							</div>
+							<div class="score-summary">
+								<ul>
+									<li class="score-summary-all">
+										<strong>356</strong>
+										<span>전체학습자</span>
+									</li>
+									<li class="score-summary-graduate">
+										<strong>290</strong>
+										<span>수료자</span>
+									</li>
+									<li class="score-summary-rate">
+										<strong>75<p>%</p></strong>
+										<span>수료율</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- 많이 학습한 과정 -->
+					<div class="cover">
+                        <div class="head">
+							<div class="head-left">
+								<h5 class="h5">많이 학습한 과정</h5>
+							</div>
+							<div class="head-right">
+								<a href="javascript:void(0);" class="btn-more" target="_self">
+									<span>더보기 +</span>
+								</a>
+							</div>
+                        </div>
+						<div class="list list-thumb">
+							<ul class="smartlearning-list-thumb">
+								<li>
+									<a href="javascript:void(0)" target="_self">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb1.jpg" alt="과정 섬네일">
+											</div>
+										</div>
+										<div class="cont">
+											<div class="title-in">
+												<span class="flag1">교양</span><!-- 추가. 디자인보완 -->
+												<strong class="title">[코어스킬T] 핵심인재의 조건 - 전략적 기획력전략적 기획력전략적 기획력전략적 기획력전략적 기획력</strong>
+											</div>
+											<!-- <div class="info-wrap2"> 삭제. 디자인보완
+												<div class="dl-prograssbar"> 
+													<dl class="dl-chart">
+														<dt>학습</dt>
+														<dd>
+															<div class="chart-stick-wrap2">
+																<div class="chart-stick-in type-learning">
+																	<div class="chart-stick">
+																		<div class="stick-in">
+																			<span class="type-my" style="width: 40%">
+																				<ins>학습</ins>
+																			</span>
+																		</div>
+																	</div>
+																	<em class="type-learning">40</em>
+																</div>
+															</div>
+														</dd>
+													</dl>
+													<dl class="dl-chart">
+														<dt>수료</dt>
+														<dd>
+															<div class="chart-stick-wrap2">
+																<div class="chart-stick-in">
+																	<div class="chart-stick">
+																		<div class="stick-in">
+																			<span class="type-my" style="width: 14%">
+																				<ins>수료</ins>
+																			</span>
+																		</div>
+																	</div>
+																	<em>14</em>
+																</div>
+															</div>
+														</dd>
+													</dl>
+												</div> 
+												<div class="chart-rate">
+													<div class="score-progress">
+														<div class="text-box">
+															<em class="default">수료율</em>
+															<p class="rate">46%</p>
+														</div>
+														<figure class="bg-white"></figure>
+														<figure class="arc">
+															<canvas id="rate5"></canvas>
+														</figure>
+													</div>
+												</div>
+											</div>-->
+											<div class="score-summary"><!-- 추가. 디자인보완 -->
+												<ul>
+													<li class="score-summary-all">
+														<strong>356</strong>
+														<span>전체학습자</span>
+													</li>
+													<li class="score-summary-graduate">
+														<strong>290</strong>
+														<span>수료자</span>
+													</li>
+													<li class="score-summary-rate">
+														<strong>75<p>%</p></strong>
+														<span>수료율</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" target="_self">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb1.jpg" alt="과정 섬네일">
+											</div>
+										</div>
+										<div class="cont">
+											<div class="title-in">
+												<span class="flag1">교양</span>
+												<strong class="title">[코어스킬T] 핵심인재의 조건</strong>
+											</div>
+											<div class="score-summary">
+												<ul>
+													<li class="score-summary-all">
+														<strong>356</strong>
+														<span>전체학습자</span>
+													</li>
+													<li class="score-summary-graduate">
+														<strong>290</strong>
+														<span>수료자</span>
+													</li>
+													<li class="score-summary-rate">
+														<strong>75<p>%</p></strong>
+														<span>수료율</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="list-thumb-none">
+									<div>
+										<span>학습한 과정이 없습니다.</span>
+										<p>* 과정을 신규로 제작하시고<br>임직원에게 업무역량을 공유해보세요.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+                    </div>
+
+					<!-- 작업중인 과정 -->
+					<div class="cover">
+                        <div class="head">
+							<div class="head-left">
+								<h5 class="h5">제작중인 과정</h5><!-- 타이틀 변경. 디자인보완 -->
+							</div>
+							<div class="head-right">
+								<a href="javascript:void(0);" class="btn-more" target="_self">
+									<span>더보기 +</span>
+								</a>
+							</div>
+                        </div>
+                        <div class="list-list type-btn">
+                            <ul>
+                                <li>
+                                    <div class="title-in title-course">
+										<span class="flag1">교양</span><!-- 추가. 디자인보완 -->
+                                        <strong class="title">줄리정의 IELTS Writing 불변의 법칙-Task 2 (Step-1)줄리정의 IELTS Writing 불변의 법칙-Task 2 (Step-1)줄리정의 IELTS Writing 불변의 법칙-Task 2 (Step-1)줄리정의 IELTS Writing 불변의 법칙-Task 2 (Step-1)</strong>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <a href="javascript:void(0)" class="btn" target="_self">
+                                            <span>과정제작</span>
+                                        </a>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="title-in title-course">
+										<span class="flag1">교양</span>
+                                        <strong class="title">[시원스쿨] NEW 일본어 왕초보 탈출 2탄</strong>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <a href="javascript:void(0)" class="btn" target="_self">
+                                            <span>과정제작</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="none-li">
+                                    <p class="none-text">등록된 내용이 없습니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+				<!-- sub-content -->
+			</div>
+			<!-- sub-container -->
+		</div>
+	</section>
+	<!-- content -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="layout-inner">
+			<strong>
+				<img src="../../images/logo_foot.png" alt="TLS Edumanager">
+			</strong>
+			<div class="foot-info">
+				<ul>
+					<li class="type-1">
+						<a href="javascript:void(0);">개인정보처리방침</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">이용약관</a>
+					</li>
+				</ul>
+				<address>서울시 영등포구</address>
+				<ul class="ul2">
+					<li>사업자등록번호 1111</li>
+					<li>123 tls@mail.com</li>
+				</ul>
+				<small>COPYRIGHT © <ins>TLS Edumanager</ins> ALL RIGHTS RESERVED.</small>
+			</div>
+			<div class="family-wrap">
+				<select class="select-foot" title="사이트바로가기 선택"> 
+					<option value="hide">사이트바로가기</option><!-- Option에 표시 안됨 -->
+					<option>선택선택선택선택선택선택선택선택선택선택선택선택</option>
+					<option>선택2</option>
+				</select>
+				<button type="button" class="btn-sm">
+					<span>이동</span>
+				</button>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+	<!-- 다크모드, 맨위로 이동 기능 추가. -->
+    <div class="quick-btn-wrap">
+        <button type="button" class="dark-toggle">
+            <span>다크 모드로 보기</span>
+        </button>
+        <button type="button" class="btn-move-top">
+            <span>맨위로 이동</span>
+        </button>
+    </div>
+
+
+</div>
+<script>
+	setEduListArc('rate1', 65, '#f15928');
+	setEduListArc('rate2', 25, '#ffa229');
+	setEduListArc('rate3', 15, '#00adef');
+	setEduListArc('rate4', 40, '#4db748');
+	setEduListArc('rate5', 30, '#767676'); // 색상 수정. 디자인보완
+	setEduListArc('rate6', 46, '#f15928');
+	
+	function setEduListArc(targetID, rate, strokeColor) {
+		var rateEnd = 2 * (rate / 100);
+		var canvas = document.getElementById(targetID);
+		var ctx = canvas.getContext('2d');
+		var x = 50;
+		var y = 50;
+		var radius = 47;
+		var startAngle = 0 * Math.PI;
+		var endAngle = rateEnd * Math.PI;
+		var counterClockwise = false;
+		ctx.beginPath();
+		ctx.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+		ctx.lineCap = "round";
+		ctx.lineWidth = 6;
+		ctx.strokeStyle=strokeColor;
+		ctx.stroke();
+	}
+</script>
+</body>
+
+</html>
