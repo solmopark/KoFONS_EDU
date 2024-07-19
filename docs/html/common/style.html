@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager : 스타일</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="stylesheet" type="text/css" href="../../css/extra.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+	<script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/fileUtil.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+	<style>
+        html {height: unset;}
+		body {}
+		hr {margin-bottom: 40px;}
+        article {margin-bottom: 40px;}
+
+        h2 {margin-bottom: 20px;font-size: 24px;font-weight: 600;line-height: 36px;color: #222;display: inline-block;position: relative;padding-right: 40px;background-color: #C1F5EB;}
+        h2::before {content: '';display: block;border-bottom: 1px solid #000;position: absolute;bottom: 0;width: 100%;}
+        .ui-wrap {padding: 100px 30px;}
+        .ui-nav {position: fixed;left: -2px;top: 0;z-index: 100;width: 100%;padding: 15px 30px 20px;border-bottom: 1px solid #eee;display: flex;gap: 10px;flex-wrap: wrap;background: #fff;}
+        .ui-nav a {display: inline-block;padding: 0 20px;margin: 0 2px;text-transform: uppercase;font-size: 10px;font-family: tahoma;line-height: 20px;color: #555;border: 1px solid #b0ac97;background: #f5ebc1;}
+        
+        .note {margin-bottom: 5px;color: #767676;}
+        .ui-cont .btn-wrap {display: flex;gap: 10px;}
+        .ui-cont .btn-wrap .btn, .ui-cont .btn-wrap .btn-line {width: 130px;}
+        .ui-cont .foot-wrap {justify-content: flex-start;margin-top: 0;}
+        h3 {margin: 30px 0 10px 0; font-size:16px; font-weight:600; color:#000;counter-increment: section;}
+        h3::before {content:counter(section) '. ';}
+
+        h4 {margin-bottom: 10px;font-size: 15px;}
+        h4::before {content: "-";}
+        h4 ins {color: #767676;margin-left: 10px;}
+        h4 ins::before {content: 'size:';}
+
+        .ui-wrap .more-box {position:relative; padding-top:31px; margin:10px 0;}
+        .ui-wrap xmp {display: block;margin: 20px 0;font-family: tahoma;font-weight: 400;font-size: 11px;line-height: 15px;color: #555;background: #f1f0f0;}
+        .ui-wrap .code {display:none; margin:0;}
+        .ui-wrap .btn-more {position:absolute; left:0; top:0; padding:3px 6px; font-size:12px; color:#fff; background:#f5c1cb;}
+
+        .colorbox .box {display: inline-flex;width:140px;height:80px; align-items: center;justify-content: center;color:#fff; vertical-align:top; box-sizing:border-box;}
+        .colorbox .box2 {display: inline-flex; width:140px; height:80px; align-items: center;justify-content: center;color:#000; vertical-align:top; box-sizing:border-box;}
+
+        .link-ex {color: #e32116;text-decoration: underline;}
+
+        .style-wrap {margin-bottom: 20px;}
+        .style-box {margin-bottom: 10px;}
+        .style-box.type-flex {display: flex;gap: 10px;}
+	</style>
+</head>
+
+<body>
+
+    <div class="ui-wrap">
+
+        <div class="ui-nav">
+            <a href="#font">font</a>
+            <a href="#iconFont">icon font</a>
+            <a href="#color">color</a>
+            <a href="#button">button</a>
+            <a href="#flag">flag</a>
+            <a href="#paging">paging</a>
+            <a href="#form">form</a>
+            <a href="#tab">tab</a>
+            <a href="#title">title</a>
+            <a href="#noData">no data</a>
+            <a href="#fileUpload">file upload</a>
+            <a href="#img">image</a>
+        </div>
+
+        <article id="font" class="ui-cont">
+            <h2>Font</h2>
+            <table>
+                <colgroup>
+                    <col style="width: 120px;">
+                    <col>
+                </colgroup>
+                <tr>
+                    <th class="tit">기본</th>
+                    <td>
+                        <p>폰트 : 노토산스 Noto Sans KR / 15px / #000 / 400 / 漢文</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="tit">타이틀(메뉴명)</th>
+                    <td>
+                        <h4 class="h4">폰트 : 노토산스 Noto Sans KR / 30px / #000 / 600 / 漢文</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="tit">본문타이틀1</th>
+                    <td>
+                        <h5 class="h5">폰트 : 노토산스 Noto Sans KR / 24px / #000 / 400 / 漢文</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="tit">본문타이틀2</th>
+                    <td>
+                        <h6 class="h6">폰트 : 노토산스 Noto Sans KR / 18px / #000 / 400 / 漢文</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="tit">버튼</th>
+                    <td>
+                        <p>폰트 : 노토산스 Noto Sans KR / 15px / #000 / 400 / 漢文</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="tit">검색/인풋/셀렉트</th>
+                    <td>
+                        <p>폰트 : 노토산스 Noto Sans KR / 15px / #000 / 400 / 漢文</p>
+                    </td>
+                </tr>
+            </table>
+        </article>
+
+        <article id="iconFont" class="ui-cont">
+            <h2>Icon Font</h2>
+            <table>
+                <colgroup>
+                    <col style="width: 120px;">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="tit">구글 아이콘폰트</th>
+                        <td>
+                            <p>
+                                <a href="https://fonts.google.com/icons?icon.style=Outlined" target="_blank">https://fonts.google.com/icons?icon.style=Outlined</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="note">
+                                @include font-icon-rounded 
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article id="color" class="ui-cont">
+            <h2>Color</h2>
+            <h3>Point Color</h3>
+            <div class="colorbox">
+                <div class="box" style="background: #000;">#000<br>$color-point1</div>
+                <div class="box" style="background: #f15928;">#f15928<br>$color-point2</div>
+                <div class="box" style="background: #e32116;">#e32116 - red text<br>$color-point1-text</div>
+                <div class="box" style="background: #4db748;">#4db748<br>$color-point3</div>
+                <div class="box" style="background: #00adef;">#00adef<br>$color-point4</div>
+            </div>
+            <h3>Font Color</h3>
+            <div class="colorbox">
+                <div class="box" style="background: #000;">#000<br>$text-color</div>
+                <div class="box" style="background: #353535;">#353535<br>$text-color2</div>
+                <div class="box" style="background: #595959;">#595959<br>$text-color3</div>
+                <div class="box" style="background: #767676;">#767676<br>$text-color4</div>
+                <div class="box" style="background: #aaa;">#aaa<br>$text-color5</div>
+            </div>
+            <h3>line Color</h3>
+            <div class="colorbox">
+                <div class="box2" style="border:1px solid #ccc">#ccc<br>$border-line</div>
+                <div class="box2" style="border:1px solid #e5e5e5">#e5e5e5<br>$border-line2</div>
+                <div class="box2" style="border:1px solid #000">#000<br>$border-line3</div>
+                <div class="box2" style="border:1px solid #d5d5d5">#d5d5d5<br>$border-line4</div>
+            </div>
+        </article>
+
+        <article id="button" class="ui-cont">
+            <h2>Button</h2>
+            <p class="note">기본 btn 기본 클래스에 필요한 요소의 클래스를 추가하여 사용.</p>
+            <p class="note">버튼은 button태그 a태그 둘 다 사용 가능.</p>
+            <h3>Type</h3>
+            <h4>Default Button : btn <ins>130*40</ins></h4>
+            <div class="btn-wrap">
+                <a href="javascript:void(0);" class="btn" target="_self">
+                    <span>기본 버튼</span>
+                </a>
+                <button type="button" class="btn" target="_self">
+                    <span>수강신청</span>
+                </button>
+                <button type="button" class="btn" target="_self">
+                    <span>학습하기</span>
+                </button>
+                <button type="button" class="btn" target="_self">
+                    <span>등록</span>
+                </button>
+            </div>
+            <div class="more-box">
+                <a href="#none" class="btn-more">소스보기</a>
+                <xmp class="code">
+                    <div class="btn-wrap">
+                        <a href="javascript:void(0);" class="btn" target="_self">
+                            <span>기본 버튼</span>
+                        </a>
+                        <button type="button" class="btn" target="_self">
+                            <span>수강신청</span>
+                        </button>
+                        <button type="button" class="btn" target="_self">
+                            <span>학습하기</span>
+                        </button>
+                        <button type="button" class="btn" target="_self">
+                            <span>등록</span>
+                        </button>
+                    </div>
+                </xmp>
+            </div>
+
+            <h4>Default Button Small : btn-sm <ins>auto*32</ins></h4>
+            <p class="note">리스트 상단 오른쪽에 쓰인다.</p>
+            <div class="btn-wrap">
+                <a href="javascript:void(0);" class="btn-sm" target="_self">
+                    <span>기본 버튼</span>
+                </a>
+                <button type="button" class="btn-sm btn-app" target="_self">
+                    <span>과정검색</span>
+                </button>
+                <button type="button" class="btn-sm btn-ask" target="_self">
+                    <span>수강신청</span>
+                </button>
+                <button type="button" class="btn-sm btn-ask2" target="_self">
+                    <span>후기등록</span>
+                </button>
+            </div>
+            <div class="more-box">
+                <a href="#none" class="btn-more">소스보기</a>
+                <xmp class="code">
+                    <div class="btn-wrap">
+                        <a href="javascript:void(0);" class="btn-sm" target="_self">
+                            <span>기본 버튼</span>
+                        </a>
+                        <button type="button" class="btn-sm btn-app" target="_self">
+                            <span>과정검색</span>
+                        </button>
+                        <button type="button" class="btn-sm btn-ask" target="_self">
+                            <span>수강신청</span>
+                        </button>
+                        <button type="button" class="btn-sm btn-ask2" target="_self">
+                            <span>후기등록</span>
+                        </button>
+                    </div>
+                </xmp>
+            </div>
+
+            <h4>Default Button Xsmall : btn-sm2 <ins>auto*32</ins></h4>
+            <div class="note">리스트 항목에 쓰인다. 
+                <a href="../05_myclass/myclass_08_1.html" class="link-ex" target="_blank">예시</a>
+            </div>
+            <div class="btn-wrap">
+                <a href="javascript:void(0);" class="btn-sm2" target="_self">
+                    <span>수료증</span>
+                </a>
+            </div>
+            <div class="more-box">
+                <a href="#none" class="btn-more">소스보기</a>
+                <xmp class="code">
+                    <div class="btn-wrap">
+                        <a href="javascript:void(0);" class="btn-sm2" target="_self">
+                            <span>수료증</span>
+                        </a>
+                    </div>
+                </xmp>
+            </div>
+
+            <h4>Default Line Button : btn-line , btn-cancel , btn-preview <ins>130*40</ins></h4>
+            <div class="btn-wrap">
+                <a href="javascript:void(0);" class="btn-line" target="_self">
+                    <span>기본 라인 버튼</span>
+                </a>
+                <button type="button" class="btn-cancel" target="_self">
+                    <span>취소</span>
+                </button>
+                <a href="javascript:void(0)" class="btn-preview" target="_self"><!-- 버튼 클래스명 수정. 디자인보완 -->
+                    <span>미리보기</span>
+                </a>
+            </div>
+            <div class="more-box">
+                <a href="#none" class="btn-more">소스보기</a>
+                <xmp class="code">
+                    <div class="btn-wrap">
+                        <a href="javascript:void(0);" class="btn-line" target="_self">
+                            <span>기본 라인 버튼</span>
+                        </a>
+                        <button type="button" class="btn-cancel" target="_self">
+                            <span>취소</span>
+                        </button>
+                    </div>
+                    <a href="javascript:void(0)" class="btn-preview" target="_self"><!-- 버튼 클래스명 수정. 디자인보완 -->
+                        <span>미리보기</span>
+                    </a>
+                </xmp>
+            </div>
+
+            <h4>Foot Button : btn-foot , btn-cancel , btn-list <ins>130*40</ins></h4>
+            <div class="foot-wrap">
+                <a href="javascript:void(0);" class="btn-foot btn-prev" target="_self">
+                    <span>이전</span>
+                </a>
+                <a href="javascript:void(0);" class="btn-foot btn-next" target="_self">
+                    <span>다음</span>
+                </a>
+                <a href="javascript:void(0)" class="btn-list" target="_self">
+                    <span>목록</span>
+                </a>
+                <a href="javascript:void(0)" class="btn-foot" target="_self">
+                    <span>등록</span>
+                </a>
+                <a href="javascript:void(0)" class="btn-cancel" target="_self">
+                    <span>취소</span>
+                </a>
+                <button type="button" class="btn-foot btn-thumbup">
+                    <span>추천</span>
+                </button>
+            </div>
+            <div class="more-box">
+                <a href="#none" class="btn-more">소스보기</a>
+                <xmp class="code">
+                    <div class="foot-wrap">
+                        <a href="javascript:void(0);" class="btn-foot btn-prev" target="_self">
+                            <span>이전</span>
+                        </a>
+                        <a href="javascript:void(0);" class="btn-foot btn-next" target="_self">
+                            <span>다음</span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-list" target="_self">
+                            <span>목록</span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-foot" target="_self">
+                            <span>등록</span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-cancel" target="_self">
+                            <span>취소</span>
+                        </a>
+                        <button type="button" class="btn-foot btn-thumbup">
+                            <span>추천</span>
+                        </button>
+                    </div>
+                </xmp>
+            </div>
+            <h3>Icon</h3>
+            <p class="note">btn-icon btn-종류를 추가해서 적는다.</p>
+            <div class="btn-wrap">
+                <button type="button" class="btn-icon btn-scrap">
+                    <span>스크랩</span>
+                </button>
+                <button type="button" class="btn-icon btn-view">
+                    <span>맛보기</span>
+                </button>
+                <button type="button" class="btn-icon btn-print">
+                    <span>프린트</span>
+                </button>
+                <button type="button" class="btn-icon btn-del">
+                    <span>삭제</span>
+                </button>
+                <button type="button" class="btn-icon btn-link2">
+                    <span>링크복사</span>
+                </button>
+                <button type="button" class="btn-icon btn-qr">
+                    <span>QR코드</span>
+                </button>
+            </div>
+            <div class="more-box">
+                <a href="#none" class="btn-more">소스보기</a>
+                <xmp class="code">
+                    <div class="btn-wrap">
+                        <button type="button" class="btn-icon btn-scrap">
+                            <span>스크랩</span>
+                        </button>
+                        <button type="button" class="btn-icon btn-view">
+                            <span>맛보기</span>
+                        </button>
+                        <button type="button" class="btn-icon btn-print">
+                            <span>프린트</span>
+                        </button>
+                        <button type="button" class="btn-icon btn-del">
+                            <span>삭제</span>
+                        </button>
+                        <button type="button" class="btn-icon btn-link2">
+                            <span>링크복사</span>
+                        </button>
+                        <button type="button" class="btn-icon btn-qr">
+                            <span>QR코드</span>
+                        </button>
+                    </div>
+                </xmp>
+            </div>
+
+
+        </article>
+
+        <article id="flag" class="ui-cont">
+            <h2>Flag</h2>
+            <h3>과정관련</h3>
+            <div>
+                <span class="flag1">소프트웨어개발</span>
+                <span class="flag1">교양</span>
+                <span class="flag2">고급</span>
+                <span class="flag2">교재</span>
+                <span class="flag2">환급</span>
+                <span class="flag2">모바일</span>
+                <span class="flag2">NCS</span>
+                <span class="flag3 ing">마감 3일전</span>
+                <span class="flag3 end">마감</span>
+                <span class="flag3 wait">신청시작전</span>
+                <span class="flag4 ing">학습중</span>
+                <span class="flag4 end">완료</span>
+                <span class="flag4 wait">대기</span>
+                <span class="d-day">00일</span>
+            </div>
+            <h3>구분 : flag7 , flag8</h3>
+            <div class="style-box">
+                <span class="flag7 essential">교육구분</span>
+                <span class="flag7 edu">필수구분</span>
+                <span class="flag7">대면</span>
+                <span class="flag7 type-2">비대면</span>
+                <span class="flag8">필수</span>
+                <span class="flag8 type-2">선택</span>
+            </div>
+
+            <h3>상태 : flag3</h3>
+            <div class="note">기간, 승인 항목에 쓰인다.
+                <a href="../06_home/home_01_1.html" class="link-ex" target="_blank">예시</a>
+            </div>
+            <div class="style-box">
+                <span class="flag3 ing">마감 3일전</span>
+                <span class="flag3 ing">진행중</span>
+                <span class="flag3 end">마감</span>
+                <span class="flag3 wait">신청시작전</span>
+                <span class="flag3 wait">대기</span>
+                <span class="flag3 end">종료</span>
+                <span class="flag3 end">참여완료</span>
+                <span class="flag3 ok">승인</span>
+            </div>
+
+            <h3>상태1 : state-text</h3>
+            <div class="note">결재 진행현황 항목에 쓰인다. 
+                <a href="../02_online/online_02.html" class="link-ex" target="_blank">예시</a>
+            </div>
+            <div class="style-box">
+                <span class="state-text ok">승인</span>
+                <span class="state-text no">반려</span>
+                <span class="state-text wait">대기</span>
+            </div>
+
+            <h3>상태2 : flag-text</h3>
+            <div class="note">이수현황 항목에 쓰인다. 
+                <a href="/html/05_myclass/myclass_04.html" class="link-ex" target="_blank">예시</a>
+            </div>
+            <div class="style-box">
+                <span class="flag-text isu">수료</span>
+                <span class="flag-text no-isu">반려</span>
+                <span class="flag-text wait">대기</span>
+                <span class="flag-text isu">이수</span>
+                <span class="flag-text no-isu">미이수</span>
+            </div>
+
+            <h3>상태3 : flag-md</h3>
+            <div class="note">학습홈메뉴에서 이수현황 항목에 쓰인다. 
+                <a href="../06_home/home_01_1.html" class="link-ex" target="_blank">예시</a>
+            </div>
+            <div class="style-box">
+                <span class="flag-md complete">응시완료</span>
+                <span class="flag-md complete">참여완료</span>
+                <span class="flag-md ok">수료</span>
+                <span class="flag-md ing">학습중</span>
+                <span class="flag-md end">학습완료</span>
+                <span class="flag-md ing2">수료진행중</span>
+            </div>
+
+        </article>
+
+        <article id="paging" class="ui-cont">
+            <h2>Paging</h2>
+            <h3>PC</h3>
+            <div class="type-pc" style="display: block;">
+                <div class="paging" style="justify-content: flex-start;">
+                    <a href="javascript:void(0);" class="prev">
+                        <span>이전페이지</span>
+                    </a>
+                    <a href="javascript:void(0);" class="on" title="선택됨">1</a>
+                    <a href="javascript:void(0);">2</a>
+                    <a href="javascript:void(0);">3</a>
+                    <a href="javascript:void(0);">4</a>
+                    <a href="javascript:void(0);">5</a>
+                    <a href="javascript:void(0);">6</a>
+                    <a href="javascript:void(0);">7</a>
+                    <a href="javascript:void(0);">8</a>
+                    <a href="javascript:void(0);">9</a>
+                    <a href="javascript:void(0);">10</a>
+                    <a href="javascript:void(0);" class="next">
+                        <span>다음페이지</span>
+                    </a>
+                </div>
+            </div>
+            <div class="more-box">
+                <a href="#none" class="btn-more">소스보기</a>
+                <xmp class="code">
+                    <div class="type-pc">
+                        <div class="paging">
+                            <a href="javascript:void(0);" class="prev">
+                                <span>이전페이지</span>
+                            </a>
+                            <a href="javascript:void(0);" class="on" title="선택됨">1</a>
+                            <a href="javascript:void(0);">2</a>
+                            <a href="javascript:void(0);">3</a>
+                            <a href="javascript:void(0);">4</a>
+                            <a href="javascript:void(0);">5</a>
+                            <a href="javascript:void(0);">6</a>
+                            <a href="javascript:void(0);">7</a>
+                            <a href="javascript:void(0);">8</a>
+                            <a href="javascript:void(0);">9</a>
+                            <a href="javascript:void(0);">10</a>
+                            <a href="javascript:void(0);" class="next">
+                                <span>다음페이지</span>
+                            </a>
+                        </div>
+                    </div>
+                </xmp>
+            </div>
+
+            <h3>Mobile</h3>
+            <div class="type-mobile" style="display: block;">
+                <div class="paging" style="justify-content: flex-start;">
+                    <a href="javascript:void(0);" class="prev">
+                        <span>이전</span>
+                    </a>
+                    <span class="page">
+                        <strong>1</strong>/<span>10</span>
+                    </span>
+                    <a href="javascript:void(0);" class="next">
+                        <span>다음</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="more-box">
+                <a href="#none" class="btn-more">소스보기</a>
+                <xmp class="code">
+                    <div class="type-mobile">
+                        <div class="paging">
+                            <a href="javascript:void(0);" class="prev">
+                                <span>이전</span>
+                            </a>
+                            <span class="page">
+                                <strong>1</strong>/<span>10</span>
+                            </span>
+                            <a href="javascript:void(0);" class="next">
+                                <span>다음</span>
+                            </a>
+                        </div>
+                    </div>
+                </xmp>
+            </div>
+            
+        </article>
+
+        <article id="form" class="ui-cont">
+            <h2>Form</h2>
+            <h3>input text</h3>
+            <div class="style-wrap">
+                <h4>input - input-box<ins>100%*35</ins></h4>
+                <div class="style-box type-flex">
+                    <input type="text" class="input-box">
+                    <input type="text" class="input-box" disabled="disabled" placeholder="disabled">
+                    <input type="text" class="input-box" readonly="readonly" placeholder="readonly">
+                </div>
+                <div class="note">상황, 영역에 맞는 사이즈별 클래스 (없을시 추가해서 사용)</div>
+                <div class="style-box type-flex">
+                    <input type="text" class="input-box min" placeholder="min">
+                    <input type="text" class="input-box mid" placeholder="mid">
+                    <input type="text" class="input-box max" placeholder="max">
+                </div>
+            </div>
+
+            <h3>selectbox</h3>
+            <div class="style-wrap">
+                <h4>selectbox - select<ins>170*35</ins></h4>
+                <div class="style-box type-flex">
+                    <select class="select" id="" title="셀렉트종류적기">
+                        <option>기본</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                    <select class="select" id="" title="셀렉트종류적기" disabled="disabled">
+                        <option>disabled</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                </div>
+    
+                <div class="note">상황, 영역에 맞는 사이즈별 클래스 (없을시 추가해서 사용)</div>
+                <div class="style-box type-flex">
+                    <select class="select min" id="" title="셀렉트종류적기">
+                        <option>min</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                    <select class="select mid" id="" title="셀렉트종류적기">
+                        <option>mid</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                    <select class="select max" id="" title="셀렉트종류적기">
+                        <option>max</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="style-wrap">
+                <h4>selectbox - select-sm<ins>170*28</ins></h4>
+                <div class="style-box type-flex">
+                    <select class="select-sm" id="" title="셀렉트종류적기">
+                        <option>기본</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                    <select class="select-sm" id="" title="셀렉트종류적기" disabled="disabled">
+                        <option>disabled</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                </div>
+                <div class="note">상황, 영역에 맞는 사이즈별 클래스 (없을시 추가해서 사용)</div>
+                <div class="style-box type-flex">
+                    <select class="select-sm min" id="" title="셀렉트종류적기">
+                        <option>min</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                    <select class="select-sm mid" id="" title="셀렉트종류적기">
+                        <option>mid</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                    <select class="select-sm max" id="" title="셀렉트종류적기">
+                        <option>max</option>
+                        <option>학습문의</option>
+                        <option>전체 전체 전체 전체 전체</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3>date picker</h3>
+            <div class="style-wrap">
+                <h4>date picker - datepicker</h4>
+                <div class="datepicker">
+                    <div class="date-input">
+                        <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                    </div>
+                    <span class="custom-form-space">~</span>
+                    <div class="date-input">
+                        <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                    </div>
+                </div>
+                <div class="datepicker">
+                    <div class="date-input">
+                        <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력" disabled>
+                    </div>
+                    <span class="custom-form-space">~</span>
+                    <div class="date-input">
+                        <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <h3>radio &amp; checkbox</h3>
+            <div class="style-wrap">
+                <h4>가로정렬 form-list</h4>
+                <div class="style-box">
+                    <ul class="form-list">
+                        <li>
+                            <input type="radio" name="radio01" class="custom-radio" id="radio01-01" checked="checked">
+                            <label for="radio01-01">라디오01</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio01" class="custom-radio" id="radio01-02">
+                            <label for="radio01-02">라디오02</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio01" class="custom-radio" id="radio01-03" disabled="disabled">
+                            <label for="radio01-03">disabled</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-box">
+                    <ul class="form-list">
+                        <li>
+                            <input type="checkbox" class="custom-check" id="check01-01" checked="checked">
+                            <label for="check01-01">체크박스01</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-check" id="check01-02">
+                            <label for="check01-02">체크박스02</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-check" id="check01-03" disabled="disabled">
+                            <label for="check01-03">disabled</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="style-wrap">
+                <h4>세로정렬 form-list type-vertical</h4>
+                <div class="style-box">
+                    <ul class="form-list type-vertical">
+                        <li>
+                            <input type="radio" name="radio01" class="custom-radio" id="radio01-01" checked="checked">
+                            <label for="radio01-01">라디오01</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio01" class="custom-radio" id="radio01-02">
+                            <label for="radio01-02">라디오02</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio01" class="custom-radio" id="radio01-03" disabled="disabled">
+                            <label for="radio01-03">disabled</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-box">
+                    <ul class="form-list type-vertical">
+                        <li>
+                            <input type="checkbox" class="custom-check" id="check01-01" checked="checked">
+                            <label for="check01-01">체크박스01</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-check" id="check01-02">
+                            <label for="check01-02">체크박스02</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-check" id="check01-03" disabled="disabled">
+                            <label for="check01-03">disabled</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Textarea</h3>
+            <div class="style-wrap">
+
+                <div class="style-wrap">
+                    <h4>Default textarea - textarea</h4>
+                    <textarea class="textarea" name="" id="" cols="30" rows="3"></textarea>
+                </div>
+
+                <div class="style-wrap">
+                    <h4>라인없는 textarea - textarea2</h4>
+                    <textarea class="textarea2" name="" id="" cols="30" rows="3" placeholder="라인없는 영역"></textarea>
+                </div>
+                <div class="style-wrap">
+                    <h4>입력 텍스트있는 textarea - textarea-wrap3</h4>
+                    <div class="textarea-wrap3">
+                        <textarea class="textarea3" id="id1" rows="4" placeholder=""></textarea>
+                        <div class="cmt-write-box-count">
+                            <em>0</em>
+                            <small>자 입력</small><!-- 추가. 20231012 -->
+                            <span>2000</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </article>
+
+        <article id="tab" class="ui-cont">
+            <h2>Tab</h2>
+
+            <p class="note">tab-area , tab-area2 둘다 사용한다. 탭 내용이 나오는 영역에는 tab-cont로 감싸고 제목은 히든처리한다. </p>
+            <div class="tab-area">
+                <ul>
+                    <li class="on" title="선택됨">
+                        <a href="javascript:void(0);" target="_self">과정안내<ins>12</ins></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_self">목차</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_self">학습후기</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-area2">
+                <ul>
+                    <li class="on" title="선택됨">
+                        <a href="javascript:void(0);" target="_self">학습 진행중<ins>12</ins></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_self">학습 대기중<ins>12</ins></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_self">학습 완료<ins>12</ins></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-cont">
+                <strong class="hidden">학습 진행중</strong><!-- 현재 탭 제목을 써준다. -->
+                탭내용
+            </div>
+
+            <div class="more-box">
+                <a href="#none" class="btn-more">소스보기</a>
+                <xmp class="code">
+                    <div class="tab-area2">
+                        <ul>
+                            <li class="on" title="선택됨">
+                                <a href="javascript:void(0);" target="_self">학습 진행중</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" target="_self">학습 대기중</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" target="_self">학습 완료</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <strong class="hidden">학습 진행중</strong><!-- 현재 탭 제목을 써준다. -->
+                        탭내용
+                    </div>
+                </xmp>
+            </div>
+
+        </article>
+
+        <article id="title" class="ui-cont">
+            <h2>Title</h2>
+            <div class="style-box">
+                <h5 class="h5">본문타이틀1 : 노토산스 Noto Sans KR / 24px / #242424 / 400</h5>
+                <h6 class="h6">본문타이틀2 : 노토산스 Noto Sans KR / 18px / #242424 / 400</h6>
+                <div class="note">상세화면 타이틀에 쓰인다. 
+                    <a href="../02_online/online_02.html" class="link-ex" target="_blank">예시</a>
+                </div>
+            </div>
+        </article>
+
+        <article id="noData" class="ui-cont">
+            <h2>No Data</h2>
+            <p class="note">리스트에 없을때는 해당 li에 none-li를 적는다.
+                <a href="../02_online/online_01_1.html" class="link-ex" target="_blank">예시</a>
+            </p>
+            <div class="style-box">
+                <p class="none-text">등록된 내용이 없습니다.</p>
+            </div>
+        </article>
+
+        <article id="fileUpload" class="ui-cont">
+            <h2>File upload</h2>
+
+            <div class="file-upload-wrap">
+
+                <div class="upload-container"><!-- 샘플등록과 동일 -->
+                    <div class="upload-progress"><div class="progress"></div></div>
+                    <div class="upload-dropzone-text">
+                        <i class="material-icons-outlined">cloud_upload</i><span>첨부할 파일을 끌어다 놓거나</span>
+                        <label class="btn-find"><!-- 클래스명 수정. 20220905. 샘플등록과 동일 -->
+                            찾아보기
+                            <input id="" name="" type="file" multiple="multiple">
+                        </label>
+                    </div>
+                </div>
+        
+                <div class="k-content">
+                    <input name="multipartFile" id="files" type="file">
+                </div>
+
+                <!-- 업로드된 파일리스트 -->
+                <div class="k-upload">
+                    <ul class="k-upload-files">
+                        <li class="k-file">
+                            <div class="k-file-extension-wrapper"></div>
+                            <div class="k-file-name-size-wrapper">
+                                <span class="k-file-name">img_name.png</span>
+                                <span class="k-file-size">1.88 KB</span>
+                            </div>
+                            <div class="k-upload-status">
+                                <a href="#0" traget="_blank" download class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                                <a href="#0" traget="_blank" class="k-upload-action"><i class="k-icon k-i-close"></i></a>
+                            </div>
+                        </li>
+                        <li class="k-file">
+                            <div class="k-file-extension-wrapper"></div>
+                            <div class="k-file-name-size-wrapper">
+                                <span class="k-file-name">img_name.png</span>
+                                <span class="k-file-size">1.88 KB</span>
+                            </div>
+                            <div class="k-upload-status">
+                                <a href="#0" traget="_blank" download class="k-upload-action"><i class="k-icon k-i-download"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //업로드된 파일리스트 -->
+        
+                <div class="alert alert-secondary">
+                    <em>파일 등록 시 유의사항</em>
+                    <p>동영상 파일은 MP4, 최대 1GB까지 등록이 가능하며, 등록 후 파일 변환 시 변환 오류로 재등록 해야 할 수 있습니다.</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="img" class="ui-cont">
+            <h2>image</h2>
+
+            <p class="note">반응형시 비율에 맞게 줄어들고 늘어난다. </p>
+            <div class="img-box" style="max-width: 400px">
+
+                <div class="thumb-wrap">
+                    <a href="javascript:void(0);" target="_self">
+                        <div class="thumb">
+                            <img src="../../images/img_thumb1.jpg" alt="과정 섬네일">
+                        </div>
+                        <div class="flag-wrap">
+                            <span class="flag7">대면</span>
+                            <span class="flag7 type-2">비대면</span>
+                            <span class="flag8">필수</span>
+                            <span class="flag8 type-2">선택</span>
+                        </div>
+                        <div class="time">00분</div>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+
+
+	<!-- 퍼블용 달력 스크립트 (개발에선 상관없음) -->
+    <script>
+        // 달력 기간
+    $(".dateGroup").each(function () {
+        let inputStart = $(this).find("input.startDate");
+        let inputEnd = $(this).find("input.endDate");
+
+        inputStart.datepicker({
+            dateFormat: "yy.mm.dd",
+            maxDate: inputEnd.val(),
+            onSelect: function (selectDate) {
+                selectFrom(selectDate);
+            }
+        });
+
+        inputEnd.datepicker({
+            dateFormat: "yy.mm.dd",
+            minDate: inputStart.val(),
+            onSelect: function (selectDate) {
+                selectTo(selectDate)
+            }
+        });
+
+        // 종료일
+        function selectFrom(selectedDate) {
+            inputEnd.datepicker('option', {
+                minDate: selectedDate
+            });
+        }
+
+        // 시작일
+        function selectTo(selectedDate) {
+            inputStart.datepicker('option', {
+                maxDate: selectedDate
+            });
+        }
+    });
+
+    // 달력
+    $('.date-picker').datepicker();
+
+    $(function(){
+	$('.ui-nav a').click(function(){
+		var tar = $(this).attr('href');
+		var tarPos = $(tar).offset().top;
+			tarPos = tarPos - $('.ui-nav').outerHeight();
+		$('html,body').animate({'scrollTop':tarPos}, 300);
+		return false;
+	});
+	$('.ui-wrap .more-box .btn-more').click(function(){
+		$(this).next('.code').stop().slideToggle(200);
+	});
+});
+
+    </script>
+
+</body>
+
+</html>

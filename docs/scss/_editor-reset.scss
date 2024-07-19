@@ -1,0 +1,25 @@
+@charset "UTF-8";
+// 에디터 리셋
+.editor-reset {}
+.editor-reset body {display: block;margin: 8px;}
+.editor-reset p {display: block;/*margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;*/}
+.editor-reset dl {display: block;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;}
+.editor-reset dl dd {display: block;margin-inline-start: 40px;}
+.editor-reset table {display: table;border-collapse: separate;box-sizing: border-box;text-indent: initial;border-spacing: 2px;border-color: grey;}
+.editor-reset table th {display: table-cell;vertical-align: inherit;font-weight: bold;text-align: -internal-center;}
+.editor-reset ul {display: block;list-style-type: disc;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;}
+.editor-reset ol {display: block;list-style-type: decimal;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0;margin-inline-end: 0;padding-inline-start: 40px}
+
+.editor-reset li {display: list-item;text-align: -webkit-match-parent;}
+.editor-reset h1 {display: block;font-size: 2em;margin-block-start: 0.67em;margin-block-end: 0.67em;margin-inline-start: 0;margin-inline-end: 0;font-weight: bold}
+.editor-reset h2 {display: block;font-size: 1.5em;margin-block-start: 0.83em;margin-block-end: 0.83em;margin-inline-start: 0;margin-inline-end: 0;font-weight: bold}
+.editor-reset h3 {display: block;font-size: 1.17em;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0;margin-inline-end: 0;font-weight: bold}
+.editor-reset h4 {display: block;margin-block-start: 1.33em;margin-block-end: 1.33em;margin-inline-start: 0;margin-inline-end: 0;font-weight: bold}
+.editor-reset h5 {display: block;font-size: .83em;margin-block-start: 1.67em;margin-block-end: 1.67em;margin-inline-start: 0;margin-inline-end: 0;font-weight: bold}
+.editor-reset h6 {display: block;font-size: .67em;margin-block-start: 2.33em;margin-block-end: 2.33em;margin-inline-start: 0;margin-inline-end: 0;font-weight: bold}
+.editor-reset u, .editor-reset ins {text-decoration: underline}
+.editor-reset abbr[title], .editor-reset acronym[title] {text-decoration: dotted underline;}
+.editor-reset strong, .editor-reset b {font-weight: bold}
+.editor-reset i, .editor-reset cite, .editor-reset em, .editor-reset var, .editor-reset address, .editor-reset dfn {font-style: italic}
+.editor-reset small {font-size: smaller}
+.editor-reset s, .editor-reset strike, .editor-reset del {text-decoration: line-through} 

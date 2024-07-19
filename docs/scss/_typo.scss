@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 400;  // 기본
+  src: url('../fonts/NotoSansKR-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 600;  // 볼드
+  src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Material Symbols Rounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/icon-font/Material-Symbols-Rounded.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Material Symbols Rounded';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/icon-font/Material-Symbols-Rounded-Fill.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Material Symbols Rounded Fill';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/icon-font/Material-Symbols-Rounded-Fill.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/icon-font/Material-Symbols-Outlined.woff2') format('woff2');
+}

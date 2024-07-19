@@ -1,0 +1,249 @@
+// 웹폰트
+%font-icon {
+  font-family: 'Material Symbols';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  vertical-align: top;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+// 웹폰트
+.font-icon {
+  font-family: 'Material Symbols';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 24px;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-icon-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-icon-round {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+// 기본 아이콘 설정
+// 아이콘 유니코드는 아래 주소 참고 https://fonts.google.com/
+
+
+%k-icon,
+[class*=k-icon-] {
+  @extend %font-icon; //웹폰트 사용
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 100%;
+  padding: 0;
+  margin-right: 4px;
+
+  &::before {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin inner-icon($icon, $font-size:22px) {
+  &::before {
+    content: $icon;
+    font-size: $font-size;
+    font-family: $font-Outlined;
+    font-size: 20px;
+  }
+
+  &.icon-only {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+  }
+} 
+
+.k-button-general {transition: all 0.3s;
+  // @include btn-default($btn-secondary, $btn-secondary-hover, $btn-text-color-default);
+  border-radius: 4px;box-sizing: border-box;border: 1px solid #000;white-space: nowrap;font-size: 1.4rem;
+  &.on {border: 0;background: $color-point1;color: #fff;
+    &:hover {background-color: $color-point1;border-color: $color-point1;}
+  }
+
+  &:active, &:focus, &:hover {
+    // border-color: #c0c0c0;
+  }
+  &:hover {transform: scale(1.04,1.04);transition: all 0.3s;background-color: #fff;border-color: #000;}
+  i {transition: all 0.3s;}
+}
+.k-icon-upload {
+  @include inner-icon("\f09b", 20px);
+}
+
+.k-icon-thumb {
+  @include inner-icon("\e3f4", 20px);
+}
+
+.k-icon-crop {
+  @include inner-icon("\e3be", 20px);
+}
+
+.k-icon-text {
+  @include inner-icon("\ef42", 20px);font-family: $font-Outlined;
+}
+
+.k-icon-mark {
+  @include inner-icon("\e8d0", 20px);
+}
+
+.k-icon-link {
+  @include inner-icon("\e157", 20px);
+}
+
+.k-icon-download {
+  @include inner-icon("\e2c4", 22px);
+}
+
+.k-icon-check {
+  @include inner-icon("\e5ca");
+}
+
+.k-icon-cancel {
+  @include inner-icon("\e14a");
+}
+
+.k-icon-popup {
+  @include inner-icon("\e02e", 22px);
+}
+
+// 관리자 소스 (지식만들기)
+.k-textbox {
+  width: 100%;
+  padding: 0 12px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #000;
+  letter-spacing: -0.02em;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #dfdfdf;
+  &.mid1 {width: 90px;}
+  &.mid2 {width: 140px;}
+}
+.k-textbox:not(:-webkit-autofill) {
+  -webkit-animation-name: autoFillEnd;
+  animation-name: autoFillEnd;
+}
+textarea.k-textbox {
+  min-height: inherit;
+  height: 80px;
+  padding: 10px 12px;
+  line-height: 20px;
+  overflow-y: auto;
+  resize: none;
+  &.type-2 {border: 0;background-color: rgba(255, 255, 255, 0.5);height: 300px;}
+}
+.k-button-basic {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  position: relative;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 15px;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 34px;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #000;
+  border: 1px solid #000;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-transition: all ease-in 0.03s;
+  transition: all ease-in 0.03s;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 100px;
+    height: 40px;
+    line-height: 38px;
+}
+.k-button-proce {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 15px;
+  height: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #000;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all ease-in 0.03s;
+
+  border-radius: 4px;
+}
+
+.table {width: 100%;border-bottom: $border-line2;table-layout: fixed;
+  th {border-right: $border-line2;background-color: #f0f0f0;}
+  th,
+  td {padding: 6px 10px;vertical-align: middle;border-top: 1px solid #dbdbdb;height: 40px;word-wrap: break-word;box-sizing: border-box;
+    &.title {text-align: left;@include ellipsis;padding: 0 30px;
+      a {vertical-align: middle;
+        &:hover {text-decoration: underline;}
+      }
+    }
+    img {width: 100%;height: auto;}
+  }
+}
+
+.form-row {display: flex;flex-wrap: wrap;
+  .col-auto {flex: 0 0 auto;width: auto;max-width: 100%;
+    &.max {flex: 1;}
+  }
+}
+.form-row > .col:first-child, .form-row > [class*=col-]:first-child {
+  padding-left: 0;
+}
+.form-row > .col, .form-row > [class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
