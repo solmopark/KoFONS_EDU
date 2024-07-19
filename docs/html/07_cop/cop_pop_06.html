@@ -1,0 +1,747 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">게시판설정</h2>
+            </header>
+            <!-- pop-header -->
+
+            <!-- pop-cont -->
+            <div class="pop-cont">
+
+                <!-- cover -->
+                <div class="cover">
+                    <div class="head">
+                        <h5 class="pop-h5">게시판 설정</h5>
+                    </div>
+                    <div class="list-write">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>게시판명</dt>
+                                    <dd>
+                                        <input type="text" class="input-box mid"> 
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>게시판유형</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio01" class="custom-radio" id="radio01-01" checked="checked">
+                                                <label for="radio01-01">일반게시판</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio01" class="custom-radio" id="radio01-02">
+                                                <label for="radio01-02">카드게시판</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio01" class="custom-radio" id="radio01-03">
+                                                <label for="radio01-03">이미지게시판</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>노출방식</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio02" class="custom-radio" id="radio02-01" checked="checked">
+                                                <label for="radio02-01">리스트</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio02" class="custom-radio" id="radio02-02">
+                                                <label for="radio02-02">블로그</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio02" class="custom-radio" id="radio2-03">
+                                                <label for="radio02-03">썸네일</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>글쓰기_분류선택</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio03" class="custom-radio" id="radio03-01" checked="checked">
+                                                <label for="radio03-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio03" class="custom-radio" id="radio03-02">
+                                                <label for="radio03-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>글쓰기_썸네일</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio04" class="custom-radio" id="radio04-01" checked="checked">
+                                                <label for="radio04-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio04" class="custom-radio" id="radio04-02">
+                                                <label for="radio04-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>글쓰기_사진내용</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio05" class="custom-radio" id="radio05-01" checked="checked">
+                                                <label for="radio05-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio05" class="custom-radio" id="radio05-02">
+                                                <label for="radio05-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>글쓰기_첨부파일</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio06" class="custom-radio" id="radio06-01" checked="checked">
+                                                <label for="radio06-01">일반 파일첨부</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio06" class="custom-radio" id="radio06-02">
+                                                <label for="radio06-02">대용량 파일첨부</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio06" class="custom-radio" id="radio06-03">
+                                                <label for="radio06-03">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>글쓰기_최소글자수</dt>
+                                    <dd>
+                                        <div class="flex-input">
+                                            <input type="text" class="input-box min">
+                                            <span class="space-text">글자</span>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>글보기 권한</dt>
+                                    <dd>
+                                        <div class="flex">
+                                            <div class="flex-item">
+                                                <ul class="form-list">
+                                                    <li>
+                                                        <input type="radio" name="radio07" class="custom-radio" id="radio07-01" checked="checked">
+                                                        <label for="radio07-01">전체</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="radio07" class="custom-radio" id="radio07-02">
+                                                        <label for="radio07-02">본인</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="radio07" class="custom-radio" id="radio07-03">
+                                                        <label for="radio07-03">일부</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item">
+                                                <em>10명</em>
+                                                <a href="javascript:void(0);" class="btn-sm">
+                                                    <span>관리</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>추천 기능</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio08" class="custom-radio" id="radio08-01" checked="checked">
+                                                <label for="radio08-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio08" class="custom-radio" id="radio08-02">
+                                                <label for="radio08-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>댓글 기능</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio09" class="custom-radio" id="radio09-01" checked="checked">
+                                                <label for="radio09-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio09" class="custom-radio" id="radio09-02">
+                                                <label for="radio09-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>댓글_최소글자수</dt>
+                                    <dd>
+                                        <div class="flex-input">
+                                            <input type="text" class="input-box min">
+                                            <span class="space-text">글자</span>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>댓글의 댓글 기능</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio10" class="custom-radio" id="radio10-01" checked="checked">
+                                                <label for="radio10-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio10" class="custom-radio" id="radio10-02">
+                                                <label for="radio10-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>댓글의 추천 기능</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio11" class="custom-radio" id="radio11-01" checked="checked">
+                                                <label for="radio11-01">사용</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio11" class="custom-radio" id="radio11-02">
+                                                <label for="radio11-02">미사용</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>게시판 관리자</dt>
+                                    <dd>
+                                        <div class="flex-input">
+                                            <input type="text" class="input-box">
+                                            <a href="javascript:void(0);" class="btn-sm">
+                                                <span>추가</span>
+                                            </a>
+                                        </div>
+                                        <div class="flex">
+                                            <ul class="dot-list">
+                                                <li>
+                                                    <div class="my-info">
+                                                        <small>김철수</small>
+                                                        <small>12343</small>
+                                                        <small>sample-hong</small>
+                                                        <small>경영전략관리팀</small>
+                                                    </div>
+                                                    <button type="button" class="btn-x2">
+                                                        <span>삭제</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <div class="my-info">
+                                                        <small>김철수</small>
+                                                        <small>12343</small>
+                                                        <small>sample-hong</small>
+                                                        <small>경영전략관리팀</small>
+                                                    </div>
+                                                    <button type="button" class="btn-x2">
+                                                        <span>삭제</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>글쓰기 권한</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio12" class="custom-radio" id="radio12-01" checked="checked">
+                                                <label for="radio12-01">전체</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio12" class="custom-radio" id="radio12-02">
+                                                <label for="radio12-02">일부</label>
+                                            </li>
+                                        </ul>
+                                        <div class="flex-input">
+                                            <input type="text" class="input-box">
+                                            <a href="javascript:void(0);" class="btn-sm">
+                                                <span>추가</span>
+                                            </a>
+                                        </div>
+                                        <div class="flex">
+                                            <ul class="dot-list">
+                                                <li>
+                                                    <div class="my-info">
+                                                        <small>김철수</small>
+                                                        <small>12343</small>
+                                                        <small>sample-hong</small>
+                                                        <small>경영전략관리팀</small>
+                                                    </div>
+                                                    <button type="button" class="btn-x2">
+                                                        <span>삭제</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <div class="my-info">
+                                                        <small>김철수</small>
+                                                        <small>12343</small>
+                                                        <small>sample-hong</small>
+                                                        <small>경영전략관리팀</small>
+                                                    </div>
+                                                    <button type="button" class="btn-x2">
+                                                        <span>삭제</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>노출여부</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="radio" name="radio13" class="custom-radio" id="radio13-01" checked="checked">
+                                                <label for="radio13-01">노출</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radio13" class="custom-radio" id="radio13-02">
+                                                <label for="radio13-02">미노출</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- cover -->
+
+                <!-- cover -->
+                <div class="cover">
+                    <div class="head">
+                        <h5 class="pop-h5">게시판 입력항목</h5>
+                    </div>
+                    <div class="data-table type-center">
+                        <table>
+                            <colgroup>
+                                <col style="width: 15%;">
+                                <col style="width: 20%;">
+                                <col style="width: 30%;">
+                                <col style="width: 12.5%;">
+                                <col style="width: 12.5%;">
+                                <col style="width: 10%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>필드명</th>
+                                    <th>노출항목명</th>
+                                    <th>설명</th>
+                                    <th>노출여부</th>
+                                    <th>필수여부</th>
+                                    <th>관리</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>제목</td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" class="btn-sm">
+                                            <span>관리</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>분류</td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" class="btn-sm">
+                                            <span>관리</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>썸네일</td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>이미지 등록</td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" class="btn-sm">
+                                            <span>관리</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>글내용</td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" class="btn-sm">
+                                            <span>관리</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>파일첨부</td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>영상업로드</td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>영상URL</td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>기타</td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td><input type="text" class="input-box"></td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="custom-check alone" id="check000-00">
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- cover -->
+
+                <!-- cover -->
+                <div class="cover">
+                    <div class="head">
+                        <h5 class="pop-h5">노출항목 설정</h5>
+                    </div>
+                    <div class="list-write">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>일반게시판_리스트</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check01-01" checked="checked">
+                                                <label for="check01-01">첨부파일</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check01-02">
+                                                <label for="check01-02">작성자</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check01-03">
+                                                <label for="check01-03">등록일</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check01-04">
+                                                <label for="check01-04">조회수</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check01-05">
+                                                <label for="check01-05">추천수</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check01-06">
+                                                <label for="check01-06">댓글수</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>일반게시판_블로그</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check02-01" checked="checked">
+                                                <label for="check02-01">분류</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check02-02">
+                                                <label for="check02-02">글요약</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check02-03">
+                                                <label for="check02-03">조회수</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check02-04">
+                                                <label for="check02-04">추천수</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check02-05">
+                                                <label for="check02-05">댓글수</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check02-06">
+                                                <label for="check02-06">등록일</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check02-07">
+                                                <label for="check02-07">작성자</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check02-08">
+                                                <label for="check02-08">이미지(영상)</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>일반게시판_썸네일</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check03-01" checked="checked">
+                                                <label for="check03-01">조회수</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check03-02">
+                                                <label for="check03-02">추천수</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check03-03">
+                                                <label for="check03-03">댓글수</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check03-04">
+                                                <label for="check03-04">등록자</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check03-05">
+                                                <label for="check03-05">등록일</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>이미지형 게시판</dt>
+                                    <dd>
+                                        <ul class="form-list">
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check04-01" checked="checked">
+                                                <label for="check04-01">글요약</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check04-02">
+                                                <label for="check04-02">이름</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check04-03">
+                                                <label for="check04-03">부서</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check04-04">
+                                                <label for="check04-04">직급</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="custom-check" id="check04-05">
+                                                <label for="check04-05">등록일</label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- cover -->
+
+            </div>
+            <!-- pop-cont -->
+
+            <!-- pop-foot -->
+            <footer class="pop-foot">
+                <a href="javascript:void(0);" class="btn-pop" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+                    <span>저장</span>
+                </a>
+            </footer>
+            <!-- pop-foot -->
+    
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<div class="quick-btn-wrap type-trick">
+    <p>이 영역은 팝업에서의 퍼블확인용으로 실제 화면에선 보이지 않음.</p>
+    <button type="button" class="dark-toggle">
+        <span>다크 모드로 보기</span>
+    </button>
+</div>
+
+
+<script src="../../js/layer_popup.js"></script><!-- 레이어팝업 js -->
+</body>
+
+</html>
