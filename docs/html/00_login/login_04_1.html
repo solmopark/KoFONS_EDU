@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="TLS Edumanager">
+    <meta name="description" content="TLS Edumanager">
+    <meta property="og:title" content="TLS Edumanager">
+    <meta property="og:image" content="../../images/link_thumb.png">
+    <meta property="og:description" content="TLS Edumanager">
+    <title>TLS Edumanager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"><!-- 구글 아이콘 폰트 -->
+    <link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+    <link rel="icon" href="../../images/favicon.ico">
+    <script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="login-wrap">
+        <article class="login-in">
+            <header>
+                <h1>
+                    <img src="../../images/logo_login.png" alt="TLS Edumanager">
+                </h1>
+            </header>
+
+            <div class="change-passwd">
+                <div class="login-text">
+                    <strong>회원님의 소중한 개인정보를 보호하기 위하여 <span class="point-text">비밀번호를 변경</span>해 주세요.</strong>
+                    <p>
+                        <em>홍길동</em>님께서는 장기간 비밀번호를 변경하지 않고, 동일한 비밀번호를 사용 중입니다. <br />
+                        비밀번호를 등록/변경하신 지 OO일이 지난 경우 회원님의 소중한 개인정보를<br />
+                        보호하기 위하여 비밀번호 변경을 안내하고 있습니다.
+                    </p>
+                </div>
+
+                <!-- login-form -->
+                <div class="login-form">
+                    <h2>비밀번호 변경</h2>
+                    <form>
+                        <fieldset>
+                            <legend>비밀번호 변경</legend>
+                            <ul class="login-ul">
+                                <li>
+                                    <label for="now-pw">현재 비밀번호</label>
+                                    <input type="password" id="now-pw" class="input-login" placeholder="현재 비밀번호">
+                                </li>
+                                <li>
+                                    <label for="new-pw">새 비밀번호</label>
+                                    <input type="password" id="new-pw" class="input-login" placeholder="새 비밀번호">
+                                </li>
+                                <li>
+                                    <label for="conf-pw">새 비밀번호 확인</label>
+                                    <input type="password" id="conf-pw" class="input-login" placeholder="새 비밀번호 확인">
+                                </li>
+                            </ul>
+                            <p class="id-check">
+                                <span class="point-text">새 비밀번호와 새 비밀번호 확인이 일치하지 않습니다.</span>
+                            </p>
+                            <div class="btn-wrap2 flex">
+                                <button type="button" class="btn-login">변경하기</button>
+                                <button type="button" class="btn-login btn-login2">다음에 변경하기</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- login-form -->
+            </div>
+        </article>
+
+        <!-- 다크모드, 맨위로 이동 기능 추가. -->
+        <div class="quick-btn-wrap">
+            <button type="button" class="dark-toggle">
+                <span>다크 모드로 보기</span>
+            </button>
+            <button type="button" class="btn-move-top">
+                <span>맨위로 이동</span>
+            </button>
+        </div>
+        
+    </div>
+</body>
+
+</html>

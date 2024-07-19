@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="TLS Edumanager">
+    <meta name="description" content="TLS Edumanager">
+    <meta property="og:title" content="TLS Edumanager">
+    <meta property="og:image" content="../../images/link_thumb.png">
+    <meta property="og:description" content="TLS Edumanager">
+    <title>TLS Edumanager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"><!-- 구글 아이콘 폰트 -->
+    <link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+    <link rel="icon" href="../../images/favicon.ico">
+    <script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="login-wrap type-2">
+    <article class="login-in2 type-long"><!-- 내용이 긴 화면엔 type-long--><!-- 20221205 -->
+        <header>
+            <h1>
+                <img src="../../images/logo_login.png" alt="TLS Edumanager">
+            </h1>
+        </header>
+        <div class="agree-cont">
+            <h3 class="agree-title">회원가입</h3>
+            <div class="cover">
+                <div class="head">
+                    <h4>가입정보 입력</h4>
+                </div>
+                <div class="list-write">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id1">회원구분<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <select class="select" id="id1" title="회원구분">
+                                        <option>010</option>
+                                        <option>학습문의</option>
+                                        <option>전체 전체 전체 전체 전체</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id1">이름<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <input type="text" title="이름" class="input-box mid" id="id1">
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id1">생년월일<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <input type="text" title="생년월일" class="input-box mid" id="id1">
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id1">성별<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <ul class="form-list">
+                                        <li>
+                                            <input type="radio" name="radio03" class="custom-radio" id="radio03-01" checked="checked">
+                                            <label for="radio03-01">남성</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="radio03" class="custom-radio" id="radio03-02">
+                                            <label for="radio03-02">여성</label>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id1">아이디<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <div class="flex">
+                                        <input type="text" title="아이디" class="input-box mid" id="id7">
+                                        <a href="javascript:void(0)" class="btn-sm btn-comm">
+                                            <span>중복체크</span>
+                                        </a>
+                                        <div class="bottom2">
+                                            <p class="point-text">사용가능한 아이디입니다.</p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id1">비밀번호<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <div class="flex">
+                                        <input type="password" title="비밀번호" class="input-box mid" id="id1">
+                                        <div class="bottom2">
+                                            <p>영문 + 숫자 + 특수문자 조합 8~16자</p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id1">비밀번호 확인<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <div class="flex">
+                                        <input type="password" title="비밀번호확인" class="input-box mid" id="id1">
+                                        <div class="bottom2">
+                                            <p>영문 + 숫자 + 특수문자 조합 8~16자</p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id2">이메일<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <div class="flex">
+                                        <div class="flex-item">
+                                            <input type="text" title="이메일주소" class="input-box" id="id2"><!-- min삭제. 20240514 -->
+                                            <span class="space">@</span>
+                                            <input type="text" title="이메일주소" class="input-box" id=""><!-- min삭제. 20240514 -->
+                                            <select class="select" title="이메일주소">
+                                                <option>선택</option>
+                                                <option>naver.com</option>
+                                                <option>daum.net</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id3">휴대전화번호</label>
+                                </dt>
+                                <dd>
+                                    <div class="flex">
+                                        <div class="flex-item">
+                                            <select class="select min" id="id3" title="휴대전화앞자리">
+                                                <option>010</option>
+                                                <option>학습문의</option>
+                                                <option>전체 전체 전체 전체 전체</option>
+                                            </select>
+                                            <span class="space">-</span>
+                                            <input type="text" title="휴대전화가운데자리" class="input-box min">
+                                            <span class="space">-</span>
+                                            <input type="text" title="휴대전화뒷자리" class="input-box min">
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id5">거주지<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <div class="flex">
+                                        <input type="text" title="거주지" class="input-box mid" id="id6">
+                                        <div class="bottom2">
+                                            <p>인천시 연수구(ㅇㅇ구까지만 작성)</p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id5">주소<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <!-- <ul class="address-input">
+                                        <li>
+                                            <input type="text" class="input-box min" id="address-postcode" readonly="readonly" placeholder="우편번호">
+                                            <button type="button" class="btn-sm postcodeBtn">
+                                                <span>주소검색</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <input type="text" class="input-box" id="address" readonly="readonly" placeholder="주소">
+                                        </li>
+                                        <li>
+                                            <input type="text" class="input-box" name="address-detail" placeholder="상세주소">
+                                        </li>
+                                    </ul> 구조 변경. 20230914 -->
+                                    <!-- 구조 변경 20230914 -->
+                                    <div class="flex">
+                                        <input type="text" class="input-box min" id="address-postcode" readonly="readonly" placeholder="우편번호">
+                                        <button type="button" class="btn-sm postcodeBtn">
+                                            <span>주소검색</span>
+                                        </button>
+                                    </div>
+                                    <div class="flex type-column">
+                                        <div class="flex-item">
+                                            <input type="text" class="input-box" id="address" readonly="readonly" placeholder="주소">
+                                        </div>
+                                        <div class="flex-item">
+                                            <input type="text" class="input-box" name="address-detail" placeholder="상세주소">
+                                        </div>
+                                    </div>
+                                    <!-- 구조 변경 20230914 -->
+                                    
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id5">소속<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <div class="flex">
+                                        <select class="select" title="부서선택">
+                                            <option>부서선택1</option>
+                                            <option>선택해주세요</option>
+                                        </select>
+                                        <input type="text" title="사번" class="input-box mid" id="id6">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id6">소속명<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <input type="text" title="소속명" class="input-box mid" id="id6">
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id7">가입사유<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <select class="select" title="가입사유">
+                                        <option>가입사유 선택해주세요</option>
+                                        <option>선택해주세요</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <label for="id7">기타<span class="required2">*</span></label>
+                                </dt>
+                                <dd>
+                                    <div class="flex infinite"><!-- 유동적으로 늘어나는 영역. 20240517 -->
+                                        <div class="flex-item">
+                                            <select class="select" title="가입사유">
+                                                <option>가입사유 선택해주세요</option>
+                                                <option>선택해주세요</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-item">
+                                            <select class="select" title="가입사유">
+                                                <option>가입사유 선택해주세요</option>
+                                                <option>선택해주세요</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-item">
+                                            <select class="select" title="가입사유">
+                                                <option>가입사유 선택해주세요</option>
+                                                <option>선택해주세요</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-item">
+                                            <select class="select" title="가입사유">
+                                                <option>가입사유 선택해주세요</option>
+                                                <option>선택해주세요</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="terms-bottom">
+                        <div class="agree-chk">
+                            <input type="checkbox" class="custom-check" id="check2">
+                            <label for="check2">[선택] 이벤트 및 프로모션 알림 등 수신 동의합니다.</label>
+                        </div>
+                        <ul class="dot-list">
+                            <li>
+                                메일 수신 여부
+                                <ul class="form-list">
+                                    <li>
+                                        <input type="radio" name="radio01" class="custom-radio" id="radio01-01" checked="checked">
+                                        <label for="radio01-01">예</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="radio01" class="custom-radio" id="radio01-02">
+                                        <label for="radio01-02">아니오</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                SMS 수신 여부
+                                <ul class="form-list">
+                                    <li>
+                                        <input type="radio" name="radio02" class="custom-radio" id="radio02-01" checked="checked">
+                                        <label for="radio02-01">예</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="radio02" class="custom-radio" id="radio02-02">
+                                        <label for="radio02-02">아니오</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="foot-wrap">
+                        <a href="javascript:void(0)" class="btn-foot" target="_self">
+                            <span>회원가입</span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-cancel" target="_self">
+                            <span>취소</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- 다크모드, 맨위로 이동 기능 추가. -->
+    <div class="quick-btn-wrap">
+        <button type="button" class="dark-toggle">
+            <span>다크 모드로 보기</span>
+        </button>
+        <button type="button" class="btn-move-top">
+            <span>맨위로 이동</span>
+        </button>
+    </div>
+    
+</div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="TLS Edumanager">
+    <meta name="description" content="TLS Edumanager">
+    <meta property="og:title" content="TLS Edumanager">
+    <meta property="og:image" content="../../images/link_thumb.png">
+    <meta property="og:description" content="TLS Edumanager">
+    <title>TLS Edumanager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"><!-- 구글 아이콘 폰트 -->
+    <link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+    <link rel="icon" href="../../images/favicon.ico">
+    <script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="login-wrap">
+    <article class="login-in">
+        <header>
+            <h1>
+                <img src="../../images/logo_login.png" alt="TLS Edumanager">
+            </h1>
+        </header>
+
+        <div class="change-passwd">
+            <h2>비밀번호 등록</h2>
+            <div class="login-text">
+                <strong>
+                    <em>연수원 이름</em>에 오신 것을 환영합니다.<br /><span class="point-text">비밀번호를 등록</span>하시고 다양한 교육과정을 학습해보세요.
+                </strong>
+                <p>
+                    <em>연수원 이름</em>에서 사용하실 비밀번호를 등록해주세요.<br />
+                    등록된 비밀번호는 암호화되어 안전하게 관리됩니다.
+                </p>
+            </div>
+            <div class="login-form"><!-- 추가. 20221223 -->
+                <form>
+                    <fieldset>
+                        <legend>비밀번호 등록</legend>
+                        <ul class="login-ul">
+                            <li>
+                                <label for="now-pw">비밀번호</label>
+                                <input type="password" class="input-login" placeholder="비밀번호">
+                            </li>
+                            <li>
+                                <label for="conf-pw">비밀번호 확인</label>
+                                <input type="password" class="input-login" placeholder="비밀번호 확인">
+                            </li>
+                        </ul>
+                        <p class="id-check">
+                            <span class="point-text">숫자, 대소문자를 포함한 알파벳, 특수문자 포함하여 OO자 이상 의 비밀번호를 입력해주세요.</span>
+                        </p>
+                        <button type="button" class="btn-login">비밀번호 등록</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </article>
+
+    <!-- 다크모드, 맨위로 이동 기능 추가. -->
+    <div class="quick-btn-wrap">
+        <button type="button" class="dark-toggle">
+            <span>다크 모드로 보기</span>
+        </button>
+        <button type="button" class="btn-move-top">
+            <span>맨위로 이동</span>
+        </button>
+    </div>
+    
+</div>
+</body>
+
+</html>

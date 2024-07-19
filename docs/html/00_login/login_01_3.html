@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="TLS Edumanager">
+    <meta name="description" content="TLS Edumanager">
+    <meta property="og:title" content="TLS Edumanager">
+    <meta property="og:image" content="../../images/link_thumb.png">
+    <meta property="og:description" content="TLS Edumanager">
+    <title>TLS Edumanager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"><!-- 구글 아이콘 폰트 -->
+    <link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+    <link rel="icon" href="../../images/favicon.ico">
+    <script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="login-wrap type-login" style="background: url('https://images.pexels.com/photos/1556691/pexels-photo-1556691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center 0 no-repeat;background-size: cover;"><!-- 로그인화면엔 type-login 20221216 -->
+    <article class="login-in">
+        <div class="login-cont">
+            <header>
+                <h1>
+                    <img src="../../images/logo_login.png" alt="LG이노텍"><!-- 로고변경 20221216 -->
+                </h1>
+            </header>
+            
+            <!-- login-form -->
+            <div class="login-form">
+                <h2>LOGIN</h2>
+                <form>
+                    <fieldset>
+                        <legend>로그인</legend>
+                        <ul class="login-ul">
+                            <li>
+                                <select class="select-login" title="선택"><!-- 셀렉트 추가 20221216 -->
+                                    <option>LG Innotek</option>
+                                    <option>ubob</option>
+                                    <option>텍스트가 길어진다</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="id">ID</label>
+                                <span class="type-add">ubob -</span><!-- 추가 20221216 -->
+                                <input type="text" id="id" class="input-login" placeholder="아이디">
+                            </li>
+                            <li>
+                                <label for="pw">PW</label>
+                                <input type="password" id="pw" class="input-login" placeholder="비밀번호">
+                            </li>
+                        </ul>
+                        <p class="p-text">
+                            아이디에는 회사 사번을 넣어주세요.<br>최초 접속 시 비밀번호 변경한 후 이용하실 수 있습니다.
+                        </p>
+                        <p class="id-check">
+                            <span class="point-text">등록되지 않은 아이디이거나 잘못된 비밀번호입니다.</span>
+                        </p>
+                        <ul class="option-ul">
+                            <li>
+                                <input type="checkbox" id="checkA01" class="custom-check">
+							    <label class="k-checkbox-label" for="checkA01">아이디 저장</label>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn-login">로그인</button>
+                    </fieldset>
+                </form>
+                <ul class="option-ul type-2">
+                    <li>
+                        <a href="javascript:void(0)">ID/PW 찾기</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- login-form -->
+        </div>
+    </article>
+</div>
+</body>
+
+</html>

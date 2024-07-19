@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+    <script src="../../lib/drag_drop/js/drag_drop.js"></script><!-- 드래그 드랍 -->
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap small">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">1:1 문의</h2>
+            </header>
+            <!-- pop-header -->
+
+            <!-- pop-cont -->
+            <div class="pop-cont">
+                
+                <div class="inquiry-wrap type-2">
+                    <ul class="write-ul">
+                        <li>
+                            <dl>
+                                <dt class="required">회사</dt>
+                                <dd>
+                                    <select class="select" title="회사선택">
+                                        <option>회사를 선택해주세요.</option>
+                                        <option>선택해주세요</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="required">아이디</dt>
+                                <dd>
+                                    <input type="text" class="input-box" name="" placeholder="아이디를 입력해주세요.">
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="required">이름</dt>
+                                <dd>
+                                    <input type="text" class="input-box" name="" placeholder="이름을 입력해주세요.">
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- pop-cont -->
+
+            <!-- pop-foot -->
+            <footer class="pop-foot">
+                <button type="button" class="btn-foot">
+                    <span>휴대전화번호 확인</span>
+                </button>
+                <a href="javascript:void(0);" class="btn-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"--><!-- 클래스명 수정. 디자인보완 -->
+                    <span>취소</span>
+                </a>
+            </footer>
+            <!-- pop-foot -->
+    
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<script src="../../js/layer_popup.js"></script><!-- 레이어팝업 js -->
+
+</body>
+
+</html>

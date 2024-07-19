@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="TLS Edumanager">
+    <meta name="description" content="TLS Edumanager">
+    <meta property="og:title" content="TLS Edumanager">
+    <meta property="og:image" content="../../images/link_thumb.png">
+    <meta property="og:description" content="TLS Edumanager">
+    <title>TLS Edumanager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"><!-- 구글 아이콘 폰트 -->
+    <link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+    <link rel="icon" href="../../images/favicon.ico">
+    <script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="login-wrap">
+    <article class="login-in2 type-long-m"><!-- 모바일 내용이 긴 화면엔 type-long-m--><!-- 20221205 -->
+        <header>
+            <h1>
+                <img src="../../images/logo_login.png" alt="TLS Edumanager">
+            </h1>
+        </header>
+        <div class="find-cont">
+
+            <!-- 추가. 20240513 -->
+            <div class="login-find-top">
+                <h5>아이디 찾기</h5>
+            </div>
+            
+            <!-- 추가. 20240513 -->
+            <div class="login-find-wrap">
+                <div class="login-find-in type-1"> 
+                    <div class="head">
+                        <h6 class="h6">인증방법 선택</h6>
+                    </div>
+                    <div class="cont">
+                        <ul>
+                            <li>
+                                <input type="radio" name="radio1" class="custom-radio" id="radio1">
+                                <label for="radio1">회원정보에 등록된 사번</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="radio1" class="custom-radio" id="radio2">
+                                <label for="radio2">회원정보에 등록된 휴대폰번호</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="radio1" class="custom-radio" id="radio3" checked>
+                                <label for="radio3">회원정보에 등록된 이메일</label>
+                            </li>
+                        </ul>
+                        <p>위 회원정보로 찾을 수가 없나요?<br />확인이 불가능하실 경우, 고객행복센터 1588-6559로 문의해주세요.</p>
+                    </div>
+                </div>
+
+                <div class="login-find-in type-2">
+                    <div class="head">
+                        <h6 class="h6">회원정보에 등록된 이메일로 찾기</h6>
+                    </div>
+                    <div class="cont">
+                        <span>회원정보에 등록된 이름과 이메일을 입력하시면 아이디를 찾을 수 있습니다.</span>
+                        <form>
+                            <fieldset>
+                                <!-- 사번 -->
+                                <!-- <ul>
+                                    <li>
+                                        <input type="text" id="id" class="input-login" placeholder="아이디">
+                                    </li>
+                                    <li>
+                                        <input type="text" id="eid" class="input-login" placeholder="사번">
+                                    </li> 
+                                </ul> -->
+                                <!-- 휴대폰 -->
+                                <!-- <ul>
+                                    <li>
+                                        <input type="text" id="id" class="input-login" placeholder="아이디">
+                                    </li>
+                                    <li>
+                                        <div class="flex">
+                                            <div class="flex-item login-phone">
+                                                <select class="select" title="휴대전화앞자리">
+                                                    <option>010</option>
+                                                    <option>011</option>
+                                                    <option>016</option>
+                                                </select>
+                                                <span class="space">-</span>
+                                                <input type="text" title="휴대전화가운데자리" class="input-box">
+                                                <span class="space">-</span>
+                                                <input type="text" title="휴대전화뒷자리" class="input-box">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> -->
+                                <!-- 이메일 -->
+                                <ul>
+                                    <li>
+                                        <input type="text" id="name" class="input-login" placeholder="이름을 입력해주세요."><!-- 클래스명 수정. 20240513 -->
+                                    </li>
+                                    <li>
+                                        <div class="flex">
+                                            <div class="flex-item login-email">
+                                                <input type="text" title="이메일주소" class="input-login" id="" placeholder="이메일">
+                                                <span class="space">@</span>
+                                                <input type="text" title="이메일주소" class="input-login" id="">
+                                                <select class="select" title="이메일주소">
+                                                    <option>선택</option>
+                                                    <option>naver.com</option>
+                                                    <option>daum.net</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-wrap"><!-- 추가. 20231215 -->
+                                    <button type="button" class="btn-login">찾기</button>
+                                    <button type="button" class="btn-second">취소</button><!-- 취소 추가. 20240513-->
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </article>
+
+    <!-- 다크모드, 맨위로 이동 기능 추가. -->
+    <div class="quick-btn-wrap">
+        <button type="button" class="dark-toggle">
+            <span>다크 모드로 보기</span>
+        </button>
+        <button type="button" class="btn-move-top">
+            <span>맨위로 이동</span>
+        </button>
+    </div>
+    
+</div>
+</body>
+
+</html>

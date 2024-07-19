@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="TLS Edumanager">
+    <meta name="description" content="TLS Edumanager">
+    <meta property="og:title" content="TLS Edumanager">
+    <meta property="og:image" content="../../images/link_thumb.png">
+    <meta property="og:description" content="TLS Edumanager">
+    <title>TLS Edumanager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"><!-- 구글 아이콘 폰트 -->
+    <link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+    <link rel="icon" href="../../images/favicon.ico">
+    <script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="login-wrap">
+    <article class="login-in2 type-long-m"><!-- 모바일 내용이 긴 화면엔 type-long-m--><!-- 20221205 -->
+        <header>
+            <h1>
+                <img src="../../images/logo_login.png" alt="TLS Edumanager">
+            </h1>
+        </header>
+        <div class="find-cont">
+            <!-- <div class="tab-area">  20240513 탭 삭제
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" target="_self">아이디 찾기</a>
+                    </li>
+                    <li class="on" title="선택됨">
+                        <a href="javascript:void(0);" target="_self">비밀번호 찾기</a>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- <div class="tab-cont">
+                <strong class="hidden">비밀번호 찾기</strong> 삭제. 20240513 탭 영역 삭제. -->
+
+
+            <!-- 추가. 20240513 -->
+            <div class="login-find-top">
+                <h5>비밀번호 찾기</h5>
+            </div>
+
+            <!-- 추가. 20240513 -->
+            <div class="login-find-wrap type-pw">
+                <div class="login-find-in type-1"> <!-- 클래스명 추가. 20240513 -->
+                    <div class="head">
+                        <h6 class="h6">인증방법 및 임시비밀번호 발송방법 선택</h6><!-- 텍스트 수정. 20240513 -->
+                    </div>
+                    <div class="cont">
+                        <ul>
+                            <li>
+                                <input type="radio" name="radio1" class="custom-radio" id="radio1">
+                                <label for="radio1">회원정보에 등록된 휴대폰번호</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="radio1" class="custom-radio" id="radio1" checked>
+                                <label for="radio1">회원정보에 등록된 이메일</label>
+                            </li>
+                            <!-- <li>
+                                <input type="radio" name="radio1" class="custom-radio" id="radio1">
+                                <label for="radio1">휴대폰 인증(본인명의)</label>
+                            </li> 삭제. 20240513 -->
+                        </ul>
+
+                        <!-- 추가. 20240514 -->
+                        <div class="login-texts">
+                            <ul class="star-list">
+                                <li><em>이름이 일치하지 않는 경우</em>, 소속 관리자에게 계정등록을 요청하세요.</li>
+                                <li><em>핸드폰번호가 일치하지 않는 경우</em>, 소속 관리자를 통해 핸드폰번호 업데이트를 요청하세요.</li>
+                            </ul>
+                        </div>
+                        <!-- <p>위 회원정보로 찾을 수가 없나요?<br />확인이 불가능하실 경우, 고객행복센터 1588-6559로 문의해주세요.</p> -->
+                    </div>
+                </div>
+
+                <div class="login-find-in type-2"><!-- 클래스명 추가. 20240513 -->
+                    <div class="head">
+                        <h6 class="h6">회원정보에 등록된 이메일로 찾기</h6>
+                    </div>
+                    <div class="cont">
+                        <span>회원정보에 등록된 이름, 이메일을 입력해주세요.</span>
+                        <form>
+                            <fieldset>
+                                <ul>
+                                    <li>
+                                        <input type="text" id="name" class="input-login" placeholder="이름">
+                                    </li>
+                                    <li>
+                                        <input type="text" id="id" class="input-login" placeholder="아이디">
+                                    </li>
+                                    <li>
+                                        <div class="input-box-add">
+                                            <span class="type-add">ubob -</span>
+                                            <input type="text" title="아이디" class="input-box" placeholder="아이디">
+                                        </div>
+                                    </li>
+                                    <li><!-- 회사선택 추가. 20231215 -->
+                                        <select class="select-login2" id="" title="회사선택">
+                                            <option>회사를 선택해주세요.</option>
+                                            <option>학습문의</option>
+                                            <option>전체 전체 전체 전체 전체</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <!-- <div class="flex">
+                                            <div class="flex-item login-phone">
+                                                <select class="select" title="휴대전화앞자리">
+                                                    <option>010</option>
+                                                    <option>011</option>
+                                                    <option>016</option>
+                                                </select>
+                                                <span class="space">-</span>
+                                                <input type="text" title="휴대전화가운데자리" class="input-box">
+                                                <span class="space">-</span>
+                                                <input type="text" title="휴대전화뒷자리" class="input-box">
+                                            </div>
+                                        </div> -->
+                                        
+                                        <div class="flex">
+                                            <div class="flex-item login-email">
+                                                <input type="text" title="이메일주소" class="input-login" id="" placeholder="이메일">
+                                                <span class="space">@</span>
+                                                <input type="text" title="이메일주소" class="input-login" id="">
+                                                <select class="select" title="이메일주소">
+                                                    <option>선택</option>
+                                                    <option>naver.com</option>
+                                                    <option>daum.net</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>                                
+                                    <li>
+                                        <div class="terms">
+                                            <span>개인정보 수집 및 이용에 대한 안내</span>
+                                            <ul class="dot-list">
+                                                <li>수집항목: 이름, 휴대폰번호</li>
+                                                <li>수집목적: 비밀번호변경 및 비밀번호 변경 내역관리</li>
+                                                <li>이용기간: 개인정보수집 및 이용에 대한 목적 달성 후 해당정보파기</li>
+                                            </ul>
+                                            <div class="terms-agree">
+                                                <input type="checkbox" class="custom-check alone" id="check000-00">
+                                                <label for="check000-00">위 개인정보 수집 및 이용에 대한 안내를 충분히 숙지하였으며 이에동의합니다.</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn-login">임시비밀번호 발송</button><!-- 텍스트수정. 20240513 -->
+                                    <button type="button" class="btn-second">취소</button><!-- 추가. 20240513 -->
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- </div> -->
+        </div>
+    </article>
+
+    <!-- 다크모드, 맨위로 이동 기능 추가. -->
+    <div class="quick-btn-wrap">
+        <button type="button" class="dark-toggle">
+            <span>다크 모드로 보기</span>
+        </button>
+        <button type="button" class="btn-move-top">
+            <span>맨위로 이동</span>
+        </button>
+    </div>
+    
+</div>
+</body>
+
+</html>
