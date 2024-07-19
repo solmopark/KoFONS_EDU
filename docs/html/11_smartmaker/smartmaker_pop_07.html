@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"><!-- 반응형 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<button aria-haspopup="dialog" data-popup="popup1" style="margin: 40px auto;display: block;">팝업 열기</button><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+
+<!-- layer-wrap -->
+<div class="layer-wrap" data-popup="popup1" role="dialog"><!-- 연결버튼 data-popup="팝업이름값맞추기"과 layer-wrap data-popup="팝업이름값맞추기" -->
+    
+    <!-- 레이어팝업 본체 -->
+    <article class="pop-wrap">
+
+        <!-- pop-in -->
+        <div class="pop-in">
+
+            <!-- pop-header -->
+            <header class="pop-header" tabindex="0">
+                <h2 class="h2">학습설정</h2>
+            </header>
+            <!-- pop-header -->
+
+            <!-- pop-cont -->
+            <div class="pop-cont">
+                <div class="head">
+                    <dl class="colon-dl type-title">
+                        <dt>과정명</dt>
+                        <dd>나도 우리제품 마케터</dd>
+                    </dl>
+                </div>
+                <div class="data-table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 120px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>학습기간<span class="required2">*</span></th>
+                                <td>
+                                    <div class="flex">
+                                        <div class="flex-item">
+                                            <div class="datepicker">
+                                                <div class="date-input">
+                                                    <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                                </div>
+                                                <span class="custom-form-space">~</span>
+                                                <div class="date-input">
+                                                    <input type="text" class="date-picker" title="날짜입력" placeholder="날짜입력">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-item">
+                                            <input type="checkbox" name="radio02" class="custom-check" id="radio02-01" checked="checked">
+                                            <label for="radio02-01">종료일 없음</label>
+                                        </div>
+                                        <div class="flex-item">
+                                            <p class="point-text">학습기간 날짜는 디폴트로 오늘날짜 ~ 현재 마이크로러닝 오픈기간 종료일까지</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>복습기간<span class="required2">*</span></th>
+                                <td>
+                                    <span class="space-text-front">학습종료(완료일) 이후</span>
+                                    <input type="text" class="input-box min2">
+                                    <span class="space-text">일까지</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>학습순서<span class="required2">*</span></th>
+                                <td>
+                                    <ul class="form-list">
+                                        <li>
+                                            <input type="radio" name="radio01" class="custom-radio" id="radio01-01" checked="checked">
+                                            <label for="radio01-01">순차학습</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="radio01" class="custom-radio" id="radio01-02">
+                                            <label for="radio01-02">비순차학습</label>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>수료기준<span class="required2">*</span></th>
+                                <td>
+                                    <select class="select min" title="갯수">
+                                        <option>선택</option>
+                                        <option>학습문의</option>
+                                        <option>전체 전체 전체 전체 전체</option>
+                                    </select>
+                                    <span class="space-text">개이상 학습완료시 수료</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>제작자 학점<span class="required2">*</span></th>
+                                <td>
+                                    <input type="text" class="input-box min2">
+                                    <span class="space-text">학점</span>
+                                    <span class="space-text">(최대 00학점까지 입력가능)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>교육시간<span class="required2">*</span></th>
+                                <td>
+                                    <input type="text" class="input-box min2">
+                                    <span class="space-text">분</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>교육인정시간<span class="required2">*</span></th>
+                                <td>
+                                    <input type="text" class="input-box min2">
+                                    <span class="space-text">분</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>수료기준<span class="required2">*</span></th>
+                                <td>
+                                    <div class="data-table type-center">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width: 100px;">
+                                                <col>
+                                                <col style="width: 60px;">
+                                                <col style="width: 100px;">
+                                                <col style="width: 100px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>유형</th>
+                                                    <th>구성요소</th>
+                                                    <th>필수</th>
+                                                    <th>교육시간</th>
+                                                    <th>수료기준</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>동영상</td>
+                                                    <td class="td-left">나와 밀접한 회계</td>
+                                                    <td>
+                                                        <input type="checkbox" class="custom-check alone2" id="check000-00">
+			                                            <label for="check000-00">선택</label>
+                                                    </td>
+                                                    <td>00:00:00</td>
+                                                    <td>
+                                                        <input type="text" class="input-box">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>동영상</td>
+                                                    <td class="td-left">나와 밀접한 회계</td>
+                                                    <td>
+                                                        <p class="point-text">필수</p>
+                                                    </td>
+                                                    <td>00:00:00</td>
+                                                    <td>00%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <!-- pop-cont -->
+
+            <footer class="pop-foot">
+                <a href="javascript:void(0);" class="btn-pop btn-apply">
+                    <span>저장</span>
+                </a>
+                <a href="javascript:void(0);" class="btn-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"--><!-- 클래스명 수정. 디자인보완 -->
+                    <span>닫기</span>
+                </a>
+            </footer>
+    
+        </div>
+        <!-- pop-in -->
+
+        <!-- 상단 오른쪽 x버튼 -->
+        <button href="javascript:void(0);" class="btn-x btn-layer-close" popup-close="popup1"><!-- 팝업이 닫히는 버튼에 popup-close="팝업이름값맞추기"-->
+            <span>닫기</span>
+        </button>
+
+    </article>
+    <!-- 레이어팝업 본체 -->
+</div>
+<!-- layer-wrap -->
+
+<div class="quick-btn-wrap type-trick">
+    <p>이 영역은 팝업에서의 퍼블확인용으로 실제 화면에선 보이지 않음.</p>
+    <button type="button" class="dark-toggle">
+        <span>다크 모드로 보기</span>
+    </button>
+</div>
+
+<script src="../../js/layer_popup.js"></script><!-- 레이어팝업 js -->
+</body>
+
+</html>
