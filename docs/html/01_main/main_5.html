@@ -1,0 +1,1434 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="TLS Edumanager">
+	<meta name="description" content="TLS Edumanager">
+	<meta property="og:title" content="TLS Edumanager">
+	<meta property="og:image" content="../../images/link_thumb.png">
+	<meta property="og:description" content="TLS Edumanager">
+	<title>TLS Edumanager</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/dns_main.min.css"><!-- 연수원별 메인 -->
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
+	<link rel="icon" href="../../images/favicon.ico">
+	<script src="../../lib/jquery/js/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../lib/swiper/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+	
+	<!-- header -->
+	<header class="header">
+
+		<!-- pc gnb -->
+		<div class="type-pc">
+			<div class="layout-inner">
+				<div class="header-top">
+					<div class="top-name">
+						<strong>홍길동님</strong>안녕하세요.
+					</div>
+					<div class="top-point">
+						<dl>
+							<dt>포인트</dt>
+							<dd>
+								<ins>1,200</ins>P
+								<small>전체 <b>1,100위</b></small>
+							</dd>
+						</dl>
+					</div>
+					<div class="top-credit">
+						<dl>
+							<dt>크레딧</dt>
+							<dd>
+								<ins>1,200</ins>Credit
+							</dd>
+						</dl>
+					</div>
+					<button type="button" class="btn-logout">
+						<span>로그아웃</span>
+					</button>
+				</div>
+				<nav class="gnb-menu">
+					<h1>
+						<a href="javascript:void(0);" target="_self" class="type-right">
+							<img src="../../images/logo_dns.png" alt="DN SOLUTIONS">
+						</a>
+						<a href="javascript:void(0);" target="_self" class="type-dark">
+							<img src="../../images/logo_dns_dk.png" alt="DN SOLUTIONS">
+						</a>
+					</h1>
+					<ul class="gnb" id="gnb">
+						<li>
+							<a href="javascript:void(0);" target="_self">온라인학습</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">학습안내</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">전체과정</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">오프라인학습</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">학습안내</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">전체과정</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">나의강의실</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">포인트몰</a>
+							<div class="lnb-wrap">
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">공지사항</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">디자인관련질의응답</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">사이트이용문의</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">자주묻는질문</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">교육담당자권한신청</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">개설희망과정신청</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+                        <li>
+							<a href="javascript:void(0);" target="_self">학습지원센터</a>
+						</li>
+					</ul>
+					<button type="button" class="btn-all-view">
+						<span>메뉴 전체보기와 닫기</span>
+						<small></small>
+						<small></small>
+						<small></small>
+					</button>
+				</nav>
+				<div class="gnb-menu-all">
+					<strong class="hidden">전체메뉴</strong>
+					<ul class="all-depth1">
+						<li>
+							<strong>온라인학습</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">전체과정</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(온라인)</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(특강)</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>오프라인학습</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">전체과정</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(온라인)</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">과정상세(특강)</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>나의강의실</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">자료실</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>포인트몰</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">공지사항</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">디자인관련질의응답</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">크리에이터현황</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">전체질의응답</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">사이트이용문의</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">자주묻는질문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">개설희망과정신청</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">교육담당자권한신청</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>학습지원센터</strong>
+							<ul class="all-depth2">
+								<li>
+									<a href="javascript:void(0);" target="_self">학습현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">보관함</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의설문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">수료증발급</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의클래스설계</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의결제현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">나의과정문의</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">개인정보관리</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">크리에이터신청</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" target="_self">크리에이터활동</a>
+									<ul class="all-depth3">
+										<li>
+											<a href="javascript:void(0);" target="_self">프로필관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">콘텐츠등록</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">콘텐츠관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" target="_self">결제관리</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- pc gnb -->
+
+		<!-- 모바일 gnb -->
+		<div class="type-mobile">
+
+			<!-- header_top -->
+			<div class="header-top">
+				<button type="button" class="btn-all-view" id="openNav">
+					<span>메뉴 전체보기</span>
+					<small></small>
+					<small></small>
+					<small></small>
+				</button>
+				<h1>
+					<a href="javascript:void(0);" target="_self" class="type-right">
+						<img src="../../images/logo_dns_m.png" alt="DN SOLUTIONS">
+					</a>
+					<a href="javascript:void(0);" target="_self" class="type-dark">
+						<img src="../../images/logo_dns_m_dk.png" alt="DN SOLUTIONS">
+					</a>
+				</h1>
+			</div>
+			<!-- header_top -->
+
+			<div class="layer-dim"></div>
+			<!-- nav -->
+			<div class="nav">
+				<article class="nav-in">
+					<!-- <div class="btn-wrap">
+						<button type="button" class="btn-close" id="closeNav">
+							<span>닫기</span>
+						</button>
+					</div> -->
+					<header>
+						<div class="top-name">
+							<strong>홍길동님</strong>안녕하세요.
+						</div>
+						<button type="button" class="btn-logout">
+							<span>로그아웃</span>
+						</button>
+					</header>
+					
+					<!-- nav -->
+					<nav>
+						<!-- gnb -->
+						<ul class="gnb" id="gnbM">
+							<li>
+								<a href="javascript:void(0);" target="_self">학습<br>과정</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+										<ul class="lnb-3">
+											<li>
+												<a href="javascript:void(0);" target="_self" class="opeth">3뎁스</a><!-- 현재메뉴 -->
+											</li>
+											<li>
+												<a href="javascript:void(0);" target="_self">3뎁스</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">2뎁스</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">실시간<br>학습</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정2-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정2-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">자료실</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정3-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정3-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">학습<br>지원</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정4-1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" target="_self">과정4-2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_self">나의<br>학습실</a>
+								<ul class="lnb">
+									<li>
+										<a href="javascript:void(0);" target="_self">과정5-1</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- gnb -->
+					</nav>
+				</article>
+				
+			</div>
+			<!-- nav -->
+
+			<!-- fnb -->
+			<div class="fnb">
+				<nav>
+					<ul>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습과정</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">실시간학습</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">자료실</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" target="_self">학습지원</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- fnb -->
+	
+		</div>
+		<!-- 모바일 gnb -->
+		
+	</header>
+	<!-- header -->
+
+	<!-- content main -->
+	<section class="main" id="content">
+		<h2 class="hidden">메인 컨텐츠</h2>
+
+		<!-- main-container -->
+		<div class="main-container">
+
+            <div class="main-info-wrap">
+				<div class="layout-inner">
+					<div class="main-info-1">
+						<a href="javascript:void(0);" target="_self"><!-- a링크 추가. 20240129 -->
+							<dl class="class-wait">
+								<dt>수강대기</dt>
+								<dd>22</dd>
+							</dl>
+						</a>
+						<a href="javascript:void(0);" target="_self"><!-- a링크 추가. 20240129 -->
+							<dl class="class-ing">
+								<dt>수강중</dt>
+								<dd>22</dd>
+							</dl>
+						</a>
+						<a href="javascript:void(0);" target="_self"><!-- a링크 추가. 20240129 -->
+							<dl class="aproval-request">
+								<dt>결재요청</dt>
+								<dd>22</dd>
+							</dl>
+						</a>
+						<a href="javascript:void(0);" target="_self"><!-- a링크 추가. 20240129 -->
+							<dl class="aproval-wait">
+								<dt>결재대기</dt>
+								<dd>22</dd>
+							</dl>
+						</a>
+					</div>
+					<div class="main-info-2">
+						<a href="javascript:void(0);" target="_self"><!-- a링크 추가. 20240126 -->
+							<dl>
+								<dt>크레딧</dt>
+								<dd>
+									<ins>1,212</ins>
+								</dd>
+							</dl>
+						</a>
+						<a href="javascript:void(0);" target="_self"><!-- a링크 추가. 20240126 -->
+							<dl>
+								<dt>포인트</dt>
+								<dd>
+									<ins>1,212</ins>P
+								</dd>
+							</dl>
+						</a>
+					</div>
+				</div>
+            </div>
+
+			<!-- main-slide-wrap -->
+			<article class="main-slide-wrap">
+				<div class="layout-inner">
+					<header>
+						<h3>추천과정</h3>
+					</header>
+					<div class="cont">
+
+						<!-- main-visual-wrap -->
+						<div class="main-visual-wrap">
+
+							<!-- main-visual-container -->
+							<div class="swiper-container main-visual-container">
+								<ul class="swiper-wrapper main-visual-slide">
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<a href="javascript:void(0)" target="_self">
+												<div class="thumb">
+													<img src="../../images/img_thumb1.jpg" alt="제목">
+												</div>
+											</a>
+										</div>
+										<div class="cont">
+
+											<!-- 이동. 디자인보완 -->
+											<div class="flag-wrap2">
+												<span class="flag dtube">D-TUBE</span>
+											</div>
+
+											<strong class="title">
+												<a href="javascript:void(0)">1 이미지사이즈 650 * 366 - 이미지비율 16:9. 세로가 긴 이미지는 세로 가운데 정렬.제목제목제목제목제목제목제목제목제목제목제목제목</a>
+											</strong>
+											<ul class="ico-info type-2">
+												<li class="ico-chasi">
+													<span class="hidden">차시</span>6차시
+												</li>
+												<li class="ico-time">
+													<span class="hidden">교육시간</span>123
+												</li>
+												<li class="ico-person">
+													<span class="hidden">모집인원</span>55
+												</li>
+												<li class="ico-rating">
+													<span class="hidden">평점</span>4.5
+												</li>
+											</ul>
+											<div class="date-wrap type-3">
+												<dl>
+													<dt>신청기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+												<dl>
+													<dt>교육기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+											</div>
+											<div class="btn-wrap">
+												<button type="button" class="btn-lg">
+													<span>수강신청</span>
+												</button>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb2.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+										<div class="cont">
+											<div class="flag-wrap2">
+												<span class="flag smart">스마트러닝</span>
+											</div>
+											<strong class="title">
+												<a href="javascript:void(0)">2 이미지사이즈 650 * 366 - 이미지비율 16:9. 세로가 긴 이미지는 세로 가운데 정렬.</a>
+											</strong>
+											<ul class="ico-info type-2">
+												<li class="ico-chasi">
+													<span class="hidden">차시</span>6차시
+												</li>
+												<li class="ico-time">
+													<span class="hidden">교육시간</span>123
+												</li>
+												<li class="ico-person">
+													<span class="hidden">모집인원</span>55
+												</li>
+												<li class="ico-rating">
+													<span class="hidden">평점</span>4.5
+												</li>
+											</ul>
+											<div class="date-wrap type-3">
+												<dl>
+													<dt>신청기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+												<dl>
+													<dt>교육기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+											</div>
+											<div class="btn-wrap">
+												<button type="button" class="btn-lg">
+													<span>수강신청</span>
+												</button>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb3.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+										<div class="cont">
+											<div class="flag-wrap2">
+												<span class="flag smart">스마트러닝</span>
+											</div>
+											<strong class="title">
+												<a href="javascript:void(0)">3 이미지사이즈 650 * 366 - 이미지비율 16:9. 세로가 긴 이미지는 세로 가운데 정렬.</a>
+											</strong>
+											<ul class="ico-info type-2">
+												<li class="ico-chasi">
+													<span class="hidden">차시</span>6차시
+												</li>
+												<li class="ico-time">
+													<span class="hidden">교육시간</span>123
+												</li>
+												<li class="ico-person">
+													<span class="hidden">모집인원</span>55
+												</li>
+												<li class="ico-rating">
+													<span class="hidden">평점</span>4.5
+												</li>
+											</ul>
+											<div class="date-wrap type-3">
+												<dl>
+													<dt>신청기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+												<dl>
+													<dt>교육기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+											</div>
+											<div class="btn-wrap">
+												<button type="button" class="btn-lg">
+													<span>수강신청</span>
+												</button>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb4.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+										<div class="cont">
+											<!-- 이동. 디자인보완 -->
+											<div class="flag-wrap2">
+												<span class="flag smart">스마트러닝</span>
+											</div>
+											<strong class="title">
+												<a href="javascript:void(0)">4 이미지사이즈 650 * 366 - 이미지비율 16:9. 세로가 긴 이미지는 세로 가운데 정렬.</a>
+											</strong>
+											<ul class="ico-info type-2">
+												<li class="ico-chasi">
+													<span class="hidden">차시</span>6차시
+												</li>
+												<li class="ico-time">
+													<span class="hidden">교육시간</span>123
+												</li>
+												<li class="ico-person">
+													<span class="hidden">모집인원</span>55
+												</li>
+												<li class="ico-rating">
+													<span class="hidden">평점</span>4.5
+												</li>
+											</ul>
+											<div class="date-wrap type-3">
+												<dl>
+													<dt>신청기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+												<dl>
+													<dt>교육기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+											</div>
+											<div class="btn-wrap">
+												<button type="button" class="btn-lg">
+													<span>수강신청</span>
+												</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- main-visual-container -->
+						</div>
+						<!-- main-visual-wrap -->
+
+						<!-- main-thumb-wrap -->
+						<div class="main-thumb-wrap">
+
+							<!-- main-thumb-container -->
+							<div class="swiper-container main-thumb-container">
+								<ul class="swiper-wrapper main-thumb-slide">
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb1.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb2.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb3.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb4.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- main-thumb-container -->
+							<div class="swiper-button-next" id="swiperBtnNext0"></div>
+							<div class="swiper-button-prev" id="swiperBtnPrev0"></div>
+
+						</div>
+						<!-- main-thumb-wrap -->
+
+					</div>
+					<a href="javascript:void(0);" class="btn-more" target="_self">
+						<span>+ 더보기</span><!-- 더보기와 + 위치 서로 변경. 20240126 -->
+					</a>
+				</div>
+			</article>
+			<!-- main-slide-wrap -->
+
+            <div class="event-wrap">
+                <div class="layout-inner">
+                    <dl>
+                        <dt>공지사항</dt>
+                        <dd class="swiper-container event-slide-wrap">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><!-- 5개까지 롤링 -->
+									<strong>
+										<span class="flag1 new">NEW</span>
+										<a href="javascript:void(0);" target="_self">[필독] 여러분들께 알려드리는 이벤트입니다[필독] 여러분들께 알려드리는 이벤트입니다[필독] 여러분들께 알려드리는 이벤트입니다[필독] 여러분들께 알려드리는 이벤트입니다</a>
+										<span class="date">2023.06.01</span>
+									</strong>
+								</li>
+								<li class="swiper-slide">
+									<strong>
+										<a href="http://www.naver.com" target="_self">[필독] 여러분들께 알려드리는 이벤트입니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.[필독] 여러분들께 알려드리는 공지사항입니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.[필독] 여러분들께 알려드리는 공지사항입니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.[필독] 여러분들께 알려드리는 공지사항입니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.[필독] 여러분들께 알려드리는 공지사항입니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.교육시스템이 새롭게 오픈되었습니다.</a>
+										<span class="date">2023.06.01</span>
+									</strong>
+								</li>
+								<li class="swiper-slide">
+									<strong>
+										<a href="javascript:void(0);" target="_self">이벤트3</a>
+										<span class="date">2023.06.01</span>
+									</strong>
+								</li>
+								<li class="swiper-slide">
+									<strong>
+										<a href="javascript:void(0);" target="_self">이벤트4</a>
+										<span class="date">2023.06.01</span>
+									</strong>
+								</li>
+								<li class="swiper-slide">
+									<strong>
+										<a href="javascript:void(0);" target="_self">이벤트5</a>
+										<span class="date">2023.06.01</span>
+									</strong>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<a href="javascript:void(0);" class="btn-more" target="_self">
+						<span>+ 더보기</span><!-- 더보기와 + 위치 서로 변경. 20240126 -->
+					</a>
+                </div>
+            </div>
+
+            <article class="icon-slide-wrap">
+                <div class="layout-inner">
+                    <div class="swiper-container icon-slide-container">
+                        <ul class="swiper-wrapper icon-slide">
+                            <li class="swiper-slide slide-page type-1">
+                                <a href="https://www.naver.com/">
+                                    <span>MTU</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide-page type-2">
+                                <a href="https://www.naver.com/">
+                                    <span>D-TUBE</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide-page type-3">
+                                <a href="javascript:void(0);">
+                                    <span>스마트러닝</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide-page type-4">
+                                <a href="javascript:void(0);">
+                                    <span>북러닝</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide-page type-5">
+                                <a href="javascript:void(0);">
+                                    <span>전화영어</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide-page type-6">
+                                <a href="javascript:void(0);">
+                                    <span>Learning Party/<br>Mentoring</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide-page type-7">
+                                <a href="javascript:void(0);">
+                                    <span>사외교육</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide-page type-8">
+                                <a href="javascript:void(0);">
+                                    <span>사외외국어지원</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide-page type-9"><!-- 추가. 20231027 -->
+                                <a href="javascript:void(0);">
+                                    <span>산업안전<br>보건교육</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+					<div class="btn-wrap">
+						<div class="swiper-button-next" id="swiperBtnNext5"></div><!-- 다음버튼 -->
+						<div class="swiper-button-prev" id="swiperBtnPrev5"></div><!-- 이전버튼 -->
+					</div>
+                </div>
+            </article>
+
+			<!-- article1 -->
+			<article class="article1">
+				<div class="layout-inner">
+					<header>
+						<h3>최신과정</h3>
+					</header>
+					<div class="cont">
+
+                        <!-- list-slide-wrap -->
+                        <div class="list-slide-wrap">
+                            <div class="swiper-container list-slide-container" id="mainSwiper1">
+                                <ul class="swiper-wrapper list-slide">
+                                    <li class="swiper-slide slide-page">
+                                        <a href="javascript:void(0)" target="_self">
+                                            <div class="thumb-wrap">
+                                                <div class="thumb">
+                                                    <img src="../../images/img_thumb4.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+                                                </div>
+                                            </div>
+                                            <div class="cont">
+                                                <div class="flag-wrap2">
+                                                    <span class="flag dtube">D-TUBE</span>
+                                                </div>
+                                                <strong class="title">
+                                                    1 이미지사이즈 372 * 209 - 이미지비율 16:9. 세로가 긴 이미지는 세로 가운데 정렬
+                                                </strong>
+                                                <!-- <div class="date-wrap">
+                                                    <dl>
+                                                        <dt>신청기간</dt>
+                                                        <dd>22.03.03 ~ 22.03.03</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>교육기간</dt>
+                                                        <dd>22.03.03 ~ 22.03.03</dd>
+                                                    </dl>
+                                                </div> -->
+                                                <div class="bot-wrap">
+                                                    <ul class="ico-info">
+                                                        <li class="ico-chasi">
+                                                            <span class="hidden">차시</span>6차시
+                                                        </li>
+                                                        <li class="ico-time">
+                                                            <span class="hidden">수강시간</span>00:00
+                                                        </li>
+														<li class="ico-like">
+															<span class="hidden">좋아요</span>22
+														</li>
+														<li class="ico-rating">
+															<span class="hidden">평점</span>4.5
+														</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide slide-page">
+                                        <div class="thumb-wrap">
+                                            <div class="thumb">
+                                                <img src="../../images/img_thumb1.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+                                            </div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="flag-wrap2">
+                                                <span class="flag smart">스마트러닝</span>
+                                            </div>
+                                            <strong class="title">
+                                                <a href="javascript:void(0)">2밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기</a>
+                                            </strong>
+                                            <!-- <div class="date-wrap">
+                                                <dl>
+                                                    <dt>신청기간</dt>
+                                                    <dd>22.03.03 ~ 22.03.03</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>교육기간</dt>
+                                                    <dd>22.03.03 ~ 22.03.03</dd>
+                                                </dl>
+                                            </div> -->
+                                            <div class="bot-wrap">
+
+                                                <ul class="ico-info">
+                                                    <li class="ico-chasi">
+                                                        <span class="hidden">차시</span>6차시
+                                                    </li>
+                                                    <li class="ico-time">
+                                                        <span class="hidden">수강시간</span>00:00
+                                                    </li>
+													<li class="ico-like">
+                                                        <span class="hidden">좋아요</span>22
+                                                    </li>
+                                                    <li class="ico-rating">
+                                                        <span class="hidden">평점</span>4.5
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide slide-page">
+                                        <div class="thumb-wrap">
+                                            <div class="thumb">
+                                                <img src="../../images/img_thumb2.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+                                            </div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="flag-wrap2">
+                                                <span class="flag dtube">D-TUBE</span>
+                                            </div>
+                                            <strong class="title">
+                                                <a href="javascript:void(0)">3밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기</a>
+                                            </strong>
+                                            <!-- <div class="date-wrap">
+                                                <dl>
+                                                    <dt>신청기간</dt>
+                                                    <dd>22.03.03 ~ 22.03.03</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>교육기간</dt>
+                                                    <dd>22.03.03 ~ 22.03.03</dd>
+                                                </dl>
+                                            </div> -->
+                                            <div class="bot-wrap">
+
+                                                <ul class="ico-info">
+                                                    <li class="ico-chasi">
+                                                        <span class="hidden">차시</span>6차시
+                                                    </li>
+                                                    <li class="ico-time">
+                                                        <span class="hidden">수강시간</span>00:00
+                                                    </li>
+                                                    <li class="ico-like">
+                                                        <span class="hidden">좋아요</span>22
+                                                    </li>
+                                                    <li class="ico-rating">
+                                                        <span class="hidden">평점</span>4.5
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide slide-page">
+                                        <div class="thumb-wrap">
+                                            <div class="thumb">
+                                                <img src="../../images/img_thumb1.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+                                            </div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="flag-wrap2">
+                                                <span class="flag dtube">D-TUBE</span>
+                                            </div>
+                                            <strong class="title">
+                                                <a href="javascript:void(0)">4밀리언셀링 디자이너</a>
+                                            </strong>
+                                            <!-- <div class="date-wrap">
+                                                <dl>
+                                                    <dt>신청기간</dt>
+                                                    <dd>22.03.03 ~ 22.03.03</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>교육기간</dt>
+                                                    <dd>22.03.03 ~ 22.03.03</dd>
+                                                </dl>
+                                            </div> -->
+                                            <div class="bot-wrap">
+
+                                                <ul class="ico-info">
+                                                    <li class="ico-chasi">
+                                                        <span class="hidden">차시</span>6차시
+                                                    </li>
+                                                    <li class="ico-time">
+                                                        <span class="hidden">수강시간</span>00:00
+                                                    </li>
+                                                    <li class="ico-like">
+                                                        <span class="hidden">좋아요</span>22
+                                                    </li>
+                                                    <li class="ico-rating">
+                                                        <span class="hidden">평점</span>4.5
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide slide-page">
+                                        <div class="thumb-wrap">
+                                            <div class="thumb">
+                                                <img src="../../images/img_thumb1.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+                                            </div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="flag-wrap2">
+                                                <span class="flag smart">스마트러닝</span>
+                                            </div>
+                                            <strong class="title">
+                                                <a href="javascript:void(0)">5밀리언셀링 디자이너</a>
+                                            </strong>
+                                            <!-- <div class="date-wrap">
+                                                <dl>
+                                                    <dt>신청기간</dt>
+                                                    <dd>22.03.03 ~ 22.03.03</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>교육기간</dt>
+                                                    <dd>22.03.03 ~ 22.03.03</dd>
+                                                </dl>
+                                            </div> -->
+                                            <div class="bot-wrap">
+
+                                                <ul class="ico-info">
+                                                    <li class="ico-chasi">
+                                                        <span class="hidden">차시</span>6차시
+                                                    </li>
+                                                    <li class="ico-time">
+                                                        <span class="hidden">수강시간</span>00:00
+                                                    </li>
+                                                    <li class="ico-like">
+                                                        <span class="hidden">좋아요</span>22
+                                                    </li>
+                                                    <li class="ico-rating">
+                                                        <span class="hidden">평점</span>4.5
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-wrap">
+								<div class="swiper-button-next" id="swiperBtnNext1"></div><!-- 다음버튼 -->
+                            	<div class="swiper-button-prev" id="swiperBtnPrev1"></div><!-- 이전버튼 -->
+							</div>
+                        </div>
+                        <!-- list-slide-wrap -->
+
+					</div>
+					<a href="javascript:void(0);" class="btn-more" target="_self">
+						<span>+ 더보기</span><!-- 더보기와 + 위치 서로 변경. 20240126 -->
+					</a>
+				</div>
+
+			</article>
+			<!-- article1 -->
+			<!-- article2 -->
+			<article class="article2">
+				<div class="layout-inner">
+					<header>
+						<h3>최신과정</h3>
+					</header>
+					<div class="cont">
+
+						<!-- list-slide-wrap -->
+						<div class="list-slide-wrap">
+							<div class="swiper-container list-slide-container" id="mainSwiper2">
+								<ul class="swiper-wrapper list-slide">
+									<li class="swiper-slide slide-page">
+										<a href="javascript:void(0)" target="_self">
+											<div class="thumb-wrap">
+												<div class="thumb">
+													<img src="../../images/img_thumb4.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+												</div>
+											</div>
+											<div class="cont">
+												<div class="flag-wrap2">
+													<span class="flag dtube">D-TUBE</span>
+												</div>
+												<strong class="title">
+													1 이미지사이즈 372 * 209 - 이미지비율 16:9. 세로가 긴 이미지는 세로 가운데 정렬
+												</strong>
+												<!-- <div class="date-wrap">
+													<dl>
+														<dt>신청기간</dt>
+														<dd>22.03.03 ~ 22.03.03</dd>
+													</dl>
+													<dl>
+														<dt>교육기간</dt>
+														<dd>22.03.03 ~ 22.03.03</dd>
+													</dl>
+												</div> -->
+	
+												<div class="bot-wrap">
+													<ul class="ico-info">
+														<li class="ico-chasi">
+															<span class="hidden">차시</span>6차시
+														</li>
+														<li class="ico-time">
+															<span class="hidden">수강시간</span>00:00
+														</li>
+														<li class="ico-like">
+															<span class="hidden">좋아요</span>22
+														</li>
+														<li class="ico-rating">
+															<span class="hidden">평점</span>4.5
+														</li>
+													</ul>
+												</div>
+	
+											</div>
+										</a>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb3.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+										<div class="cont">
+											<div class="flag-wrap2">
+												<span class="flag smart">스마트러닝</span>
+											</div>
+											<strong class="title">
+												<a href="javascript:void(0)">2밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기</a>
+											</strong>
+											<!-- <div class="date-wrap">
+												<dl>
+													<dt>신청기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+												<dl>
+													<dt>교육기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+											</div> -->
+											<div class="bot-wrap">
+												<ul class="ico-info">
+                                                    <li class="ico-chasi">
+                                                        <span class="hidden">차시</span>6차시
+                                                    </li>
+                                                    <li class="ico-time">
+                                                        <span class="hidden">수강시간</span>00:00
+                                                    </li>
+                                                    <li class="ico-like">
+                                                        <span class="hidden">좋아요</span>22
+                                                    </li>
+                                                    <li class="ico-rating">
+                                                        <span class="hidden">평점</span>4.5
+                                                    </li>
+                                                </ul>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb4.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+										<div class="cont">
+											<!-- 이동. 디자인보완 -->
+											<div class="flag-wrap2">
+												<span class="flag smart">스마트러닝</span>
+											</div>
+											<strong class="title">
+												<a href="javascript:void(0)">3밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기</a>
+											</strong>
+											<!-- <div class="date-wrap">
+												<dl>
+													<dt>신청기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+												<dl>
+													<dt>교육기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+											</div> -->
+											<div class="bot-wrap">
+
+												<ul class="ico-info">
+                                                    <li class="ico-chasi">
+                                                        <span class="hidden">차시</span>6차시
+                                                    </li>
+                                                    <li class="ico-time">
+                                                        <span class="hidden">수강시간</span>00:00
+                                                    </li>
+                                                    <li class="ico-like">
+                                                        <span class="hidden">좋아요</span>22
+                                                    </li>
+                                                    <li class="ico-rating">
+                                                        <span class="hidden">평점</span>4.5
+                                                    </li>
+                                                </ul>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb1.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+										<div class="cont">
+											<div class="flag-wrap2">
+												<span class="flag smart">스마트러닝</span>
+											</div>
+											<strong class="title">
+												<a href="javascript:void(0)">4밀리언셀링 디자이너</a>
+											</strong>
+											<!-- <div class="date-wrap">
+												<dl>
+													<dt>신청기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+												<dl>
+													<dt>교육기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+											</div> -->
+											<div class="bot-wrap">
+												<ul class="ico-info">
+                                                    <li class="ico-chasi">
+                                                        <span class="hidden">차시</span>6차시
+                                                    </li>
+                                                    <li class="ico-time">
+                                                        <span class="hidden">수강시간</span>00:00
+                                                    </li>
+                                                    <li class="ico-like">
+                                                        <span class="hidden">좋아요</span>22
+                                                    </li>
+                                                    <li class="ico-rating">
+                                                        <span class="hidden">평점</span>4.5
+                                                    </li>
+                                                </ul>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide slide-page">
+										<div class="thumb-wrap">
+											<div class="thumb">
+												<img src="../../images/img_thumb1.jpg" alt="밀리언셀링 디자이너 탄젠씨의 실무 제품 디자인 기초">
+											</div>
+										</div>
+										<div class="cont">
+											<div class="flag-wrap2">
+												<span class="flag smart">스마트러닝</span>
+											</div>
+											<strong class="title">
+												<a href="javascript:void(0)">5밀리언셀링 디자이너</a>
+											</strong>
+											<!-- <div class="date-wrap">
+												<dl>
+													<dt>신청기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+												<dl>
+													<dt>교육기간</dt>
+													<dd>22.03.03 ~ 22.03.03</dd>
+												</dl>
+											</div> -->
+											<div class="bot-wrap">
+
+												<ul class="ico-info">
+                                                    <li class="ico-chasi">
+                                                        <span class="hidden">차시</span>6차시
+                                                    </li>
+                                                    <li class="ico-time">
+                                                        <span class="hidden">수강시간</span>00:00
+                                                    </li>
+                                                    <li class="ico-like">
+                                                        <span class="hidden">좋아요</span>22
+                                                    </li>
+                                                    <li class="ico-rating">
+                                                        <span class="hidden">평점</span>4.5
+                                                    </li>
+                                                </ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="btn-wrap">
+								<div class="swiper-button-next" id="swiperBtnNext2"></div><!-- 다음버튼 -->
+                            	<div class="swiper-button-prev" id="swiperBtnPrev2"></div><!-- 이전버튼 -->
+							</div>
+						</div>
+						<!-- list-slide-wrap -->
+
+					</div>
+					<a href="javascript:void(0);" class="btn-more" target="_self">
+						<span>+ 더보기</span><!-- 더보기와 + 위치 서로 변경. 20240126 -->
+					</a>
+				</div>
+
+			</article>
+			<!-- article2 -->
+
+            <article class="article-shortcut">
+				<div class="layout-inner">
+					<div class="book-shortcut">
+						<a href="javascript:void(0);" target="_self">
+							<span>독서통신 바로가기</span>
+						</a>
+					</div>
+					<div class="tel-shortcut">
+						<a href="javascript:void(0);" target="_self">
+							<span>전화영어 바로가기</span>
+						</a>
+					</div>
+				</div>
+            </article>
+
+
+			<!-- article-center -->
+			<article class="article-center">
+				<div class="layout-inner">
+
+					<div class="center-wrap">
+						<div class="center-1">
+							<header>
+								<h3>모바일 연수원 WEB 접속안내</h3>
+							</header>
+							<div class="cont">
+								<ul>
+									<li class="way-1">
+										<span class="qr-img">
+											<img src="../../images/img_qr_dns.jpg" alt="qr코드">
+										</span>
+										<dl>
+											<dt>방법 1</dt>
+											<dd class="dd-1">QR코드로 접속하세요.</dd><!-- 텍스트 추가. 20240126 -->
+											<dd class="dd-2">네이버, 다음 등의 어플 중 하나를 실행하여 QR코드를 촬영해주세요.</dd><!-- 클래스명 추가. 20240126 -->
+										</dl>
+									</li>
+									<li class="way-2">
+										<dl>
+											<dt>방법 2</dt>
+											<dd>접속 URL을 보내드립니다.</dd>
+										</dl>
+										<div class="url-wrap">
+											<input type="text">
+											<button type="button">
+												<span>보내기</span>
+											</button>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="center-2">
+							<header>
+								<h3>학습지원센터</h3>
+								<a href="javascript:void(0);" class="btn-center" target="_self">
+									<span>1:1문의</span>
+								</a>
+							</header>
+							<div class="cont">
+								<em>02-2183-3625</em>
+								<dl>
+									<dt>평일</dt>
+									<dd>09:00 ~ 18:00</dd>
+								</dl>
+								<dl>
+									<dt>교육담당</dt>
+									<dd>장봉근 매니저(4015), 손설희 매니저(4012) , 박인혁(4049)</dd><!-- 님 삭제. 20240126 -->
+								</dl>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</article>
+			<!-- article-center -->
+		</div>
+		<!-- main-container -->
+
+	</section>
+	<!-- content -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="layout-inner">
+			<strong>
+				<img src="../../images/logo_dns_foot.png" alt="DN SOLUTIONS">
+			</strong>
+			<div class="foot-info">
+				<address>우) 51537 경상남도 창원시 성산구 정동로162번길 40 (DN솔루션즈)</address>
+				<small>Copyright 2023. DN솔루션즈. All rights reserved</small>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+	<!-- 다크모드, 맨위로 이동 기능 추가. -->
+	<div class="quick-btn-wrap">
+		<button type="button" class="dark-toggle">
+			<span>다크 모드로 보기</span>
+		</button>
+		<button type="button" class="btn-move-top">
+			<span>맨위로 이동</span>
+		</button>
+	</div>
+
+</div>
+<script src="../../js/main_dns.js"></script><!-- 메인 슬라이드 스크립트 -->
+
+</body>
+</html>
