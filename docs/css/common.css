@@ -2,8 +2,41 @@
 
 /* color */
 
-:root {
+:root {    
+--text_black:#222222;
+--text_gray:#707070;
+--text_lightG:#767676;
 
+
+--subM_gray:#f3f3f3;
+--foot_gray:#EFF1F2;
+
+--main_blue:#0066B3;
+--nevy:#304572;
+--white:#fff;
 }
 
-/* 공통 */
+/* -------- hs_추가 -------- */
+/* color */
+.M_blue {color:var(--main_blue);}
+/* text */
+.h2 {font-size: 4.0rem; font-weight: 600; line-height: 1;}
+.ft_20 {font-size:2rem !important; line-height: 1;}
+
+.subtext {font-size: 1.8rem; font-weight: 200; line-height: 1.8;}
+.textArea {font-size: 1.6rem; font-weight: normal; line-height: 1.8; letter-spacing: -0.08rem;}
+
+/* label */
+.label_blue {background:var(--nevy); padding:0.2rem 0.6rem; color:var(--white); display: inline-block;}
+
+/* margin */
+.mb4 {margin-bottom:0.4rem;}
+.mb20 {margin-bottom:2rem;}
+.mb60 {margin-bottom:6rem;}
+
+/* box-style */
+.box_style01 {background:#f2f2f2; padding:4rem;}
+
+/* line-style */
+.line_style01 {border-bottom:1px solid #222;}
+.line_style02 {border-bottom:1px solid #222; margin:3.3rem 0 5rem 0;}
