@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+/* color */
+
+:root {    
+--text_black:#222222;
+--text_gray:#707070;
+--text_lightG:#767676;
+
+--btn_black :#3e3d3e;
+--line_gray: #DDDDDD;
+
+--subM_gray:#f3f3f3;
+--foot_gray:#EFF1F2;
+
+--main_blue:#0066B3;
+--nevy:#304572;
+--white:#fff;
+}
+
+/* -------- hs_공용CSS_Start  -------- */
+/* color */
+.M_blue {color:var(--main_blue);}
+
+/* text */
+.h2 {font-size: 4.0rem; font-weight: 600; line-height: 1;}
+.ft_20 {font-size:2rem !important; line-height: 1;}
+
+.page_title {font-size:3rem; font-weight:bold; line-height: 1;}
+.page_title02 {font-size:1.8rem; font-weight:bold; line-height: 1; margin-bottom:1.8rem;}
+.titleArea {font-size: 4rem; line-height: 1; font-weight: bold; }
+.subtext {font-size: 1.8rem; font-weight: 200; line-height: 1.8;}
+.textArea {font-size: 1.6rem; font-weight: normal; line-height: 1.8; letter-spacing: -0.08rem;}
+
+.text_C {text-align: center;}
+/* label */
+.label_blue {background:var(--nevy); padding:0.2rem 0.6rem; color:var(--white); display: inline-block;}
+
+/* br */
+.br_320 {display: none;}
+.br_375 {display:none;}
+
+.hide_375 {display:block;}
+
+
+/* margin */
+.mb4 {margin-bottom:0.4rem;}
+.mb20 {margin-bottom:2rem;}
+.mb50 {margin-bottom:5rem;}
+.mb60 {margin-bottom:6rem;}
+
+/* box-style */
+.box_style01 {background:#f2f2f2; padding:4rem;}
+
+/* line-style */
+.line_style01 {border-bottom:1px solid #222; padding-bottom: 3.3rem; }
+.line_style02 {border-bottom:1px solid #222; padding-bottom: 3.3rem; margin-bottom:5rem;}
+.line_style03 {border-bottom:1px solid var(--line_gray) !important;}
+
+/* flex */
+.flex01 {display:flex; justify-content: space-between;}
+.ai_c {align-items: center;}
+
+/* table */
+.tb_style {width: 100%; text-align: center; border-top:2px solid var(--text_black);}
+.tb_style tr {border-bottom:1px solid var(--line_gray);}
+.tb_style tr >* {padding:2rem 2.8rem; font-size: 1.6rem;  font-weight: 400; color: var(--text_gray); white-space: break-spaces;}
+.tb_style tr >*:first-child {font-weight:bold; width:20%; color:var(--text_black); white-space: nowrap;}
+
+/* sch-box */
+.sub-content .sch-box {border:0;}
+.sub-content .sch-box .sch-select {padding:2rem;}
+.sub-content .sch-box .sch-select ul {flex-wrap: nowrap; padding:0; justify-content: space-between;}
+.sub-content .sch-box .sch-select ul >* {width:calc(98% / 5);  margin:5px 0;}
+.sub-content .sch-box .sch-select ul li {border-radius: 50px; color:var(--main_blue); border: 1px solid var(--main_blue); } 
+.sub-content .sch-select ul li.on {background:var(--main_blue); border: 1px solid var(--main_blue);}
+
+/* footer */
+.footer.ft01 {padding: 0; background:var(--white);}
+.footer.ft01 .layout-inner {margin:0 auto; padding:0; }
+
+.footer.ft01 .family-wrap .select-foot {color:var(--text_black);     background: url(../images/ico_arrow_sel.png) no-repeat right 50% var(--white);
+}
+.footer.ft01 >*:first-child {background:#EFF1F2; padding:1.5rem 0;}
+.footer.ft01 >*:last-child {padding:4.5rem 0;}
+.footer.ft01 .ft_company >* {font-weight: 1.6rem; color:var(--text_lightG);}
+.footer.ft01 .ft_company ul {margin:1.5rem 0 3rem;}
+.footer.ft01 .ft_company ul li {margin-right: 2rem;}
+.footer.ft01 .ft_company ul li b {color:var(--text_black); font-weight: 700;}
+.footer.ft01 .ft_company >*:last-child {margin-top: 1.6rem;}
+.footer.ft01 .footsite .flex01 .flex {display:flex;}
+.footer.ft01 .footsite .flex01 .flex li {font-size: 1.8rem; color:var(--text_black); font-weight: bold;}
+.footer.ft01 .footsite .flex01 .flex:first-child li {margin-right: 2rem;}
+/* .footer.ft01 .family-wrap {width: -webkit-fill-available;} */
+.footer.ft01 .family-wrap .select-foot {width: 280px; height: auto; border-radius: 5px;}
+.footer.ft01 .family-wrap .btn-sm {background: var(--btn_black); padding: 1.4rem 2.4rem; width: max-content; height: auto;}
+
+/* -------- hs_공용CSS_End -------- */
+
+/* -------- edu_map_Start -------- */
+.edu_map {width:100%; height:max-content;}
+.edu_map .root_daum_roughmap {width:100%;}
+/* -------- edu_map_End -------- */
+
+/* -------- sub_Css_Start -------- */
+.sub .sub-container .sub-content .title {font-size: 2.4rem;}
+/* view-top */
+.sub .view-top {display: flex; flex-flow: column;}
+.sub .view-top .flex01 {flex-flow: row wrap;}
+.sub .view-top .flex01 .box {display:flex; margin-bottom:4rem;}
+.sub .view-top .flex01 .box:last-child  {margin-bottom: 0;}
+.sub .view-top .flex01 .box h5 {margin-bottom: 1.6rem;}
+.sub .view-top .flex01 .box .dl-list>dl>dd {width: max-content;}
+/* -------- sub_Css_End -------- */
+
+/* -------- media_Start -------- */
+@media (max-width: 1024px) {
+    /* 공용css */
+    .mb60 {margin-bottom:4rem;}
+
+    .box_style01 {padding:2rem;}
+    .subtext {font-size: 1.6rem;}
+    .titleArea {font-size:4rem;}
+
+    /* footer */
+    .footer.ft01 {padding-bottom:9rem;}
+    .footer.ft01 .layout-inner {max-width: -webkit-fill-available; margin:auto 2rem; display: flex; flex-flow: row;}
+
+    /* sub */
+    .sub .sub-container .sub-content {padding-top: 5.2rem;}
+    .sub-content .sch-box { margin-top: 0;}
+}
+@media (max-width: 1023px) {    
+    .footer .family-wrap {position: static;}
+}
+@media (max-width: 768px) {
+    /* footer */
+    .footer.ft01 >*:first-child {background:#EFF1F2; padding:2.2rem 0;}
+    .footer.ft01 >*:last-child {padding:4.5rem 0;}
+    .footer.ft01 .family-wrap {margin: 2rem 0 0; width: -webkit-fill-available;}
+    
+    .footer.ft01 .layout-inner {flex-flow: column; align-items: flex-start;}
+    /* .footer .family-wrap {margin-left: 0; margin-top:2rem; width: -webkit-fill-available;}
+    .footer.ft01 .layout-inner .flex01 .flex {display:flex; flex-flow: column; align-items: flex-start;} */
+    
+    .footer.ft01 strong {display:none;}
+
+    /* view-top */
+    .sub .view-top .flex01 {flex-flow: column; align-items: flex-start;}
+    .sub .view-top .flex01 .box {margin-bottom:2rem;}
+    .sub .view-top .flex01 .box .dl-list>dl>dt {width:26px; font-size: 1.4rem;}
+    .sub .view-top .cont {padding-left:1rem; justify-content: center;}
+    .sub .view-top .head {margin-bottom: 0;}
+    .sub .view-top .thumb-wrap {margin-bottom: 0;}
+    .sub .view-top .thumb-wrap img {max-width: 110px;}
+}
+
+@media (max-width: 425px) {
+    /* ---- 공용 css ---- */
+    /* text */
+    .page_title {font-size:2rem;}
+    .ft_20 {font-size: 1.8rem;}    
+    .subtext {font-size: 1.5rem; letter-spacing: -0.1rem;}
+    .titleArea {font-size:3rem;}
+    .textArea {font-size: 1.4rem;}
+
+    .mb50 {margin-bottom:3rem;}
+    .mb60 {margin-bottom:3rem;}
+
+    .line_style02 {padding-bottom:2.2rem; margin-bottom: 3rem;}
+    /* br */
+    .br_375 {display:block;}
+    .hide_375 {display:none;}
+    
+    /* footer */
+    .footer.ft01 .footsite .flex01 .flex li {font-size: 1.5rem;}
+    .footer.ft01 .family-wrap .select-foot {padding: 1.2rem 2.4rem;}
+    .footer.ft01 .family-wrap .btn-sm {white-space: nowrap; padding: 1.2rem 2.4rem;}
+
+    .footer.ft01 >*:last-child {padding: 2.5rem 0;}
+    .footer.ft01 .ft_company ul {margin:1.5rem 0 2.5rem;}
+    .footer.ft01 .ft_company >* {font-size: 1.4rem;}
+    .footer.ft01 .ft_company >*:last-child {margin-top: 1.4rem;}
+    .footer.ft01 .ft_company >*:last-child span {display: none;}
+    .footer.ft01 .ft_company ul  {flex-flow: column;}
+    .footer.ft01 .family-wrap .select-foot {width: -webkit-fill-available;}
+
+    /* sch-box */
+    .sub-content .sch-box .sch-select {padding:1rem 0;}
+    .sub-content .sch-box .sch-select ul {flex-wrap:wrap; }
+    .sub-content .sch-box .sch-select ul >* {width:calc(90% / 2);}
+
+    /* table */
+    .tb_style tr >* {padding: 2rem 1rem; font-size: 1.4rem; text-align: justify;}
+    .tb_style tr >*:first-child {width:24%; text-align: center;}
+
+    .sub .sub-container .sub-content .title {font-size: 1.8rem;}
+
+    /* view-top */
+    .sub .view-top .flex01 .box .dl-list>dl>dd {width: -webkit-fill-available; letter-spacing: -0.08rem;}
+}
+@media (max-width: 350px) {
+    .tb_style tr >*:first-child {width:30%;}
+    /* view-top */
+    .sub .view-top .thumb-wrap img {max-width: 100px;}
+}
+@media (max-width: 320px) {
+    /* ---- 공용 css ---- */
+    .br_320 {display: block;}
+    .footer.ft01 .ft_company >* {font-size: 1.3rem; letter-spacing: -0.075rem;}
+    .footer.ft01 .footsite .flex01 .flex li {font-size: 1.3rem; }
+}
+/* ---- edu_find ---- */
